@@ -1,0 +1,225 @@
+[0.000000] (-) TimerEvent: {}
+[0.000579] (micro_ros_setup) JobQueued: {'identifier': 'micro_ros_setup', 'dependencies': OrderedDict()}
+[0.000607] (micro_ros_setup) JobStarted: {'identifier': 'micro_ros_setup'}
+[0.007145] (micro_ros_setup) JobProgress: {'identifier': 'micro_ros_setup', 'progress': 'cmake'}
+[0.007543] (micro_ros_setup) Command: {'cmd': ['/usr/bin/cmake', '/home/diego/Ros2_esp32/src/micro_ros_setup', '-DCMAKE_INSTALL_PREFIX=/home/diego/Ros2_esp32/install/micro_ros_setup'], 'cwd': '/home/diego/Ros2_esp32/build/micro_ros_setup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'diego'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/diego'), ('OLDPWD', '/home/diego'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1973'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'diego'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'diego'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/diego/.espressif/eim_gui:/home/diego/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/diego-desktop:@/tmp/.ICE-unix/1935,unix/diego-desktop:/tmp/.ICE-unix/1935'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1de23c21_0ec7_4755_8c7c_5c717efeb3d6'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.QBYQR3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.102'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/diego/Ros2_esp32/build/micro_ros_setup'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/home/diego/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.060697] (micro_ros_setup) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099651] (-) TimerEvent: {}
+[0.113907] (micro_ros_setup) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.120893] (micro_ros_setup) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.186633] (micro_ros_setup) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.193352] (micro_ros_setup) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.193558] (micro_ros_setup) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.193896] (micro_ros_setup) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.196602] (micro_ros_setup) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.199706] (-) TimerEvent: {}
+[0.274737] (micro_ros_setup) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.281640] (micro_ros_setup) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.281900] (micro_ros_setup) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.282306] (micro_ros_setup) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.284817] (micro_ros_setup) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.299795] (-) TimerEvent: {}
+[0.400033] (-) TimerEvent: {}
+[0.419200] (micro_ros_setup) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.500126] (-) TimerEvent: {}
+[0.501684] (micro_ros_setup) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.592751] (micro_ros_setup) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[0.600202] (-) TimerEvent: {}
+[0.617071] (micro_ros_setup) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[0.620302] (micro_ros_setup) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.622202] (micro_ros_setup) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[0.635166] (micro_ros_setup) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.636695] (micro_ros_setup) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.639652] (micro_ros_setup) StdoutLine: {'line': b'-- Generating done\n'}
+[0.641376] (micro_ros_setup) StdoutLine: {'line': b'-- Build files have been written to: /home/diego/Ros2_esp32/build/micro_ros_setup\n'}
+[0.645901] (micro_ros_setup) CommandEnded: {'returncode': 0}
+[0.646408] (micro_ros_setup) JobProgress: {'identifier': 'micro_ros_setup', 'progress': 'build'}
+[0.646939] (micro_ros_setup) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/diego/Ros2_esp32/build/micro_ros_setup', '--', '-j12', '-l12'], 'cwd': '/home/diego/Ros2_esp32/build/micro_ros_setup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'diego'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/diego'), ('OLDPWD', '/home/diego'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1973'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'diego'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'diego'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/diego/.espressif/eim_gui:/home/diego/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/diego-desktop:@/tmp/.ICE-unix/1935,unix/diego-desktop:/tmp/.ICE-unix/1935'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1de23c21_0ec7_4755_8c7c_5c717efeb3d6'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.QBYQR3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.102'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/diego/Ros2_esp32/build/micro_ros_setup'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/home/diego/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.685963] (micro_ros_setup) CommandEnded: {'returncode': 0}
+[0.686534] (micro_ros_setup) JobProgress: {'identifier': 'micro_ros_setup', 'progress': 'install'}
+[0.695325] (micro_ros_setup) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/diego/Ros2_esp32/build/micro_ros_setup'], 'cwd': '/home/diego/Ros2_esp32/build/micro_ros_setup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'diego'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/diego'), ('OLDPWD', '/home/diego'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1973'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'diego'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'diego'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/diego/.espressif/eim_gui:/home/diego/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/diego-desktop:@/tmp/.ICE-unix/1935,unix/diego-desktop:/tmp/.ICE-unix/1935'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1de23c21_0ec7_4755_8c7c_5c717efeb3d6'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.QBYQR3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.102'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/diego/Ros2_esp32/build/micro_ros_setup'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/home/diego/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.700239] (-) TimerEvent: {}
+[0.703208] (micro_ros_setup) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.703426] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/share/ament_index/resource_index/package_run_dependencies/micro_ros_setup\n'}
+[0.703685] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/share/ament_index/resource_index/parent_prefix_path/micro_ros_setup\n'}
+[0.703906] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/share/micro_ros_setup/environment/ament_prefix_path.sh\n'}
+[0.704060] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/share/micro_ros_setup/environment/ament_prefix_path.dsv\n'}
+[0.704227] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/share/micro_ros_setup/environment/path.sh\n'}
+[0.704384] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/share/micro_ros_setup/environment/path.dsv\n'}
+[0.704535] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/share/micro_ros_setup/local_setup.bash\n'}
+[0.704690] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/share/micro_ros_setup/local_setup.sh\n'}
+[0.704845] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/share/micro_ros_setup/local_setup.zsh\n'}
+[0.704999] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/share/micro_ros_setup/local_setup.dsv\n'}
+[0.705145] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/share/micro_ros_setup/package.dsv\n'}
+[0.705356] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/share/ament_index/resource_index/packages/micro_ros_setup\n'}
+[0.705554] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/share/micro_ros_setup/cmake/micro_ros_setupConfig.cmake\n'}
+[0.705686] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/share/micro_ros_setup/cmake/micro_ros_setupConfig-version.cmake\n'}
+[0.705836] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/share/micro_ros_setup/package.xml\n'}
+[0.705981] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config\n'}
+[0.706072] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/utils.sh\n'}
+[0.706198] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos\n'}
+[0.706286] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/list_apps.sh\n'}
+[0.706425] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/nucleo_f767zi\n'}
+[0.706509] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/nucleo_f767zi/client_uros_packages.repos\n'}
+[0.706587] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/nucleo_f767zi/create.sh\n'}
+[0.706703] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/nucleo_f767zi/configure.sh\n'}
+[0.706833] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/nucleo_f767zi/board.repos\n'}
+[0.706963] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/nucleo_f767zi/flash.sh\n'}
+[0.707093] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/nucleo_f767zi/client-colcon.meta\n'}
+[0.707225] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/nucleo_f767zi/package.xml\n'}
+[0.707362] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/nucleo_f767zi/build.sh\n'}
+[0.707501] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/dev_ros2_packages.txt\n'}
+[0.707626] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/olimex-stm32-e407\n'}
+[0.707721] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/client_uros_packages.repos\n'}
+[0.707789] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/create.sh\n'}
+[0.707898] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/configure.sh\n'}
+[0.708029] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/board.repos\n'}
+[0.708165] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/flash.sh\n'}
+[0.708300] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/client-colcon.meta\n'}
+[0.708440] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/package.xml\n'}
+[0.708593] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/build.sh\n'}
+[0.708717] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/esp32\n'}
+[0.708806] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/esp32/client_uros_packages.repos\n'}
+[0.708885] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/esp32/create.sh\n'}
+[0.708988] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/esp32/configure.sh\n'}
+[0.709118] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/esp32/board.repos\n'}
+[0.709247] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/esp32/flash.sh\n'}
+[0.709381] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/esp32/README.md\n'}
+[0.709516] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/esp32/client-colcon.meta\n'}
+[0.709645] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/esp32/package.xml\n'}
+[0.709776] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/esp32/build.sh\n'}
+[0.709907] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/nucleo_f446re\n'}
+[0.709992] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/nucleo_f446re/client_uros_packages.repos\n'}
+[0.710067] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/nucleo_f446re/create.sh\n'}
+[0.710173] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/nucleo_f446re/configure.sh\n'}
+[0.710302] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/nucleo_f446re/board.repos\n'}
+[0.710441] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/nucleo_f446re/flash.sh\n'}
+[0.710571] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/nucleo_f446re/client-colcon.meta\n'}
+[0.710701] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/nucleo_f446re/package.xml\n'}
+[0.710832] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/nucleo_f446re/build.sh\n'}
+[0.710986] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/nucleo_f446ze\n'}
+[0.711062] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/nucleo_f446ze/client_uros_packages.repos\n'}
+[0.711141] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/nucleo_f446ze/create.sh\n'}
+[0.711212] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/nucleo_f446ze/configure.sh\n'}
+[0.711343] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/nucleo_f446ze/board.repos\n'}
+[0.711508] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/nucleo_f446ze/flash.sh\n'}
+[0.711632] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/nucleo_f446ze/client-colcon.meta\n'}
+[0.711762] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/nucleo_f446ze/package.xml\n'}
+[0.711886] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/nucleo_f446ze/build.sh\n'}
+[0.712005] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/nucleo_f746zg\n'}
+[0.712085] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/nucleo_f746zg/client_uros_packages.repos\n'}
+[0.712161] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/nucleo_f746zg/create.sh\n'}
+[0.712250] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/nucleo_f746zg/configure.sh\n'}
+[0.712412] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/nucleo_f746zg/board.repos\n'}
+[0.712544] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/nucleo_f746zg/flash.sh\n'}
+[0.712667] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/nucleo_f746zg/client-colcon.meta\n'}
+[0.712789] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/nucleo_f746zg/package.xml\n'}
+[0.712913] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/nucleo_f746zg/build.sh\n'}
+[0.713031] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/crazyflie21\n'}
+[0.713112] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/crazyflie21/client_uros_packages.repos\n'}
+[0.713189] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/crazyflie21/create.sh\n'}
+[0.713276] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/crazyflie21/configure.sh\n'}
+[0.713452] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/crazyflie21/board.repos\n'}
+[0.713577] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/crazyflie21/flash.sh\n'}
+[0.713704] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/crazyflie21/client-colcon.meta\n'}
+[0.713827] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/crazyflie21/package.xml\n'}
+[0.713950] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/crazyflie21/build.sh\n'}
+[0.714075] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/freertos/dev_uros_packages.repos\n'}
+[0.714196] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/client_uros_packages.repos\n'}
+[0.714310] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/host\n'}
+[0.714490] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/host/dev_ros2_packages.txt\n'}
+[0.714614] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/host/dev_uros_packages.repos\n'}
+[0.714730] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/host/generic\n'}
+[0.714810] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/host/generic/client_host_packages.repos\n'}
+[0.714938] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/host/generic/create.sh\n'}
+[0.715061] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/host/generic/flash.sh\n'}
+[0.715185] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/host/generic/client-host-colcon.meta\n'}
+[0.715307] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/host/generic/package.xml\n'}
+[0.715440] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/host/generic/build.sh\n'}
+[0.715583] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/host/client_ros2_packages.txt\n'}
+[0.715690] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/raspbian\n'}
+[0.715764] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/raspbian/dev_ros2_packages.txt\n'}
+[0.715897] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/raspbian/dev_uros_packages.repos\n'}
+[0.716007] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/raspbian/generic\n'}
+[0.716087] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/raspbian/generic/client_uros_packages.repos\n'}
+[0.716214] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/raspbian/generic/supported_platforms\n'}
+[0.716351] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/raspbian/generic/create.sh\n'}
+[0.716484] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/raspbian/generic/configure.sh\n'}
+[0.716608] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/raspbian/generic/flash.sh\n'}
+[0.716732] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/raspbian/generic/client-colcon.meta\n'}
+[0.716854] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/raspbian/generic/build.sh\n'}
+[0.716976] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/android\n'}
+[0.717067] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/android/dev_ros2_packages.txt\n'}
+[0.717192] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/android/dev_uros_packages.repos\n'}
+[0.717309] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/android/generic\n'}
+[0.717402] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/android/generic/client_uros_packages.repos\n'}
+[0.717531] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/android/generic/create.sh\n'}
+[0.717655] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/android/generic/flash.sh\n'}
+[0.717784] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/android/generic/client-colcon.meta\n'}
+[0.717909] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/android/generic/package.xml\n'}
+[0.718034] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/android/generic/build.sh\n'}
+[0.718163] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/renesas_ra\n'}
+[0.718250] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/renesas_ra/list_apps.sh\n'}
+[0.718389] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/renesas_ra/dev_ros2_packages.txt\n'}
+[0.718552] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/renesas_ra/ra6m5\n'}
+[0.718632] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/renesas_ra/ra6m5/client_uros_packages.repos\n'}
+[0.718735] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/renesas_ra/ra6m5/create.sh\n'}
+[0.718858] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/renesas_ra/ra6m5/configure.sh\n'}
+[0.718983] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/renesas_ra/ra6m5/board.repos\n'}
+[0.719107] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/renesas_ra/ra6m5/flash.sh\n'}
+[0.719232] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/renesas_ra/ra6m5/client-colcon.meta\n'}
+[0.719355] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/renesas_ra/ra6m5/build.sh\n'}
+[0.719515] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/renesas_ra/dev_uros_packages.repos\n'}
+[0.719640] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/agent_uros_packages.repos\n'}
+[0.719762] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/mbed\n'}
+[0.719844] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/mbed/list_apps.sh\n'}
+[0.719994] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/mbed/dev_ros2_packages.txt\n'}
+[0.720121] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/mbed/dev_uros_packages.repos\n'}
+[0.720258] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/mbed/generic\n'}
+[0.720362] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/mbed/generic/client_uros_packages.repos\n'}
+[0.720486] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/mbed/generic/supported_platforms\n'}
+[0.720605] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/mbed/generic/create.sh\n'}
+[0.720723] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/mbed/generic/board.repos\n'}
+[0.720859] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/mbed/generic/flash.sh\n'}
+[0.720970] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/mbed/generic/package.xml\n'}
+[0.721086] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/mbed/generic/build.sh\n'}
+[0.721201] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/generate_lib\n'}
+[0.721277] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/generate_lib/dev_ros2_packages.txt\n'}
+[0.721413] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/generate_lib/dev_uros_packages.repos\n'}
+[0.721525] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/generate_lib/generic\n'}
+[0.721601] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/generate_lib/generic/client_uros_packages.repos\n'}
+[0.721667] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/generate_lib/generic/create.sh\n'}
+[0.721762] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/generate_lib/generic/flash.sh\n'}
+[0.721896] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/generate_lib/generic/client-colcon.meta\n'}
+[0.722018] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/generate_lib/generic/package.xml\n'}
+[0.722138] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/generate_lib/generic/demo_toolchain.cmake\n'}
+[0.722260] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/generate_lib/generic/build.sh\n'}
+[0.722396] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/agent_ros2_packages.txt\n'}
+[0.722515] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/zephyr\n'}
+[0.722589] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/zephyr/list_apps.sh\n'}
+[0.722709] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/zephyr/dev_ros2_packages.txt\n'}
+[0.722827] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/zephyr/dev_uros_packages.repos\n'}
+[0.722940] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/zephyr/generic\n'}
+[0.723017] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/zephyr/generic/client_uros_packages.repos\n'}
+[0.723092] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/zephyr/generic/supported_platforms\n'}
+[0.723175] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/zephyr/generic/create.sh\n'}
+[0.723300] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/zephyr/generic/configure.sh\n'}
+[0.723431] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/zephyr/generic/board.repos\n'}
+[0.723555] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/zephyr/generic/flash.sh\n'}
+[0.723671] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/zephyr/generic/client-colcon.meta\n'}
+[0.723794] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/zephyr/generic/package.xml\n'}
+[0.723915] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/zephyr/generic/build.sh\n'}
+[0.724043] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/./config/client_ros2_packages.txt\n'}
+[0.724296] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/lib/micro_ros_setup/create_ws.sh\n'}
+[0.724456] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/lib/micro_ros_setup/create_agent_ws.sh\n'}
+[0.724608] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/lib/micro_ros_setup/create_firmware_ws.sh\n'}
+[0.724760] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/lib/micro_ros_setup/configure_firmware.sh\n'}
+[0.724906] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/lib/micro_ros_setup/flash_firmware.sh\n'}
+[0.725019] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/lib/micro_ros_setup/build_firmware.sh\n'}
+[0.725245] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/lib/micro_ros_setup/build_agent.sh\n'}
+[0.725333] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/lib/micro_ros_setup/yaml_filter.py\n'}
+[0.725413] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/lib/micro_ros_setup/clean_env.sh\n'}
+[0.725522] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/diego/Ros2_esp32/install/micro_ros_setup/lib/micro_ros_setup/component\n'}
+[0.727655] (micro_ros_setup) CommandEnded: {'returncode': 0}
+[0.742448] (micro_ros_setup) JobEnded: {'identifier': 'micro_ros_setup', 'rc': 0}
+[0.742930] (-) EventReactorShutdown: {}

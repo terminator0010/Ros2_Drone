@@ -1,0 +1,17 @@
+/home/diego/Ros2_fg_prj/install/fg_bridge/lib/fg_bridge/Ros2_main
+/home/diego/Ros2_fg_prj/install/fg_bridge/lib/fg_bridge/Ros2fg_bridge
+/home/diego/Ros2_fg_prj/install/fg_bridge/share/ament_index/resource_index/package_run_dependencies/fg_bridge
+/home/diego/Ros2_fg_prj/install/fg_bridge/share/ament_index/resource_index/parent_prefix_path/fg_bridge
+/home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/environment/ament_prefix_path.sh
+/home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/environment/ament_prefix_path.dsv
+/home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/environment/path.sh
+/home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/environment/path.dsv
+/home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/local_setup.bash
+/home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/local_setup.sh
+/home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/local_setup.zsh
+/home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/local_setup.dsv
+/home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/package.dsv
+/home/diego/Ros2_fg_prj/install/fg_bridge/share/ament_index/resource_index/packages/fg_bridge
+/home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/cmake/fg_bridgeConfig.cmake
+/home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/cmake/fg_bridgeConfig-version.cmake
+/home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/package.xml

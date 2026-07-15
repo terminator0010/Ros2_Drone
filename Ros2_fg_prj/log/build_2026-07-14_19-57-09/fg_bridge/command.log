@@ -1,0 +1,2 @@
+Invoking command in '/home/diego/Ros2_fg_prj/build/fg_bridge': /usr/bin/cmake /home/diego/Ros2_fg_prj/src/fg_node -DCMAKE_INSTALL_PREFIX=/home/diego/Ros2_fg_prj/install/fg_bridge
+Invoked command in '/home/diego/Ros2_fg_prj/build/fg_bridge' returned '1': /usr/bin/cmake /home/diego/Ros2_fg_prj/src/fg_node -DCMAKE_INSTALL_PREFIX=/home/diego/Ros2_fg_prj/install/fg_bridge

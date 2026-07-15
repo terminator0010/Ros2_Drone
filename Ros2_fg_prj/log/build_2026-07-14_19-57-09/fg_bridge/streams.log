@@ -1,0 +1,33 @@
+[0.020s] Invoking command in '/home/diego/Ros2_fg_prj/build/fg_bridge': /usr/bin/cmake /home/diego/Ros2_fg_prj/src/fg_node -DCMAKE_INSTALL_PREFIX=/home/diego/Ros2_fg_prj/install/fg_bridge
+[0.066s] -- The C compiler identification is GNU 11.4.0
+[0.115s] -- The CXX compiler identification is GNU 11.4.0
+[0.122s] -- Detecting C compiler ABI info
+[0.181s] -- Detecting C compiler ABI info - done
+[0.187s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.187s] -- Detecting C compile features
+[0.188s] -- Detecting C compile features - done
+[0.190s] -- Detecting CXX compiler ABI info
+[0.260s] -- Detecting CXX compiler ABI info - done
+[0.266s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.267s] -- Detecting CXX compile features
+[0.267s] -- Detecting CXX compile features - done
+[0.280s] [31mCMake Error at CMakeLists.txt:9 (find_package):
+[0.280s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[0.280s]   has asked CMake to find a package configuration file provided by
+[0.280s]   "ament_cmake", but CMake did not find one.
+[0.280s] 
+[0.280s]   Could not find a package configuration file provided by "ament_cmake" with
+[0.280s]   any of the following names:
+[0.280s] 
+[0.280s]     ament_cmakeConfig.cmake
+[0.280s]     ament_cmake-config.cmake
+[0.280s] 
+[0.280s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[0.280s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[0.280s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[0.280s]   has been installed.
+[0.281s] 
+[0.281s] [0m
+[0.281s] -- Configuring incomplete, errors occurred!
+[0.281s] See also "/home/diego/Ros2_fg_prj/build/fg_bridge/CMakeFiles/CMakeOutput.log".
+[0.283s] Invoked command in '/home/diego/Ros2_fg_prj/build/fg_bridge' returned '1': /usr/bin/cmake /home/diego/Ros2_fg_prj/src/fg_node -DCMAKE_INSTALL_PREFIX=/home/diego/Ros2_fg_prj/install/fg_bridge
