@@ -69,8 +69,11 @@ class VirtualPanel:
         val_surf = self.font_large.render(f"{int(value)} {unit}", True, self.COLOR_WHITE)
         self.screen.blit(val_surf, val_surf.get_rect(center=(x, y + radius / 2 + 10)))
 
-    def draw_artificial_horizon(self, x, y, radius, pitch_rad, roll_rad):
-        """Desenha o Horizonte Artificial reagindo a Pitch e Roll."""
+    def draw_artificial_horizon(self, x, y, radius, pitch_rad, roll_rad, alt_agl=None):
+        """
+        Desenha um horizonte artificial clássico.
+        Se alt_agl for fornecido, desenha um rádio altímetro na parte inferior.
+        """
         # Criamos uma superfície separada (maior) para desenhar o céu/terra e poder rodar sem cortar as bordas
         inner_surf = pygame.Surface((radius * 3, radius * 3), pygame.SRCALPHA)
         center_inner = radius * 1.5
@@ -121,7 +124,14 @@ class VirtualPanel:
         title_surf = self.font_large.render("ATTITUDE", True, self.COLOR_WHITE)
         self.screen.blit(title_surf, title_surf.get_rect(center=(x, y - radius - 20)))
 
-    def update(self, pitch_rad, roll_rad, ias_knots, tas_knots):
+        # Radio Altimeter (AGL) dentro do horizonte
+        if alt_agl is not None:
+            color = (0, 255, 0) if alt_agl < 2500 else self.COLOR_WHITE
+            agl_text = f"RA: {alt_agl:.0f}"
+            agl_surf = self.font_large.render(agl_text, True, color)
+            self.screen.blit(agl_surf, agl_surf.get_rect(center=(x, y + radius - 30)))
+
+    def update(self, pitch_rad, roll_rad, ias_knots, tas_knots, alt_msl=0.0, alt_agl=0.0):
         """Atualiza o ecrã a cada ciclo da simulação."""
         self.screen.fill(self.COLOR_BG) # Limpa o ecrã com cinzento escuro
 
@@ -133,11 +143,15 @@ class VirtualPanel:
         # 1. Velocidade Relativa (Airspeed - IAS)
         self.draw_gauge(spacing // 2, center_y, radius, ias_knots, 200, "AIRSPEED (IAS)")
 
-        # 2. Horizonte Artificial (Atitude)
-        self.draw_artificial_horizon(spacing + spacing // 2, center_y, radius, pitch_rad, roll_rad)
+        # 2. Horizonte Artificial (Atitude) + AGL (Radio Altimeter)
+        self.draw_artificial_horizon(spacing + spacing // 2, center_y, radius, pitch_rad, roll_rad, alt_agl=alt_agl)
 
         # 3. Velocidade Real (True Airspeed - TAS)
         self.draw_gauge(spacing * 2 + spacing // 2, center_y, radius, tas_knots, 200, "TRUE AIRSPEED")
+
+        # 4. Altitudes (MSL apenas, AGL foi pro Horizonte)
+        alt_msl_surf = self.font_large.render(f"ALT (MSL): {alt_msl:.0f} ft", True, self.COLOR_WHITE)
+        self.screen.blit(alt_msl_surf, (20, 20))
 
         # Atualiza o display do Pygame
         pygame.display.flip()

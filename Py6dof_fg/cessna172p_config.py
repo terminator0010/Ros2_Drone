@@ -38,10 +38,13 @@ CESSNA_172P = {
     "C_m_de": -1.28,            # Eficiência do profundor
     "C_l_p": -0.47,             # Amortecimento de rolagem
     "C_l_da": 0.17,             # Eficiência do aileron
+    "C_l_beta": -0.089,         # Efeito de diedro (roll induzido por beta)
+    "C_l_dr": 0.0147,           # Roll induzido pelo leme
     
     "C_n_beta": 0.071,          # Estabilidade direcional (Weathercock)
     "C_n_r": -0.15,             # Amortecimento de guinada
     "C_n_dr": -0.074,           # Eficiência do leme
+    "C_n_da": -0.01,            # Guinada adversa (Yaw induzido pelo aileron)
     
     # --- Limites Operacionais ---
     "v_ne": 158.0,                # Velocity Never Exceed (Nós) - 293 km/h

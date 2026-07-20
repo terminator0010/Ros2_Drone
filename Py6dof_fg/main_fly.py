@@ -17,6 +17,10 @@ from engine_forces import EngineDynamics
 from atmosphere_model import AtmosphereModel
 from LandingGearDyna import LandingGearDynamics
 from ActuatorDynamics import ActuatorDynamics
+from TerrainElevationReader import TerrainElevationReader
+
+# NOTA: Para leitura dinâmica da elevação do terreno, lembre-se de rodar o FlightGear com:
+# fgfs --httpd=8080 ...
 
 import rclpy
 from rclpy.node import Node
@@ -43,6 +47,11 @@ UDP_PORT = 5500
 HZ = 60
 DT = 1.0 / HZ
 
+# Sub-stepping de física (alta frequência para estabilidade de contato rígido)
+PHYSICS_HZ = 1200
+PHYSICS_DT = 1.0 / PHYSICS_HZ
+STEPS_PER_FRAME = int(PHYSICS_HZ / HZ)
+
 # Instanciar a Rede
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
@@ -55,7 +64,7 @@ alt_inicial = 1500.0 # Metros
 fdm = FGNetFDM()
 sim = RigidBody6DOF(lat_inicial, lon_inicial, alt_inicial)
 engine = EngineDynamics(max_thrust=CESSNA_172P["max_thrust"])
-atm = AtmosphereModel(wind_speed_knots=10.0, wind_dir_deg=90.0, turbulence_intensity=0.3)
+atm = AtmosphereModel(wind_speed_knots=0.0, wind_dir_deg=0.0, turbulence_intensity=0.0)
 gear = LandingGearDynamics()
 actuators = ActuatorDynamics(tau_aileron=0.15, tau_elevator=0.2, tau_rudder=0.25)
 
@@ -81,9 +90,12 @@ sim.C_m_q = CESSNA_172P["C_m_q"]
 sim.C_m_de = CESSNA_172P["C_m_de"]
 sim.C_l_p = CESSNA_172P["C_l_p"]
 sim.C_l_da = CESSNA_172P["C_l_da"]
+sim.C_l_beta = CESSNA_172P["C_l_beta"]
+sim.C_l_dr = CESSNA_172P["C_l_dr"]
 sim.C_n_beta = CESSNA_172P["C_n_beta"]
 sim.C_n_r = CESSNA_172P["C_n_r"]
 sim.C_n_dr = CESSNA_172P["C_n_dr"]
+sim.C_n_da = CESSNA_172P["C_n_da"]
 
 print(f"A iniciar simulação 6DOF a {HZ}Hz...")
 
@@ -91,8 +103,16 @@ rclpy.init()
 joy_node = JoystickNode()
 
 try:
+    terrain_reader = TerrainElevationReader()
+    last_terrain_update = time.time()
+
     while True:
         start_time = time.time()
+
+        # Atualiza elevação do terreno a 10Hz (0.1s)
+        if start_time - last_terrain_update >= 0.1:
+            gear.ground_elevation = terrain_reader.get_elevation()
+            last_terrain_update = start_time
 
         # ---------------------------------------------------------
         # COMANDOS DA SIMULAÇÃO
@@ -170,15 +190,26 @@ try:
         # brakes_applied pode ser associado a um input do joystick futuramente
         brakes_applied = 0.0
 
-        # Avança a física em 1 timestep (dt), repassando gear para o RK4
-        sim.update(
-            DT, wind_u, wind_v, wind_w, 
-            thrust, torque, p_factor, 
-            cmd_roll, cmd_pitch, cmd_yaw, 
-            flap_setting, 
-            gear_model=gear, 
-            brakes_applied=brakes_applied
-        )
+        # Sub-stepping: Rodar a física múltiplas vezes por frame para evitar instabilidade
+        for _ in range(STEPS_PER_FRAME):
+            # 1. Calcula as forças do solo no estado atual
+            forces_ground, moments_ground, on_ground = gear.calculate_forces(
+                sim.alt, sim.theta, sim.phi, 
+                sim.state[0], sim.state[1], sim.state[2], 
+                sim.state[3], sim.state[4], sim.state[5], 
+                brakes_applied
+            )
+            
+            # 2. Avança a física no passo reduzido (PHYSICS_DT) injetando as forças do solo
+            sim.update(
+                PHYSICS_DT, wind_u, wind_v, wind_w, 
+                thrust, torque, p_factor, 
+                cmd_roll, cmd_pitch, cmd_yaw, 
+                flap_setting, 
+                forces_ground=forces_ground, 
+                moments_ground=moments_ground,
+                on_ground=on_ground
+            )
 
         # Mapeamento do Estado Físico para a Estrutura Binária do FlightGear
         fdm.latitude = sim.lat
@@ -207,8 +238,10 @@ try:
         densidade_ratio = max(0.0, 1.0 - (0.000006875 * alt_pes)) ** 4.256
         ias_knots = tas_knots * math.sqrt(densidade_ratio)
 
-        # Atualiza a interface gráfica do painel (Pitch, Roll, IAS, TAS)
-        painel.update(theta, phi, ias_knots, tas_knots)
+        # Atualiza a interface gráfica do painel (Pitch, Roll, IAS, TAS, Altitudes)
+        alt_msl = alt_pes
+        alt_agl = (sim.alt - gear.ground_elevation) * 3.28084
+        painel.update(theta, phi, ias_knots, tas_knots, alt_msl, alt_agl)
         # --------------------------------------
 
         # O instrumento visual do FlightGear (vcas) baterá com o seu painel
