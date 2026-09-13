@@ -6,4 +6,7 @@ idf_component_register(
     REQUIRES
         micro_ros_espidf_component
         esp_driver_uart
+        micro_ros_espidf_component driver
+        esp_adc
 )
+

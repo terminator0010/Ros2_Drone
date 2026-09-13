@@ -9,6 +9,9 @@
 #define MICRO_ROS_UART_RX_BUFFER_SIZE 2048
 #define MICRO_ROS_UART_TX_BUFFER_SIZE 2048
 
+#define MICRO_ROS_UART_TX_GPIO 43
+#define MICRO_ROS_UART_RX_GPIO 44
+
 static uart_port_t get_uart_port(struct uxrCustomTransport *transport)
 {
     if (transport == NULL || transport->args == NULL) {
@@ -46,11 +49,12 @@ bool esp32_serial_open(struct uxrCustomTransport *transport)
      */
     ret = uart_set_pin(
         uart_port,
-        UART_PIN_NO_CHANGE,
-        UART_PIN_NO_CHANGE,
+        MICRO_ROS_UART_TX_GPIO,
+        MICRO_ROS_UART_RX_GPIO,
         UART_PIN_NO_CHANGE,
         UART_PIN_NO_CHANGE
     );
+    
     if (ret != ESP_OK) {
         return false;
     }

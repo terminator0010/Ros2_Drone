@@ -1,0 +1,8 @@
+{
+  "name": "Servo Feedback",
+  "author": "Diego",
+  "pins": [
+    "PWM",
+    "FEEDBACK"
+  ]
+}

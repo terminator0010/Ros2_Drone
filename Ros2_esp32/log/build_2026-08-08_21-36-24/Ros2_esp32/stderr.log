@@ -1,0 +1,8 @@
+[01m[K/home/diego/Ros2_esp32/main/micro-ros-esp32.cpp:[m[K In function '[01m[Kvoid[01;32m[K init_servo[m[K()[m[K':
+[01m[K/home/diego/Ros2_esp32/main/micro-ros-esp32.cpp:55:3:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[Kledc_timer_config_t::deconfigure[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.2.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+   55 |   [01;35m[K}[m[K;
+      |   [01;35m[K^[m[K
+[01m[K/home/diego/Ros2_esp32/main/micro-ros-esp32.cpp:66:3:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[Kledc_channel_config_t::sleep_mode[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.2.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+   66 |   [01;35m[K}[m[K;
+      |   [01;35m[K^[m[K
+[01m[K/home/diego/Ros2_esp32/main/micro-ros-esp32.cpp:66:3:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[Kledc_channel_config_t::flags[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.2.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]

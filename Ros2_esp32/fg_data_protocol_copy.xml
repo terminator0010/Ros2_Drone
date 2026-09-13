@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<PropertyList>
+ <generic>
+  <output>
+   <line_separator>newline</line_separator>
+   <var_separator>,</var_separator>
+   
+   <chunk>
+    <name>Ground Elevation</name>
+    <node>/position/ground-elev-m</node>
+    <type>float</type>
+    <format>%f\n</format>
+   </chunk>
+   
+   <chunk>
+    <name>Rudder Control</name>
+    <node>/controls/flight/Rudder</node>
+    <type>float</type>
+    <format>%f\n</format>
+   </chunk>
+
+  </output>
+ </generic>
+</PropertyList>

@@ -17,29 +17,60 @@ from engine_forces import EngineDynamics
 from atmosphere_model import AtmosphereModel
 from LandingGearDyna import LandingGearDynamics
 from ActuatorDynamics import ActuatorDynamics
-from TerrainElevationReader import TerrainElevationReader
-
-# NOTA: Para leitura dinâmica da elevação do terreno, lembre-se de rodar o FlightGear com:
-# fgfs --httpd=8080 ...
+from FGDataReader import FGDataReader
 
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Joy
+from std_msgs.msg import Float32
 
 class JoystickNode(Node):
     def __init__(self):
         super().__init__('joystick_ros_node')
         self.subscription = self.create_subscription(
             Joy,
-            '/flightgear_attitude_echo',
+            '/joy_processed',
             self.listener_callback,
             1)
+            
+        # Publisher para enviar a posição do leme ao fg_bridge / ESP32
+        self.rudder_pub = self.create_publisher(Float32, 'rudder_pos_servo_sub', 10)
+        self.aileron_pub = self.create_publisher(Float32, 'aileron_pos_servo_sub', 10)
+        self.elevator_pub = self.create_publisher(Float32, 'elevator_pos_servo_sub', 10)
+        self.throttle_pub = self.create_publisher(Float32, 'throttle_pos_servo_sub', 10)
+        self.flap_pub = self.create_publisher(Float32, 'flap_pos_servo_sub', 10)
+
         self.current_axes = []
         self.current_buttons = []
 
     def listener_callback(self, msg):
         self.current_axes = list(msg.axes)
         self.current_buttons = list(msg.buttons)
+        
+    def publish_rudder(self, rudder_pos):
+        msg = Float32()
+        msg.data = float(rudder_pos)
+        self.rudder_pub.publish(msg)
+
+    def publish_aileron(self, aileron_pos):
+        msg = Float32()
+        msg.data = float(aileron_pos)
+        self.aileron_pub.publish(msg)
+    
+    def publish_elevator(self, elevator_pos):
+        msg = Float32()
+        msg.data = float(elevator_pos)
+        self.elevator_pub.publish(msg)
+    
+    def publish_throttle(self, throttle_pos):
+        msg = Float32()
+        msg.data = float(throttle_pos)
+        self.throttle_pub.publish(msg)
+
+    def publish_flap(self, flap_pos):
+        msg = Float32()
+        msg.data = float(flap_pos)
+        self.flap_pub.publish(msg)
 
 # Configurações de Rede e Simulação
 UDP_IP = "127.0.0.1"
@@ -58,7 +89,7 @@ sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 # Posição inicial (Ex: Sorocaba)
 lat_inicial = math.radians(-23.4709)
 lon_inicial = math.radians(-47.4851)
-alt_inicial = 1500.0 # Metros
+alt_inicial = 1500.0 # Metros // 620m É A ALTITUDE DE SOROCABA de Solo
 
 # Instanciar a Estrutura Binária do FG e o Motor Físico
 fdm = FGNetFDM()
@@ -103,16 +134,19 @@ rclpy.init()
 joy_node = JoystickNode()
 
 try:
-    terrain_reader = TerrainElevationReader()
+    fg_reader = FGDataReader(udp_port=5590)
     last_terrain_update = time.time()
 
     while True:
         start_time = time.time()
 
-        # Atualiza elevação do terreno a 10Hz (0.1s)
-        if start_time - last_terrain_update >= 0.1:
-            gear.ground_elevation = terrain_reader.get_elevation()
-            last_terrain_update = start_time
+        # Esgota a fila UDP e pega os dados mais recentes do FlightGear
+        fg_reader.update()
+        
+        gear.ground_elevation = fg_reader.get_elevation()
+        
+        # Envia a leitura contínua do leme para o ROS (para o ESP32 espelhar no servo)
+        # joy_node.publish_rudder(fg_reader.get_rudder())
 
         # ---------------------------------------------------------
         # COMANDOS DA SIMULAÇÃO
@@ -125,7 +159,7 @@ try:
         empuxo = 0.0  # Newtons
         target_roll = 0.0  # Comando positivo = rolar para a direita
         target_pitch = 0.0 # Comando positivo = nariz para cima
-        target_yaw = 0.0   # Comando positivo = guinar para a direita        
+        target_yaw = 0.0   # Comando positivo = guinar para a direita        v
         flap_setting = 0.0 # Comando de flaps (0.0 a 1.0)
         
         # COMANDOS DA SIMULAÇÃO (Hardware-in-the-loop via ROS 2 ou fallback)
@@ -145,12 +179,16 @@ try:
             yaw_input = apply_deadzone(yaw_raw)     # Inversão de Z (yaw) mantida
             
             # Mapeamento do throttle [-1, 1] para [0, 1]
-            throttle_input = (throttle_raw + 1.0) / 2.0            
+            throttle_input = (throttle_raw + 1.0) / 2.0 
+
+            target_throttle = fg_reader.get_throttle()         
             
             # Comandos em radianos para a física (baseados nos limites reais da aeronave)
             target_roll = roll_input * math.radians(CESSNA_172P["limits"]["aileron"])
             target_pitch = pitch_input * math.radians(CESSNA_172P["limits"]["elevator"])
             target_yaw = yaw_input * math.radians(CESSNA_172P["limits"]["rudder"])
+
+            target_flap = fg_reader.get_flaps()         
             
         else:
             # Fallback para valores padrão ou para um voo "autônomo" simples
@@ -159,13 +197,23 @@ try:
             target_pitch = 0.0 # Sem pitch
             target_yaw = 0.0 # Sem yaw
 
+
+
         # Passar os comandos pelo filtro passa-baixo dos atuadores
-        cmd_roll, cmd_pitch, cmd_yaw = actuators.update(target_roll, target_pitch, target_yaw, DT)
+        cmd_roll, cmd_pitch, cmd_yaw, cmd_throttle, cmd_flap = actuators.update(target_roll, target_pitch, target_yaw, target_throttle, target_flap, DT)
 
         # Valores normalizados (-1 a 1) para a visualização no FlightGear baseados nos comandos filtrados
         surf_aileron = cmd_roll / math.radians(CESSNA_172P["limits"]["aileron"])
         surf_elevator = cmd_pitch / math.radians(CESSNA_172P["limits"]["elevator"])
         surf_rudder = cmd_yaw / math.radians(CESSNA_172P["limits"]["rudder"])
+
+        throttle_to_engine = cmd_throttle / CESSNA_172P["max_thrust"]  
+
+        joy_node.publish_aileron(surf_aileron)
+        joy_node.publish_elevator(surf_elevator)
+        joy_node.publish_rudder(surf_rudder)
+        joy_node.publish_throttle(throttle_to_engine)
+        joy_node.publish_flap(cmd_flap)
         # ---------------------------------------------------------
         
         u, v, w = sim.state[0], sim.state[1], sim.state[2]
@@ -290,4 +338,6 @@ finally:
     joy_node.destroy_node()
     rclpy.shutdown()
     sock.close()
+    if 'fg_reader' in locals():
+        fg_reader.close()
     pygame.quit() # Garante que a janela do painel fecha graciosamente

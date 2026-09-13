@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/diego/Ros2_fg_prj/build/fg_bridge/Ros2_main" "/home/diego/Ros2_fg_prj/build/fg_bridge/Ros2fg_bridge" "TARGETS" "Ros2_main" "Ros2fg_bridge" "DESTINATION" "lib/fg_bridge")

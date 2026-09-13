@@ -1,0 +1,531 @@
+{
+  "version": 1,
+  "author": "Diego",
+  "editor": "wokwi",
+
+  "parts": [
+    {
+      "type": "board-esp32-s3-devkitc-1",
+      "id": "esp",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+
+    {
+      "type": "chip-pca9685-virtual",
+      "id": "chip1",
+      "top": 0,
+      "left": 350,
+      "attrs": {}
+    },
+
+    {
+      "type": "wokwi-servo",
+      "id": "rudder",
+      "top": 200,
+      "left": 500,
+      "attrs": {}
+    },
+
+    {
+      "type": "wokwi-servo",
+      "id": "aileron1",
+      "top": -200,
+      "left": 200,
+      "attrs": {}
+    },
+
+    {
+      "type": "wokwi-servo",
+      "id": "aileron2",
+      "top": -200,
+      "left": 800,
+      "attrs": {}
+    },
+
+    {
+      "type": "wokwi-servo",
+      "id": "elevator1",
+      "top": 50,
+      "left": 650,
+      "attrs": {}
+    },
+
+    {
+      "type": "wokwi-servo",
+      "id": "elevator2",
+      "top": 50,
+      "left": 350,
+      "attrs": {}
+    },
+
+    {
+      "type": "wokwi-servo",
+      "id": "flap1",
+      "top": -100,
+      "left": 300,
+      "attrs": {}
+    },
+
+    {
+      "type": "wokwi-servo",
+      "id": "flap2",
+      "top": -100,
+      "left": 700,
+      "attrs": {}
+    },
+
+    {
+      "type": "wokwi-servo",
+      "id": "engine1",
+      "top": -300,
+      "left": 500,
+      "attrs": {}
+    },
+
+    {
+      "type": "wokwi-potentiometer",
+      "id": "pot_rudder",
+      "top": 0,
+      "left": 1100,
+      "attrs": {}
+    },
+
+    {
+      "type": "wokwi-potentiometer",
+      "id": "pot_aileron",
+      "top": -250,
+      "left": 1100,
+      "attrs": {}
+    },
+
+    {
+      "type": "wokwi-potentiometer",
+      "id": "pot_elevator",
+      "top": -100,
+      "left": 1100,
+      "attrs": {}
+    },
+
+    {
+      "type": "wokwi-potentiometer",
+      "id": "pot_flaps",
+      "top": -400,
+      "left": 1100,
+      "attrs": {}
+    },
+
+    {
+      "type": "wokwi-potentiometer",
+      "id": "pot_engine",
+      "top": 250,
+      "left": 1100,
+      "attrs": {}
+    }
+  ],
+
+  "connections": [
+
+    [
+      "esp:TX",
+      "$serialMonitor:RX",
+      "",
+      []
+    ],
+
+    [
+      "esp:RX",
+      "$serialMonitor:TX",
+      "",
+      []
+    ],
+
+    [
+      "esp:21",
+      "chip1:SDA",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+
+    [
+      "esp:2",
+      "chip1:SCL",
+      "blue",
+      [
+        "v0"
+      ]
+    ],
+
+    [
+      "esp:3V3.1",
+      "chip1:VCC",
+      "red",
+      [
+        "v0"
+      ]
+    ],
+
+    [
+      "esp:GND.1",
+      "chip1:GND",
+      "black",
+      [
+        "v0"
+      ]
+    ],
+
+    [
+      "chip1:PWM0",
+      "rudder:PWM",
+      "yellow",
+      [
+        "v0"
+      ]
+    ],
+
+    [
+      "chip1:PWM1",
+      "aileron1:PWM",
+      "yellow",
+      [
+        "v0"
+      ]
+    ],
+
+    [
+      "chip1:PWM2",
+      "aileron2:PWM",
+      "yellow",
+      [
+        "v0"
+      ]
+    ],
+
+    [
+      "chip1:PWM3",
+      "elevator1:PWM",
+      "yellow",
+      [
+        "v0"
+      ]
+    ],
+
+    [
+      "chip1:PWM4",
+      "elevator2:PWM",
+      "yellow",
+      [
+        "v0"
+      ]
+    ],
+
+    [
+      "chip1:PWM5",
+      "flap1:PWM",
+      "yellow",
+      [
+        "v0"
+      ]
+    ],
+
+    [
+      "chip1:PWM6",
+      "flap2:PWM",
+      "yellow",
+      [
+        "v0"
+      ]
+    ],
+
+    [
+      "chip1:PWM7",
+      "engine1:PWM",
+      "yellow",
+      [
+        "v0"
+      ]
+    ],
+
+    [
+      "esp:5V",
+      "rudder:V+",
+      "red",
+      [
+        "v0"
+      ]
+    ],
+
+    [
+      "esp:5V",
+      "aileron1:V+",
+      "red",
+      [
+        "v0"
+      ]
+    ],
+
+    [
+      "esp:5V",
+      "aileron2:V+",
+      "red",
+      [
+        "v0"
+      ]
+    ],
+
+    [
+      "esp:5V",
+      "elevator1:V+",
+      "red",
+      [
+        "v0"
+      ]
+    ],
+
+    [
+      "esp:5V",
+      "elevator2:V+",
+      "red",
+      [
+        "v0"
+      ]
+    ],
+
+    [
+      "esp:5V",
+      "flap1:V+",
+      "red",
+      [
+        "v0"
+      ]
+    ],
+
+    [
+      "esp:5V",
+      "flap2:V+",
+      "red",
+      [
+        "v0"
+      ]
+    ],
+
+    [
+      "esp:5V",
+      "engine1:V+",
+      "red",
+      [
+        "v0"
+      ]
+    ],
+
+    [
+      "esp:GND.2",
+      "rudder:GND",
+      "black",
+      [
+        "v0"
+      ]
+    ],
+
+    [
+      "esp:GND.2",
+      "aileron1:GND",
+      "black",
+      [
+        "v0"
+      ]
+    ],
+
+    [
+      "esp:GND.2",
+      "aileron2:GND",
+      "black",
+      [
+        "v0"
+      ]
+    ],
+
+    [
+      "esp:GND.2",
+      "elevator1:GND",
+      "black",
+      [
+        "v0"
+      ]
+    ],
+
+    [
+      "esp:GND.2",
+      "elevator2:GND",
+      "black",
+      [
+        "v0"
+      ]
+    ],
+
+    [
+      "esp:GND.2",
+      "flap1:GND",
+      "black",
+      [
+        "v0"
+      ]
+    ],
+
+    [
+      "esp:GND.2",
+      "flap2:GND",
+      "black",
+      [
+        "v0"
+      ]
+    ],
+
+    [
+      "esp:GND.2",
+      "engine1:GND",
+      "black",
+      [
+        "v0"
+      ]
+    ],
+
+    [
+      "pot_rudder:VCC",
+      "esp:3V3",
+      "red",
+      [
+        "v0"
+      ]
+    ],
+
+    [
+      "pot_rudder:GND",
+      "esp:GND.3",
+      "black",
+      [
+        "v0"
+      ]
+    ],
+
+    [
+      "pot_rudder:SIG",
+      "esp:4",
+      "purple",
+      [
+        "v0"
+      ]
+    ],
+
+    [
+      "pot_aileron:VCC",
+      "esp:3V3",
+      "red",
+      [
+        "v0"
+      ]
+    ],
+
+    [
+      "pot_aileron:GND",
+      "esp:GND.3",
+      "black",
+      [
+        "v0"
+      ]
+    ],
+
+    [
+      "pot_aileron:SIG",
+      "esp:5",
+      "purple",
+      [
+        "v0"
+      ]
+    ],
+
+    [
+      "pot_elevator:VCC",
+      "esp:3V3",
+      "red",
+      [
+        "v0"
+      ]
+    ],
+
+    [
+      "pot_elevator:GND",
+      "esp:GND.3",
+      "black",
+      [
+        "v0"
+      ]
+    ],
+
+    [
+      "pot_elevator:SIG",
+      "esp:6",
+      "purple",
+      [
+        "v0"
+      ]
+    ],
+
+    [
+      "pot_flaps:VCC",
+      "esp:3V3",
+      "red",
+      [
+        "v0"
+      ]
+    ],
+
+    [
+      "pot_flaps:GND",
+      "esp:GND.3",
+      "black",
+      [
+        "v0"
+      ]
+    ],
+
+    [
+      "pot_flaps:SIG",
+      "esp:7",
+      "purple",
+      [
+        "v0"
+      ]
+    ],
+
+    [
+      "pot_engine:VCC",
+      "esp:3V3",
+      "red",
+      [
+        "v0"
+      ]
+    ],
+
+    [
+      "pot_engine:GND",
+      "esp:GND.3",
+      "black",
+      [
+        "v0"
+      ]
+    ],
+
+    [
+      "pot_engine:SIG",
+      "esp:8",
+      "purple",
+      [
+        "v0"
+      ]
+    ]
+  ]
+}

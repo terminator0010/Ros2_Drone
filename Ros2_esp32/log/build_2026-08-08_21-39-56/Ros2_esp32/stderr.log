@@ -1,0 +1,20 @@
+[01m[K/home/diego/Ros2_esp32/main/micro-ros-esp32.cpp:[m[K In function '[01m[Kvoid[01;32m[K init_servo[m[K()[m[K':
+[01m[K/home/diego/Ros2_esp32/main/micro-ros-esp32.cpp:54:61:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[Kledc_timer_config_t::deconfigure[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.2.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+   54 |                                     .clk_cfg = LEDC_AUTO_CLK[01;35m[K}[m[K;
+      |                                                             [01;35m[K^[m[K
+[01m[K/home/diego/Ros2_esp32/main/micro-ros-esp32.cpp:63:52:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[Kledc_channel_config_t::sleep_mode[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.2.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+   63 |                                         .hpoint = 0[01;35m[K}[m[K;
+      |                                                    [01;35m[K^[m[K
+[01m[K/home/diego/Ros2_esp32/main/micro-ros-esp32.cpp:63:52:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[Kledc_channel_config_t::flags[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.2.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/diego/Ros2_esp32/main/micro-ros-esp32.cpp:[m[K In function '[01m[Kvoid[01;32m[K app_main[m[K()[m[K':
+[01m[K/home/diego/Ros2_esp32/main/micro-ros-esp32.cpp:266:32:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before '[01m[K{[m[K' token
+  266 |   static void init_servo(void) [01;31m[K{[m[K
+      |                                [01;31m[K^[m[K
+[01m[K/home/diego/Ros2_esp32/main/micro-ros-esp32.cpp:[m[K At global scope:
+[01m[K/home/diego/Ros2_esp32/main/micro-ros-esp32.cpp:48:13:[m[K [01;35m[Kwarning: [m[K'[01m[Kvoid[01;32m[K init_servo[m[K()[m[K' defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.2.0/gcc/Warning-Options.html#index-Wno-unused-function-Wunused-function]8;;[m[K]
+   48 | static void [01;35m[Kinit_servo[m[K(void) {
+      |             [01;35m[K^~~~~~~~~~[m[K
+gmake[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:76: esp-idf/main/CMakeFiles/__idf_main.dir/micro-ros-esp32.cpp.obj] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:6034: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:136: all] Error 2

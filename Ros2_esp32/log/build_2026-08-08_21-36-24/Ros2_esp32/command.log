@@ -1,0 +1,6 @@
+Invoking command in '/home/diego/Ros2_esp32/build/Ros2_esp32': /usr/bin/cmake /home/diego/Ros2_esp32 -DCMAKE_INSTALL_PREFIX=/home/diego/Ros2_esp32/install/Ros2_esp32
+Invoked command in '/home/diego/Ros2_esp32/build/Ros2_esp32' returned '0': /usr/bin/cmake /home/diego/Ros2_esp32 -DCMAKE_INSTALL_PREFIX=/home/diego/Ros2_esp32/install/Ros2_esp32
+Invoking command in '/home/diego/Ros2_esp32/build/Ros2_esp32': /usr/bin/cmake --build /home/diego/Ros2_esp32/build/Ros2_esp32 -- -j12 -l12
+Invoked command in '/home/diego/Ros2_esp32/build/Ros2_esp32' returned '0': /usr/bin/cmake --build /home/diego/Ros2_esp32/build/Ros2_esp32 -- -j12 -l12
+Invoking command in '/home/diego/Ros2_esp32/build/Ros2_esp32': /usr/bin/cmake --install /home/diego/Ros2_esp32/build/Ros2_esp32
+Invoked command in '/home/diego/Ros2_esp32/build/Ros2_esp32' returned '0': /usr/bin/cmake --install /home/diego/Ros2_esp32/build/Ros2_esp32

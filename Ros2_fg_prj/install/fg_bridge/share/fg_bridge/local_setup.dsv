@@ -1,2 +1,1 @@
-source;share/fg_bridge/environment/ament_prefix_path.sh
-source;share/fg_bridge/environment/path.sh
+/home/diego/Ros2_fg_prj/build/fg_bridge/ament_cmake_environment_hooks/local_setup.dsv

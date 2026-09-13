@@ -2,9 +2,9 @@
 #include "sensor_msgs/msg/joy.hpp"
 #include <memory>
 
-class JoyToESP32Bridge : public rclcpp::Node {
+class JoyToSimBridge : public rclcpp::Node {
 public:
-  JoyToESP32Bridge() : Node("joy_to_esp32_bridge") {
+  JoyToSimBridge() : Node("joy_to_fg_bridge") {
     // Declaração de Parâmetros com os valores padrão ideais para o seu cenário
     // Já deixei o Roll como true por padrão para corrigir o seu simulador
     // imediatamente
@@ -20,17 +20,16 @@ public:
     this->declare_parameter<double>("scale_throttle", 1.0);
 
     // Revertemos para a fila 10 para garantir compatibilidade total com o
-    // micro-ROS (ESP32)
+    // micro-ROS (Fg Bridge)
     joy_sub_ = this->create_subscription<sensor_msgs::msg::Joy>(
         "/joy", 1,
-        std::bind(&JoyToESP32Bridge::joy_callback, this,
-                  std::placeholders::_1));
+        std::bind(&JoyToSimBridge::joy_callback, this, std::placeholders::_1));
 
-    esp32_pub_ =
-        this->create_publisher<sensor_msgs::msg::Joy>("flightgear_attitude", 5);
+    sim_pub_ =
+        this->create_publisher<sensor_msgs::msg::Joy>("/joy_processed", 5);
 
     RCLCPP_INFO(this->get_logger(),
-                "Nó de Ponte (Joystick -> ESP32) iniciado.");
+                "Nó de Ponte (Joystick -> Fg Bridge) iniciado.");
     RCLCPP_INFO(this->get_logger(),
                 "Lendo parâmetros de inversão dinamicamente.");
   }
@@ -63,17 +62,17 @@ private:
     if (axes_count > 3)
       modified_msg.axes[3] *= (inv_throttle ? -1.0 : 1.0) * sc_throttle;
 
-    // Repassa para o ESP32
-    esp32_pub_->publish(modified_msg);
+    // Repassa para o Fg_bridge
+    sim_pub_->publish(modified_msg);
   }
 
   rclcpp::Subscription<sensor_msgs::msg::Joy>::SharedPtr joy_sub_;
-  rclcpp::Publisher<sensor_msgs::msg::Joy>::SharedPtr esp32_pub_;
+  rclcpp::Publisher<sensor_msgs::msg::Joy>::SharedPtr sim_pub_;
 };
 
 int main(int argc, char *argv[]) {
   rclcpp::init(argc, argv);
-  rclcpp::spin(std::make_shared<JoyToESP32Bridge>());
+  rclcpp::spin(std::make_shared<JoyToSimBridge>());
   rclcpp::shutdown();
   return 0;
 }

@@ -1,0 +1,29 @@
+[0.014s] Invoking command in '/home/diego/Ros2_fg_prj/build/fg_bridge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/diego/Ros2_fg_prj/build/fg_bridge -- -j12 -l12
+[0.091s] [35m[1mConsolidate compiler generated dependencies of target Ros2_main[0m
+[0.092s] [35m[1mConsolidate compiler generated dependencies of target Ros2fg_bridge[0m
+[0.126s] [ 75%] [32mBuilding CXX object CMakeFiles/Ros2fg_bridge.dir/src/Ros2fg_bridge.cpp.o[0m
+[0.126s] [ 75%] Built target Ros2_main
+[8.580s] [100%] [32m[1mLinking CXX executable Ros2fg_bridge[0m
+[9.147s] [100%] Built target Ros2fg_bridge
+[9.161s] Invoked command in '/home/diego/Ros2_fg_prj/build/fg_bridge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/diego/Ros2_fg_prj/build/fg_bridge -- -j12 -l12
+[9.173s] Invoking command in '/home/diego/Ros2_fg_prj/build/fg_bridge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/diego/Ros2_fg_prj/build/fg_bridge
+[9.181s] -- Install configuration: ""
+[9.182s] -- Up-to-date: /home/diego/Ros2_fg_prj/install/fg_bridge/lib/fg_bridge/Ros2_main
+[9.183s] -- Installing: /home/diego/Ros2_fg_prj/install/fg_bridge/lib/fg_bridge/Ros2fg_bridge
+[9.188s] -- Set runtime path of "/home/diego/Ros2_fg_prj/install/fg_bridge/lib/fg_bridge/Ros2fg_bridge" to ""
+[9.188s] -- Up-to-date: /home/diego/Ros2_fg_prj/install/fg_bridge/share/ament_index/resource_index/package_run_dependencies/fg_bridge
+[9.189s] -- Up-to-date: /home/diego/Ros2_fg_prj/install/fg_bridge/share/ament_index/resource_index/parent_prefix_path/fg_bridge
+[9.189s] -- Up-to-date: /home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/environment/ament_prefix_path.sh
+[9.189s] -- Up-to-date: /home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/environment/ament_prefix_path.dsv
+[9.189s] -- Up-to-date: /home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/environment/path.sh
+[9.189s] -- Up-to-date: /home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/environment/path.dsv
+[9.189s] -- Up-to-date: /home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/local_setup.bash
+[9.189s] -- Up-to-date: /home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/local_setup.sh
+[9.189s] -- Up-to-date: /home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/local_setup.zsh
+[9.189s] -- Up-to-date: /home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/local_setup.dsv
+[9.189s] -- Installing: /home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/package.dsv
+[9.189s] -- Up-to-date: /home/diego/Ros2_fg_prj/install/fg_bridge/share/ament_index/resource_index/packages/fg_bridge
+[9.189s] -- Up-to-date: /home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/cmake/fg_bridgeConfig.cmake
+[9.189s] -- Up-to-date: /home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/cmake/fg_bridgeConfig-version.cmake
+[9.189s] -- Up-to-date: /home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/package.xml
+[9.192s] Invoked command in '/home/diego/Ros2_fg_prj/build/fg_bridge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/diego/Ros2_fg_prj/build/fg_bridge

@@ -1,0 +1,11 @@
+{
+  "name": "pca9685-virtual",
+  "author": "Diego",
+  "pins": [
+    "VCC",
+    "GND",
+    "SDA",
+    "SCL",
+    "PWM0"
+  ]
+}

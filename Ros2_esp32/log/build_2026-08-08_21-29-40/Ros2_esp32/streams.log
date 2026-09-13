@@ -1,0 +1,1438 @@
+[0.011s] Invoking command in '/home/diego/Ros2_esp32/build/Ros2_esp32': /usr/bin/cmake /home/diego/Ros2_esp32 -DCMAKE_INSTALL_PREFIX=/home/diego/Ros2_esp32/install/Ros2_esp32
+[0.023s] -- IDF_TARGET is not set, guessed 'esp32s3' from sdkconfig '/home/diego/Ros2_esp32/sdkconfig'
+[0.033s] -- Found Git: /usr/bin/git (found version "2.34.1") 
+[0.053s] -- Component directory /home/diego/.espressif/v5.5/esp-idf/components/esp_blockdev does not contain a CMakeLists.txt file. No component will be added
+[1.224s] -- Minimal build - OFF
+[1.463s] -- The C compiler identification is GNU 14.2.0
+[1.629s] -- The CXX compiler identification is GNU 14.2.0
+[1.645s] -- The ASM compiler identification is GNU
+[1.647s] -- Found assembler: /home/diego/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc
+[1.650s] -- Detecting C compiler ABI info
+[1.712s] -- Detecting C compiler ABI info - done
+[1.719s] -- Check for working C compiler: /home/diego/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc - skipped
+[1.719s] -- Detecting C compile features
+[1.719s] -- Detecting C compile features - done
+[1.723s] -- Detecting CXX compiler ABI info
+[1.786s] -- Detecting CXX compiler ABI info - done
+[1.793s] -- Check for working CXX compiler: /home/diego/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32s3-elf-g++ - skipped
+[1.793s] -- Detecting CXX compile features
+[1.794s] -- Detecting CXX compile features - done
+[1.799s] -- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+[1.799s] -- Could not use 'git describe' to determine PROJECT_VER.
+[1.799s] -- Building ESP-IDF components for target esp32s3
+[1.800s] -- Checking Python dependencies...
+[2.048s] Python requirements are satisfied.
+[2.061s] Constraint file: /home/diego/.espressif/espidf.constraints.v5.5.txt
+[2.061s] Requirement files:
+[2.061s]  - /home/diego/.espressif/v5.5/esp-idf/tools/requirements/requirements.core.txt
+[2.061s] Python being checked: /home/diego/.espressif/python_env/idf5.5_py3.10_env/bin/python
+[2.473s] NOTICE: Skipping optional dependency: espressif/esp_wifi_remote
+[2.473s] NOTICE: Skipping optional dependency: espressif/esp_hosted
+[2.508s] NOTICE: Processing 1 dependencies:
+[2.508s] NOTICE: [1/1] idf (5.5.4)
+[2.675s] -- ESP-TEE is currently supported only on the esp32c6;esp32h2;esp32c5 SoCs
+[3.031s] NOTICE: Skipping optional dependency: espressif/esp_wifi_remote
+[3.031s] NOTICE: Skipping optional dependency: espressif/esp_hosted
+[3.605s] -- Project sdkconfig file /home/diego/Ros2_esp32/sdkconfig
+[3.949s] -- Compiler supported targets: xtensa-esp-elf
+[4.057s] -- Detecting C compiler ABI info
+[4.117s] -- Detecting C compiler ABI info - done
+[4.124s] -- Detecting CXX compiler ABI info
+[4.186s] -- Detecting CXX compiler ABI info - done
+[4.204s] -- Detecting C compiler ABI info
+[4.266s] -- Detecting C compiler ABI info - done
+[4.274s] -- Detecting CXX compiler ABI info
+[4.338s] -- Detecting CXX compiler ABI info - done
+[4.575s] -- Found Python3: /home/diego/.espressif/python_env/idf5.5_py3.10_env/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[4.627s] -- Looking for pthread.h
+[4.694s] -- Looking for pthread.h - found
+[4.694s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.764s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[4.765s] -- Found Threads: TRUE  
+[4.770s] -- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
+[4.827s] -- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS - Success
+[4.827s] -- USING O3
+[4.961s] -- App "Ros2_esp32" version: 1
+[5.061s] -- Adding linker script /home/diego/Ros2_esp32/build/Ros2_esp32/esp-idf/esp_system/ld/memory.ld
+[5.061s] -- Adding linker script /home/diego/Ros2_esp32/build/Ros2_esp32/esp-idf/esp_system/ld/sections.ld.in
+[5.070s] -- Adding linker script /home/diego/.espressif/v5.5/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ld
+[5.070s] -- Adding linker script /home/diego/.espressif/v5.5/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.api.ld
+[5.070s] -- Adding linker script /home/diego/.espressif/v5.5/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.bt_funcs.ld
+[5.070s] -- Adding linker script /home/diego/.espressif/v5.5/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.libgcc.ld
+[5.070s] -- Adding linker script /home/diego/.espressif/v5.5/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.wdt.ld
+[5.070s] -- Adding linker script /home/diego/.espressif/v5.5/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.version.ld
+[5.070s] -- Adding linker script /home/diego/.espressif/v5.5/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ble_master.ld
+[5.070s] -- Adding linker script /home/diego/.espressif/v5.5/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ble_50.ld
+[5.071s] -- Adding linker script /home/diego/.espressif/v5.5/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ble_smp.ld
+[5.071s] -- Adding linker script /home/diego/.espressif/v5.5/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ble_dtm.ld
+[5.071s] -- Adding linker script /home/diego/.espressif/v5.5/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ble_test.ld
+[5.071s] -- Adding linker script /home/diego/.espressif/v5.5/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ble_scan.ld
+[5.071s] -- Adding linker script /home/diego/.espressif/v5.5/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.libc.ld
+[5.071s] -- Adding linker script /home/diego/.espressif/v5.5/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib.ld
+[5.083s] -- Adding linker script /home/diego/.espressif/v5.5/esp-idf/components/soc/esp32s3/ld/esp32s3.peripherals.ld
+[5.331s] -- Using Micro XRCE-DDS middleware
+[5.386s] make: Nothing to be done for 'all'.
+[5.621s] -- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_driver_ana_cmpr esp_driver_bitscrambler esp_driver_cam esp_driver_dac esp_driver_gpio esp_driver_gptimer esp_driver_i2c esp_driver_i2s esp_driver_isp esp_driver_jpeg esp_driver_ledc esp_driver_mcpwm esp_driver_parlio esp_driver_pcnt esp_driver_ppa esp_driver_rmt esp_driver_sdio esp_driver_sdm esp_driver_sdmmc esp_driver_sdspi esp_driver_spi esp_driver_touch_sens esp_driver_tsens esp_driver_twai esp_driver_uart esp_driver_usb_serial_jtag esp_eth esp_event esp_gdbstub esp_hal_ieee802154 esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_security esp_system esp_timer esp_vfs_console esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls micro_ros_espidf_component mqtt newlib nvs_flash nvs_sec_provider openthread partition_table perfmon protobuf-c protocomm pthread rt sdmmc soc spi_flash spiffs tcp_transport touch_element ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+[5.621s] -- Component paths: /home/diego/.espressif/v5.5/esp-idf/components/app_trace /home/diego/.espressif/v5.5/esp-idf/components/app_update /home/diego/.espressif/v5.5/esp-idf/components/bootloader /home/diego/.espressif/v5.5/esp-idf/components/bootloader_support /home/diego/.espressif/v5.5/esp-idf/components/bt /home/diego/.espressif/v5.5/esp-idf/components/cmock /home/diego/.espressif/v5.5/esp-idf/components/console /home/diego/.espressif/v5.5/esp-idf/components/cxx /home/diego/.espressif/v5.5/esp-idf/components/driver /home/diego/.espressif/v5.5/esp-idf/components/efuse /home/diego/.espressif/v5.5/esp-idf/components/esp-tls /home/diego/.espressif/v5.5/esp-idf/components/esp_adc /home/diego/.espressif/v5.5/esp-idf/components/esp_app_format /home/diego/.espressif/v5.5/esp-idf/components/esp_bootloader_format /home/diego/.espressif/v5.5/esp-idf/components/esp_coex /home/diego/.espressif/v5.5/esp-idf/components/esp_common /home/diego/.espressif/v5.5/esp-idf/components/esp_driver_ana_cmpr /home/diego/.espressif/v5.5/esp-idf/components/esp_driver_bitscrambler /home/diego/.espressif/v5.5/esp-idf/components/esp_driver_cam /home/diego/.espressif/v5.5/esp-idf/components/esp_driver_dac /home/diego/.espressif/v5.5/esp-idf/components/esp_driver_gpio /home/diego/.espressif/v5.5/esp-idf/components/esp_driver_gptimer /home/diego/.espressif/v5.5/esp-idf/components/esp_driver_i2c /home/diego/.espressif/v5.5/esp-idf/components/esp_driver_i2s /home/diego/.espressif/v5.5/esp-idf/components/esp_driver_isp /home/diego/.espressif/v5.5/esp-idf/components/esp_driver_jpeg /home/diego/.espressif/v5.5/esp-idf/components/esp_driver_ledc /home/diego/.espressif/v5.5/esp-idf/components/esp_driver_mcpwm /home/diego/.espressif/v5.5/esp-idf/components/esp_driver_parlio /home/diego/.espressif/v5.5/esp-idf/components/esp_driver_pcnt /home/diego/.espressif/v5.5/esp-idf/components/esp_driver_ppa /home/diego/.espressif/v5.5/esp-idf/components/esp_driver_rmt /home/diego/.espressif/v5.5/esp-idf/components/esp_driver_sdio /home/diego/.espressif/v5.5/esp-idf/components/esp_driver_sdm /home/diego/.espressif/v5.5/esp-idf/components/esp_driver_sdmmc /home/diego/.espressif/v5.5/esp-idf/components/esp_driver_sdspi /home/diego/.espressif/v5.5/esp-idf/components/esp_driver_spi /home/diego/.espressif/v5.5/esp-idf/components/esp_driver_touch_sens /home/diego/.espressif/v5.5/esp-idf/components/esp_driver_tsens /home/diego/.espressif/v5.5/esp-idf/components/esp_driver_twai /home/diego/.espressif/v5.5/esp-idf/components/esp_driver_uart /home/diego/.espressif/v5.5/esp-idf/components/esp_driver_usb_serial_jtag /home/diego/.espressif/v5.5/esp-idf/components/esp_eth /home/diego/.espressif/v5.5/esp-idf/components/esp_event /home/diego/.espressif/v5.5/esp-idf/components/esp_gdbstub /home/diego/.espressif/v5.5/esp-idf/components/esp_hal_ieee802154 /home/diego/.espressif/v5.5/esp-idf/components/esp_hid /home/diego/.espressif/v5.5/esp-idf/components/esp_http_client /home/diego/.espressif/v5.5/esp-idf/components/esp_http_server /home/diego/.espressif/v5.5/esp-idf/components/esp_https_ota /home/diego/.espressif/v5.5/esp-idf/components/esp_https_server /home/diego/.espressif/v5.5/esp-idf/components/esp_hw_support /home/diego/.espressif/v5.5/esp-idf/components/esp_lcd /home/diego/.espressif/v5.5/esp-idf/components/esp_local_ctrl /home/diego/.espressif/v5.5/esp-idf/components/esp_mm /home/diego/.espressif/v5.5/esp-idf/components/esp_netif /home/diego/.espressif/v5.5/esp-idf/components/esp_netif_stack /home/diego/.espressif/v5.5/esp-idf/components/esp_partition /home/diego/.espressif/v5.5/esp-idf/components/esp_phy /home/diego/.espressif/v5.5/esp-idf/components/esp_pm /home/diego/.espressif/v5.5/esp-idf/components/esp_psram /home/diego/.espressif/v5.5/esp-idf/components/esp_ringbuf /home/diego/.espressif/v5.5/esp-idf/components/esp_rom /home/diego/.espressif/v5.5/esp-idf/components/esp_security /home/diego/.espressif/v5.5/esp-idf/components/esp_system /home/diego/.espressif/v5.5/esp-idf/components/esp_timer /home/diego/.espressif/v5.5/esp-idf/components/esp_vfs_console /home/diego/.espressif/v5.5/esp-idf/components/esp_wifi /home/diego/.espressif/v5.5/esp-idf/components/espcoredump /home/diego/.espressif/v5.5/esp-idf/components/esptool_py /home/diego/.espressif/v5.5/esp-idf/components/fatfs /home/diego/.espressif/v5.5/esp-idf/components/freertos /home/diego/.espressif/v5.5/esp-idf/components/hal /home/diego/.espressif/v5.5/esp-idf/components/heap /home/diego/.espressif/v5.5/esp-idf/components/http_parser /home/diego/.espressif/v5.5/esp-idf/components/idf_test /home/diego/.espressif/v5.5/esp-idf/components/ieee802154 /home/diego/.espressif/v5.5/esp-idf/components/json /home/diego/.espressif/v5.5/esp-idf/components/log /home/diego/.espressif/v5.5/esp-idf/components/lwip /home/diego/Ros2_esp32/main /home/diego/.espressif/v5.5/esp-idf/components/mbedtls /home/diego/Ros2_esp32/components/micro_ros_espidf_component /home/diego/.espressif/v5.5/esp-idf/components/mqtt /home/diego/.espressif/v5.5/esp-idf/components/newlib /home/diego/.espressif/v5.5/esp-idf/components/nvs_flash /home/diego/.espressif/v5.5/esp-idf/components/nvs_sec_provider /home/diego/.espressif/v5.5/esp-idf/components/openthread /home/diego/.espressif/v5.5/esp-idf/components/partition_table /home/diego/.espressif/v5.5/esp-idf/components/perfmon /home/diego/.espressif/v5.5/esp-idf/components/protobuf-c /home/diego/.espressif/v5.5/esp-idf/components/protocomm /home/diego/.espressif/v5.5/esp-idf/components/pthread /home/diego/.espressif/v5.5/esp-idf/components/rt /home/diego/.espressif/v5.5/esp-idf/components/sdmmc /home/diego/.espressif/v5.5/esp-idf/components/soc /home/diego/.espressif/v5.5/esp-idf/components/spi_flash /home/diego/.espressif/v5.5/esp-idf/components/spiffs /home/diego/.espressif/v5.5/esp-idf/components/tcp_transport /home/diego/.espressif/v5.5/esp-idf/components/touch_element /home/diego/.espressif/v5.5/esp-idf/components/ulp /home/diego/.espressif/v5.5/esp-idf/components/unity /home/diego/.espressif/v5.5/esp-idf/components/usb /home/diego/.espressif/v5.5/esp-idf/components/vfs /home/diego/.espressif/v5.5/esp-idf/components/wear_levelling /home/diego/.espressif/v5.5/esp-idf/components/wifi_provisioning /home/diego/.espressif/v5.5/esp-idf/components/wpa_supplicant /home/diego/.espressif/v5.5/esp-idf/components/xtensa
+[5.626s] -- Configuring done
+[6.466s] -- Generating done
+[6.634s] -- Build files have been written to: /home/diego/Ros2_esp32/build/Ros2_esp32
+[6.691s] Invoked command in '/home/diego/Ros2_esp32/build/Ros2_esp32' returned '0': /usr/bin/cmake /home/diego/Ros2_esp32 -DCMAKE_INSTALL_PREFIX=/home/diego/Ros2_esp32/install/Ros2_esp32
+[6.693s] Invoking command in '/home/diego/Ros2_esp32/build/Ros2_esp32': /usr/bin/cmake --build /home/diego/Ros2_esp32/build/Ros2_esp32 -- -j12 -l12
+[6.757s] [  0%] [34m[1mGenerating ../../partition_table/partition-table.bin[0m
+[6.757s] [  0%] [34m[1mGenerating project_elf_src_esp32s3.c[0m
+[6.757s] [  0%] [34m[1mGenerating /home/diego/Ros2_esp32/build/Ros2_esp32/esp-idf/esp_system/ld/sections.ld.in linker script...[0m
+[6.757s] [  0%] Built target custom_bundle
+[6.757s] [  0%] [34m[1mGenerating /home/diego/Ros2_esp32/build/Ros2_esp32/esp-idf/esp_system/ld/memory.ld linker script...[0m
+[6.774s] [  0%] Built target _project_elf_src
+[6.796s] [  0%] Built target sections.ld.in
+[6.796s] [  0%] Built target memory.ld
+[6.813s] Partition table binary generated. Contents:
+[6.817s] [  1%] [32mBuilding C object esp-idf/esp_https_ota/CMakeFiles/__idf_esp_https_ota.dir/src/esp_https_ota.c.obj[0m
+[6.821s] *******************************************************************************
+[6.850s] # ESP-IDF Partition Table
+[6.850s] # Name, Type, SubType, Offset, Size, Flags
+[6.850s] nvs,data,nvs,0x9000,24K,
+[6.850s] phy_init,data,phy,0xf000,4K,
+[6.851s] factory,app,factory,0x10000,4M,
+[6.851s] storage,data,spiffs,0x410000,10M,
+[6.862s] *******************************************************************************
+[6.871s] [  1%] Built target partition_table_bin
+[6.890s] [  1%] [34m[1mCreating directories for 'bootloader'[0m
+[6.962s] [  1%] [34m[1mNo download step for 'bootloader'[0m
+[6.988s] [  1%] [34m[1mNo update step for 'bootloader'[0m
+[7.013s] [  1%] [34m[1mNo patch step for 'bootloader'[0m
+[7.038s] [  1%] [34m[1mPerforming configure step for 'bootloader'[0m
+[7.058s] -- Found Git: /usr/bin/git (found version "2.34.1") 
+[7.063s] [  1%] [32m[1mLinking C static library libesp_https_ota.a[0m
+[7.078s] -- Component directory /home/diego/.espressif/v5.5/esp-idf/components/esp_blockdev does not contain a CMakeLists.txt file. No component will be added
+[7.105s] [  1%] Built target __idf_esp_https_ota
+[7.128s] [  1%] [32mBuilding C object esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/httpd_sess.c.obj[0m
+[7.128s] [  1%] [32mBuilding C object esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/httpd_parse.c.obj[0m
+[7.130s] [  1%] [32mBuilding C object esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/httpd_txrx.c.obj[0m
+[7.130s] [  1%] [32mBuilding C object esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/httpd_main.c.obj[0m
+[7.130s] [  1%] [32mBuilding C object esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/httpd_uri.c.obj[0m
+[7.130s] [  1%] [32mBuilding C object esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/httpd_ws.c.obj[0m
+[7.132s] [  1%] [32mBuilding C object esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/util/ctrl_sock.c.obj[0m
+[7.416s] [  1%] [32m[1mLinking C static library libesp_http_server.a[0m
+[7.467s] [  1%] Built target __idf_esp_http_server
+[7.491s] [  1%] [32mBuilding C object esp-idf/esp_http_client/CMakeFiles/__idf_esp_http_client.dir/esp_http_client.c.obj[0m
+[7.491s] [  1%] [32mBuilding C object esp-idf/esp_http_client/CMakeFiles/__idf_esp_http_client.dir/lib/http_auth.c.obj[0m
+[7.491s] [  1%] [32mBuilding C object esp-idf/esp_http_client/CMakeFiles/__idf_esp_http_client.dir/lib/http_utils.c.obj[0m
+[7.491s] [  2%] [32mBuilding C object esp-idf/esp_http_client/CMakeFiles/__idf_esp_http_client.dir/lib/http_header.c.obj[0m
+[7.976s] -- Minimal build - OFF
+[8.052s] [  2%] [32m[1mLinking C static library libesp_http_client.a[0m
+[8.094s] [  2%] Built target __idf_esp_http_client
+[8.119s] [  2%] [32mBuilding C object esp-idf/tcp_transport/CMakeFiles/__idf_tcp_transport.dir/transport.c.obj[0m
+[8.119s] [  2%] [32mBuilding C object esp-idf/tcp_transport/CMakeFiles/__idf_tcp_transport.dir/transport_ws.c.obj[0m
+[8.119s] [  2%] [32mBuilding C object esp-idf/tcp_transport/CMakeFiles/__idf_tcp_transport.dir/transport_socks_proxy.c.obj[0m
+[8.119s] [  2%] [32mBuilding C object esp-idf/tcp_transport/CMakeFiles/__idf_tcp_transport.dir/transport_internal.c.obj[0m
+[8.120s] [  2%] [32mBuilding C object esp-idf/tcp_transport/CMakeFiles/__idf_tcp_transport.dir/transport_ssl.c.obj[0m
+[8.189s] -- The C compiler identification is GNU 14.2.0
+[8.386s] -- The CXX compiler identification is GNU 14.2.0
+[8.405s] -- The ASM compiler identification is GNU
+[8.407s] -- Found assembler: /home/diego/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc
+[8.411s] -- Detecting C compiler ABI info
+[8.480s] [  3%] [32m[1mLinking C static library libtcp_transport.a[0m
+[8.481s] -- Detecting C compiler ABI info - done
+[8.489s] -- Check for working C compiler: /home/diego/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc - skipped
+[8.489s] -- Detecting C compile features
+[8.489s] -- Detecting C compile features - done
+[8.492s] -- Detecting CXX compiler ABI info
+[8.523s] [  3%] Built target __idf_tcp_transport
+[8.551s] [  3%] [32mBuilding C object esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_cali.c.obj[0m
+[8.551s] [  4%] [32mBuilding C object esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_oneshot.c.obj[0m
+[8.551s] [  4%] [32mBuilding C object esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_common.c.obj[0m
+[8.551s] [  4%] [32mBuilding C object esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_cali_curve_fitting.c.obj[0m
+[8.551s] [  4%] [32mBuilding C object esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/deprecated/esp_adc_cal_common_legacy.c.obj[0m
+[8.552s] [  4%] [32mBuilding C object esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_continuous.c.obj[0m
+[8.553s] [  4%] [32mBuilding C object esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/gdma/adc_dma.c.obj[0m
+[8.555s] [  4%] [32mBuilding C object esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_monitor.c.obj[0m
+[8.560s] [  4%] [32mBuilding C object esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_filter.c.obj[0m
+[8.562s] [  4%] [32mBuilding C object esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/esp32s3/curve_fitting_coefficients.c.obj[0m
+[8.565s] [  4%] [32mBuilding C object esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/deprecated/esp32s3/esp_adc_cal_legacy.c.obj[0m
+[8.586s] -- Detecting CXX compiler ABI info - done
+[8.609s] -- Check for working CXX compiler: /home/diego/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32s3-elf-g++ - skipped
+[8.612s] -- Detecting CXX compile features
+[8.615s] -- Detecting CXX compile features - done
+[8.830s] [  5%] [32m[1mLinking C static library libesp_adc.a[0m
+[8.877s] [  5%] Built target __idf_esp_adc
+[8.899s] [  5%] [32mBuilding C object esp-idf/esp-tls/CMakeFiles/__idf_esp-tls.dir/esp_tls.c.obj[0m
+[8.899s] [  5%] [32mBuilding C object esp-idf/esp-tls/CMakeFiles/__idf_esp-tls.dir/esp_tls_mbedtls.c.obj[0m
+[8.900s] [  5%] [32mBuilding C object esp-idf/esp-tls/CMakeFiles/__idf_esp-tls.dir/esp-tls-crypto/esp_tls_crypto.c.obj[0m
+[8.901s] [  5%] [32mBuilding C object esp-idf/esp-tls/CMakeFiles/__idf_esp-tls.dir/esp_tls_error_capture.c.obj[0m
+[8.901s] [  5%] [32mBuilding C object esp-idf/esp-tls/CMakeFiles/__idf_esp-tls.dir/esp_tls_platform_port.c.obj[0m
+[9.000s] -- Building ESP-IDF components for target esp32s3
+[9.191s] [  5%] [32m[1mLinking C static library libesp-tls.a[0m
+[9.232s] [  5%] Built target __idf_esp-tls
+[9.257s] [  5%] [32mBuilding C object esp-idf/http_parser/CMakeFiles/__idf_http_parser.dir/http_parser.c.obj[0m
+[9.615s] -- ESP-TEE is currently supported only on the esp32c6;esp32h2;esp32c5 SoCs
+[9.689s] [  6%] [32m[1mLinking C static library libhttp_parser.a[0m
+[9.736s] [  6%] Built target __idf_http_parser
+[9.763s] [  6%] [32mBuilding C object esp-idf/driver/CMakeFiles/__idf_driver.dir/i2c/i2c.c.obj[0m
+[9.764s] [  6%] [32mBuilding C object esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/adc_dma_legacy.c.obj[0m
+[9.764s] [  6%] [32mBuilding C object esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/adc_legacy.c.obj[0m
+[9.764s] [  7%] [32mBuilding C object esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/pcnt_legacy.c.obj[0m
+[9.764s] [  7%] [32mBuilding C object esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/sigma_delta_legacy.c.obj[0m
+[9.764s] [  7%] [32mBuilding C object esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/rmt_legacy.c.obj[0m
+[9.764s] [  7%] [32mBuilding C object esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/mcpwm_legacy.c.obj[0m
+[9.764s] [  7%] [32mBuilding C object esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/timer_legacy.c.obj[0m
+[9.765s] [  7%] [32mBuilding C object esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/rtc_temperature_legacy.c.obj[0m
+[9.765s] [  7%] [32mBuilding C object esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/i2s_legacy.c.obj[0m
+[9.769s] [  7%] [32mBuilding C object esp-idf/driver/CMakeFiles/__idf_driver.dir/touch_sensor/touch_sensor_common.c.obj[0m
+[10.016s] [  7%] [32mBuilding C object esp-idf/driver/CMakeFiles/__idf_driver.dir/touch_sensor/esp32s3/touch_sensor.c.obj[0m
+[10.036s] [  7%] [32mBuilding C object esp-idf/driver/CMakeFiles/__idf_driver.dir/twai/twai.c.obj[0m
+[10.402s] -- Project sdkconfig file /home/diego/Ros2_esp32/sdkconfig
+[10.466s] [  7%] [32m[1mLinking C static library libdriver.a[0m
+[10.526s] [  7%] Built target __idf_driver
+[10.546s] [  8%] [32mBuilding C object esp-idf/esp_driver_twai/CMakeFiles/__idf_esp_driver_twai.dir/esp_twai.c.obj[0m
+[10.546s] [  8%] [32mBuilding C object esp-idf/esp_driver_twai/CMakeFiles/__idf_esp_driver_twai.dir/esp_twai_onchip.c.obj[0m
+[10.562s] -- Compiler supported targets: xtensa-esp-elf
+[10.565s] -- Detecting C compiler ABI info
+[10.629s] -- Detecting C compiler ABI info - done
+[10.637s] -- Detecting CXX compiler ABI info
+[10.702s] -- Detecting CXX compiler ABI info - done
+[10.778s] [  8%] [32m[1mLinking C static library libesp_driver_twai.a[0m
+[10.815s] [  8%] Built target __idf_esp_driver_twai
+[10.816s] -- Detecting C compiler ABI info
+[10.835s] [  8%] [32mBuilding C object esp-idf/esp_driver_ledc/CMakeFiles/__idf_esp_driver_ledc.dir/src/ledc.c.obj[0m
+[10.877s] -- Detecting C compiler ABI info - done
+[10.884s] -- Detecting CXX compiler ABI info
+[10.946s] -- Detecting CXX compiler ABI info - done
+[10.964s] -- Adding linker script /home/diego/.espressif/v5.5/esp-idf/components/soc/esp32s3/ld/esp32s3.peripherals.ld
+[10.974s] -- Bootloader project name: "bootloader" version: 1
+[10.998s] -- Adding linker script /home/diego/.espressif/v5.5/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ld
+[10.998s] -- Adding linker script /home/diego/.espressif/v5.5/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.api.ld
+[10.998s] -- Adding linker script /home/diego/.espressif/v5.5/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.bt_funcs.ld
+[10.998s] -- Adding linker script /home/diego/.espressif/v5.5/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.libgcc.ld
+[10.998s] -- Adding linker script /home/diego/.espressif/v5.5/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.wdt.ld
+[10.998s] -- Adding linker script /home/diego/.espressif/v5.5/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.version.ld
+[10.999s] -- Adding linker script /home/diego/.espressif/v5.5/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.libc.ld
+[10.999s] -- Adding linker script /home/diego/.espressif/v5.5/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib.ld
+[11.011s] -- Adding linker script /home/diego/.espressif/v5.5/esp-idf/components/bootloader/subproject/main/ld/esp32s3/bootloader.rom.ld
+[11.075s] -- Components: bootloader bootloader_support efuse esp_app_format esp_bootloader_format esp_common esp_hw_support esp_rom esp_security esp_system esptool_py freertos hal log main micro-ecc newlib partition_table soc spi_flash xtensa
+[11.075s] -- Component paths: /home/diego/.espressif/v5.5/esp-idf/components/bootloader /home/diego/.espressif/v5.5/esp-idf/components/bootloader_support /home/diego/.espressif/v5.5/esp-idf/components/efuse /home/diego/.espressif/v5.5/esp-idf/components/esp_app_format /home/diego/.espressif/v5.5/esp-idf/components/esp_bootloader_format /home/diego/.espressif/v5.5/esp-idf/components/esp_common /home/diego/.espressif/v5.5/esp-idf/components/esp_hw_support /home/diego/.espressif/v5.5/esp-idf/components/esp_rom /home/diego/.espressif/v5.5/esp-idf/components/esp_security /home/diego/.espressif/v5.5/esp-idf/components/esp_system /home/diego/.espressif/v5.5/esp-idf/components/esptool_py /home/diego/.espressif/v5.5/esp-idf/components/freertos /home/diego/.espressif/v5.5/esp-idf/components/hal /home/diego/.espressif/v5.5/esp-idf/components/log /home/diego/.espressif/v5.5/esp-idf/components/bootloader/subproject/main /home/diego/.espressif/v5.5/esp-idf/components/bootloader/subproject/components/micro-ecc /home/diego/.espressif/v5.5/esp-idf/components/newlib /home/diego/.espressif/v5.5/esp-idf/components/partition_table /home/diego/.espressif/v5.5/esp-idf/components/soc /home/diego/.espressif/v5.5/esp-idf/components/spi_flash /home/diego/.espressif/v5.5/esp-idf/components/xtensa
+[11.075s] -- Adding linker script /home/diego/.espressif/v5.5/esp-idf/components/bootloader/subproject/main/ld/esp32s3/bootloader.ld
+[11.076s] -- Configuring done
+[11.154s] -- Generating done
+[11.160s] -- Build files have been written to: /home/diego/Ros2_esp32/build/Ros2_esp32/bootloader
+[11.197s] [  8%] [34m[1mPerforming build step for 'bootloader'[0m
+[11.246s] [  3%] [32mBuilding C object esp-idf/log/CMakeFiles/__idf_log.dir/src/buffer/log_buffers.c.obj[0m
+[11.246s] [  3%] [34m[1mGenerating project_elf_src_esp32s3.c[0m
+[11.246s] [  3%] [32mBuilding C object esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/log_timestamp.c.obj[0m
+[11.246s] [  4%] [32mBuilding C object esp-idf/log/CMakeFiles/__idf_log.dir/src/log_timestamp_common.c.obj[0m
+[11.246s] [  5%] [32mBuilding C object esp-idf/log/CMakeFiles/__idf_log.dir/src/log_format_text.c.obj[0m
+[11.246s] [  5%] [32mBuilding C object esp-idf/log/CMakeFiles/__idf_log.dir/src/log_print.c.obj[0m
+[11.246s] [  5%] [32mBuilding C object esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/log_lock.c.obj[0m
+[11.247s] [  7%] [32mBuilding C object esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/util.c.obj[0m
+[11.249s] [  7%] [32mBuilding C object esp-idf/log/CMakeFiles/__idf_log.dir/src/util.c.obj[0m
+[11.252s] [  8%] [32mBuilding C object esp-idf/log/CMakeFiles/__idf_log.dir/src/log.c.obj[0m
+[11.265s] [  8%] [32m[1mLinking C static library libesp_driver_ledc.a[0m
+[11.280s] [  8%] Built target _project_elf_src
+[11.319s] [  8%] Built target __idf_esp_driver_ledc
+[11.340s] [  8%] [32mBuilding C object esp-idf/esp_driver_i2c/CMakeFiles/__idf_esp_driver_i2c.dir/i2c_common.c.obj[0m
+[11.340s] [  8%] [32mBuilding C object esp-idf/esp_driver_i2c/CMakeFiles/__idf_esp_driver_i2c.dir/i2c_slave.c.obj[0m
+[11.340s] [  8%] [32mBuilding C object esp-idf/esp_driver_i2c/CMakeFiles/__idf_esp_driver_i2c.dir/i2c_master.c.obj[0m
+[11.345s] [  9%] [32m[1mLinking C static library liblog.a[0m
+[11.391s] [  9%] Built target __idf_log
+[11.403s] [35m[1mScanning dependencies of target __idf_esp_rom[0m
+[11.424s] [ 11%] [32mBuilding C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_crc.c.obj[0m
+[11.425s] [ 12%] [32mBuilding C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_gpio.c.obj[0m
+[11.425s] [ 11%] [32mBuilding C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_spiflash.c.obj[0m
+[11.426s] [ 13%] [32mBuilding ASM object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_longjmp.S.obj[0m
+[11.426s] [ 13%] [32mBuilding C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_efuse.c.obj[0m
+[11.426s] [ 15%] [32mBuilding C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_systimer.c.obj[0m
+[11.427s] [ 15%] [32mBuilding C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_print.c.obj[0m
+[11.427s] [ 15%] [32mBuilding C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_sys.c.obj[0m
+[11.432s] [ 16%] [32mBuilding C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_uart.c.obj[0m
+[11.475s] [ 17%] [32mBuilding C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_wdt.c.obj[0m
+[11.479s] [ 17%] [32mBuilding C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_cache_esp32s2_esp32s3.c.obj[0m
+[11.495s] [ 18%] [32mBuilding ASM object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_cache_writeback_esp32s3.S.obj[0m
+[11.649s] [ 19%] [32m[1mLinking C static library libesp_rom.a[0m
+[11.694s] [ 19%] Built target __idf_esp_rom
+[11.714s] [ 20%] [32mBuilding C object esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/esp_err_to_name.c.obj[0m
+[11.772s] [ 21%] [32m[1mLinking C static library libesp_common.a[0m
+[11.810s] [ 21%] Built target __idf_esp_common
+[11.838s] [ 23%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/esp_memory_utils.c.obj[0m
+[11.838s] [ 24%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_sleep.c.obj[0m
+[11.838s] [ 24%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/cpu.c.obj[0m
+[11.838s] [ 25%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_init.c.obj[0m
+[11.838s] [ 25%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_time.c.obj[0m
+[11.838s] [ 26%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk.c.obj[0m
+[11.841s] [ 27%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/chip_info.c.obj[0m
+[11.841s] [ 28%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk_init.c.obj[0m
+[11.842s] [ 28%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_cpu_intr.c.obj[0m
+[11.845s] [ 29%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/cpu_region_protect.c.obj[0m
+[11.848s] [  8%] [32m[1mLinking C static library libesp_driver_i2c.a[0m
+[11.914s] [  8%] Built target __idf_esp_driver_i2c
+[11.945s] [  8%] [32mBuilding C object esp-idf/esp_driver_sdm/CMakeFiles/__idf_esp_driver_sdm.dir/src/sdm.c.obj[0m
+[12.096s] [ 30%] [32m[1mLinking C static library libesp_hw_support.a[0m
+[12.111s] [  8%] [32m[1mLinking C static library libesp_driver_sdm.a[0m
+[12.143s] [ 30%] Built target __idf_esp_hw_support
+[12.152s] [  8%] Built target __idf_esp_driver_sdm
+[12.164s] [ 31%] [32mBuilding C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_err.c.obj[0m
+[12.174s] [  8%] [32mBuilding C object esp-idf/esp_driver_tsens/CMakeFiles/__idf_esp_driver_tsens.dir/src/temperature_sensor.c.obj[0m
+[12.224s] [ 32%] [32m[1mLinking C static library libesp_system.a[0m
+[12.266s] [ 32%] Built target __idf_esp_system
+[12.297s] [ 32%] [32mBuilding C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s3/esp_efuse_table.c.obj[0m
+[12.298s] [ 34%] [32mBuilding C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s3/esp_efuse_fields.c.obj[0m
+[12.301s] [ 35%] [32mBuilding C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s3/esp_efuse_utility.c.obj[0m
+[12.301s] [ 36%] [32mBuilding C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s3/esp_efuse_rtc_calib.c.obj[0m
+[12.301s] [ 37%] [32mBuilding C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_api.c.obj[0m
+[12.303s] [ 38%] [32mBuilding C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_utility.c.obj[0m
+[12.310s] [ 38%] [32mBuilding C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_fields.c.obj[0m
+[12.317s] [ 39%] [32mBuilding C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/efuse_controller/keys/with_key_purposes/esp_efuse_api_key.c.obj[0m
+[12.341s] [  8%] [32m[1mLinking C static library libesp_driver_tsens.a[0m
+[12.427s] [  8%] Built target __idf_esp_driver_tsens
+[12.472s] [  8%] [32mBuilding C object esp-idf/esp_driver_rmt/CMakeFiles/__idf_esp_driver_rmt.dir/src/rmt_encoder_bytes.c.obj[0m
+[12.473s] [  8%] [32mBuilding C object esp-idf/esp_driver_rmt/CMakeFiles/__idf_esp_driver_rmt.dir/src/rmt_encoder.c.obj[0m
+[12.476s] [  8%] [32mBuilding C object esp-idf/esp_driver_rmt/CMakeFiles/__idf_esp_driver_rmt.dir/src/rmt_encoder_copy.c.obj[0m
+[12.477s] [  8%] [32mBuilding C object esp-idf/esp_driver_rmt/CMakeFiles/__idf_esp_driver_rmt.dir/src/rmt_common.c.obj[0m
+[12.479s] [  8%] [32mBuilding C object esp-idf/esp_driver_rmt/CMakeFiles/__idf_esp_driver_rmt.dir/src/rmt_rx.c.obj[0m
+[12.481s] [  8%] [32mBuilding C object esp-idf/esp_driver_rmt/CMakeFiles/__idf_esp_driver_rmt.dir/src/rmt_encoder_simple.c.obj[0m
+[12.490s] [  9%] [32mBuilding C object esp-idf/esp_driver_rmt/CMakeFiles/__idf_esp_driver_rmt.dir/src/rmt_tx.c.obj[0m
+[12.632s] [ 40%] [32m[1mLinking C static library libefuse.a[0m
+[12.691s] [ 40%] Built target __idf_efuse
+[12.724s] [ 40%] [32mBuilding C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_random.c.obj[0m
+[12.724s] [ 42%] [32mBuilding C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_common_loader.c.obj[0m
+[12.724s] [ 42%] [32mBuilding C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_mem.c.obj[0m
+[12.730s] [ 42%] [32mBuilding C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_common.c.obj[0m
+[12.731s] [ 43%] [32mBuilding C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_clock_init.c.obj[0m
+[12.732s] [ 45%] [32mBuilding C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_efuse.c.obj[0m
+[12.733s] [ 45%] [32mBuilding C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/flash_encrypt.c.obj[0m
+[12.734s] [ 46%] [32mBuilding C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/secure_boot.c.obj[0m
+[12.737s] [ 47%] [32mBuilding C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_random_esp32s3.c.obj[0m
+[12.782s] [ 47%] [32mBuilding C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/bootloader_flash.c.obj[0m
+[12.832s] [ 48%] [32mBuilding C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/bootloader_flash_config_esp32s3.c.obj[0m
+[12.839s] [ 49%] [32mBuilding C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/flash_qio_mode.c.obj[0m
+[12.848s] [ 50%] [32mBuilding C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_utility.c.obj[0m
+[12.852s] [ 51%] [32mBuilding C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/flash_partitions.c.obj[0m
+[12.872s] [ 51%] [32mBuilding C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp_image_format.c.obj[0m
+[12.884s] [ 52%] [32mBuilding C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_sha.c.obj[0m
+[12.968s] [ 53%] [32mBuilding C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_init.c.obj[0m
+[12.996s] [ 54%] [32mBuilding C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_clock_loader.c.obj[0m
+[12.996s] [ 55%] [32mBuilding C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_console.c.obj[0m
+[13.012s] [ 55%] [32mBuilding C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_console_loader.c.obj[0m
+[13.015s] [ 56%] [32mBuilding C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp32s3/bootloader_soc.c.obj[0m
+[13.031s] [ 57%] [32mBuilding C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp32s3/bootloader_esp32s3.c.obj[0m
+[13.043s] [ 58%] [32mBuilding C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_panic.c.obj[0m
+[13.102s] [  9%] [32m[1mLinking C static library libesp_driver_rmt.a[0m
+[13.169s] [  9%] Built target __idf_esp_driver_rmt
+[13.201s] [  9%] [32mBuilding C object esp-idf/esp_driver_sdspi/CMakeFiles/__idf_esp_driver_sdspi.dir/src/sdspi_host.c.obj[0m
+[13.203s] [  9%] [32mBuilding C object esp-idf/esp_driver_sdspi/CMakeFiles/__idf_esp_driver_sdspi.dir/src/sdspi_crc.c.obj[0m
+[13.206s] [  9%] [32mBuilding C object esp-idf/esp_driver_sdspi/CMakeFiles/__idf_esp_driver_sdspi.dir/src/sdspi_transaction.c.obj[0m
+[13.310s] [ 59%] [32m[1mLinking C static library libbootloader_support.a[0m
+[13.369s] [ 59%] Built target __idf_bootloader_support
+[13.391s] [ 59%] [32mBuilding C object esp-idf/esp_bootloader_format/CMakeFiles/__idf_esp_bootloader_format.dir/esp_bootloader_desc.c.obj[0m
+[13.409s] [  9%] [32m[1mLinking C static library libesp_driver_sdspi.a[0m
+[13.432s] [ 60%] [32m[1mLinking C static library libesp_bootloader_format.a[0m
+[13.450s] [  9%] Built target __idf_esp_driver_sdspi
+[13.473s] [ 60%] Built target __idf_esp_bootloader_format
+[13.474s] [  9%] [32mBuilding C object esp-idf/esp_driver_sdmmc/CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_transaction.c.obj[0m
+[13.474s] [  9%] [32mBuilding C object esp-idf/esp_driver_sdmmc/CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_host.c.obj[0m
+[13.497s] [ 61%] [32mBuilding C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_wrap.c.obj[0m
+[13.601s] [ 62%] [32m[1mLinking C static library libspi_flash.a[0m
+[13.647s] [ 62%] Built target __idf_spi_flash
+[13.674s] [ 63%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/hal_utils.c.obj[0m
+[13.675s] [ 63%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/mpu_hal.c.obj[0m
+[13.678s] [ 65%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/cache_hal.c.obj[0m
+[13.678s] [ 65%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32s3/efuse_hal.c.obj[0m
+[13.678s] [ 65%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/mmu_hal.c.obj[0m
+[13.683s] [ 67%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/efuse_hal.c.obj[0m
+[13.839s] [ 68%] [32m[1mLinking C static library libhal.a[0m
+[13.887s] [ 68%] Built target __idf_hal
+[13.900s] [  9%] [32m[1mLinking C static library libesp_driver_sdmmc.a[0m
+[13.911s] [ 68%] [32mBuilding C object esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/uECC_verify_antifault.c.obj[0m
+[13.947s] [  9%] Built target __idf_esp_driver_sdmmc
+[13.978s] [  9%] [32mBuilding C object esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_common.c.obj[0m
+[13.978s] [  9%] [32mBuilding C object esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_cmd.c.obj[0m
+[13.980s] [  9%] [32mBuilding C object esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_io.c.obj[0m
+[13.980s] [  9%] [32mBuilding C object esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_mmc.c.obj[0m
+[13.980s] [  9%] [32mBuilding C object esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_init.c.obj[0m
+[13.986s] [  9%] [32mBuilding C object esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_sd.c.obj[0m
+[13.986s] [  9%] [32mBuilding C object esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sd_pwr_ctrl/sd_pwr_ctrl.c.obj[0m
+[14.292s] [ 10%] [32m[1mLinking C static library libsdmmc.a[0m
+[14.344s] [ 10%] Built target __idf_sdmmc
+[14.368s] [ 11%] [32mBuilding C object esp-idf/esp_driver_i2s/CMakeFiles/__idf_esp_driver_i2s.dir/i2s_common.c.obj[0m
+[14.370s] [ 11%] [32mBuilding C object esp-idf/esp_driver_i2s/CMakeFiles/__idf_esp_driver_i2s.dir/i2s_platform.c.obj[0m
+[14.370s] [ 11%] [32mBuilding C object esp-idf/esp_driver_i2s/CMakeFiles/__idf_esp_driver_i2s.dir/i2s_pdm.c.obj[0m
+[14.370s] [ 11%] [32mBuilding C object esp-idf/esp_driver_i2s/CMakeFiles/__idf_esp_driver_i2s.dir/i2s_tdm.c.obj[0m
+[14.370s] [ 11%] [32mBuilding C object esp-idf/esp_driver_i2s/CMakeFiles/__idf_esp_driver_i2s.dir/i2s_std.c.obj[0m
+[14.690s] [ 69%] [32m[1mLinking C static library libmicro-ecc.a[0m
+[14.730s] [ 69%] Built target __idf_micro-ecc
+[14.757s] [ 71%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/gpio_periph.c.obj[0m
+[14.757s] [ 71%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/dport_access_common.c.obj[0m
+[14.759s] [ 71%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/uart_periph.c.obj[0m
+[14.764s] [ 73%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/interrupts.c.obj[0m
+[14.766s] [ 73%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/lldesc.c.obj[0m
+[14.767s] [ 74%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/adc_periph.c.obj[0m
+[14.770s] [ 75%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/gdma_periph.c.obj[0m
+[14.771s] [ 76%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/dedic_gpio_periph.c.obj[0m
+[14.777s] [ 77%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/pcnt_periph.c.obj[0m
+[14.781s] [ 77%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/spi_periph.c.obj[0m
+[14.781s] [ 78%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/ledc_periph.c.obj[0m
+[14.823s] [ 79%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/rmt_periph.c.obj[0m
+[14.824s] [ 79%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/sdm_periph.c.obj[0m
+[14.826s] [ 11%] [32m[1mLinking C static library libesp_driver_i2s.a[0m
+[14.839s] [ 80%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/i2s_periph.c.obj[0m
+[14.843s] [ 81%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/i2c_periph.c.obj[0m
+[14.843s] [ 82%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/temperature_sensor_periph.c.obj[0m
+[14.851s] [ 83%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/timer_periph.c.obj[0m
+[14.859s] [ 84%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/mcpwm_periph.c.obj[0m
+[14.864s] [ 85%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/lcd_periph.c.obj[0m
+[14.864s] [ 85%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/mpi_periph.c.obj[0m
+[14.864s] [ 86%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/sdmmc_periph.c.obj[0m
+[14.875s] [ 87%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/touch_sensor_periph.c.obj[0m
+[14.881s] [ 87%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/twai_periph.c.obj[0m
+[14.898s] [ 88%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/wdt_periph.c.obj[0m
+[14.906s] [ 89%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/usb_dwc_periph.c.obj[0m
+[14.911s] [ 90%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/cam_periph.c.obj[0m
+[14.911s] [ 90%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/power_supply_periph.c.obj[0m
+[14.911s] [ 91%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/rtc_io_periph.c.obj[0m
+[14.921s] [ 11%] Built target __idf_esp_driver_i2s
+[14.947s] [ 11%] [32mBuilding C object esp-idf/esp_driver_mcpwm/CMakeFiles/__idf_esp_driver_mcpwm.dir/src/mcpwm_cmpr.c.obj[0m
+[14.948s] [ 11%] [32mBuilding C object esp-idf/esp_driver_mcpwm/CMakeFiles/__idf_esp_driver_mcpwm.dir/src/mcpwm_cap.c.obj[0m
+[14.948s] [ 11%] [32mBuilding C object esp-idf/esp_driver_mcpwm/CMakeFiles/__idf_esp_driver_mcpwm.dir/src/mcpwm_fault.c.obj[0m
+[14.948s] [ 11%] [32mBuilding C object esp-idf/esp_driver_mcpwm/CMakeFiles/__idf_esp_driver_mcpwm.dir/src/mcpwm_com.c.obj[0m
+[14.950s] [ 12%] [32mBuilding C object esp-idf/esp_driver_mcpwm/CMakeFiles/__idf_esp_driver_mcpwm.dir/src/mcpwm_sync.c.obj[0m
+[14.953s] [ 12%] [32mBuilding C object esp-idf/esp_driver_mcpwm/CMakeFiles/__idf_esp_driver_mcpwm.dir/src/mcpwm_timer.c.obj[0m
+[14.953s] [ 12%] [32mBuilding C object esp-idf/esp_driver_mcpwm/CMakeFiles/__idf_esp_driver_mcpwm.dir/src/mcpwm_oper.c.obj[0m
+[14.953s] [ 12%] [32mBuilding C object esp-idf/esp_driver_mcpwm/CMakeFiles/__idf_esp_driver_mcpwm.dir/src/mcpwm_gen.c.obj[0m
+[14.981s] [ 92%] [32m[1mLinking C static library libsoc.a[0m
+[15.102s] [ 92%] Built target __idf_soc
+[15.144s] [ 93%] [32mBuilding C object esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/eri.c.obj[0m
+[15.146s] [ 93%] [32mBuilding C object esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/xt_trax.c.obj[0m
+[15.216s] [ 94%] [32m[1mLinking C static library libxtensa.a[0m
+[15.258s] [ 12%] [32m[1mLinking C static library libesp_driver_mcpwm.a[0m
+[15.258s] [ 94%] Built target __idf_xtensa
+[15.280s] [ 95%] [32mBuilding C object esp-idf/main/CMakeFiles/__idf_main.dir/bootloader_start.c.obj[0m
+[15.308s] [ 12%] Built target __idf_esp_driver_mcpwm
+[15.330s] [ 12%] [32mBuilding C object esp-idf/esp_driver_pcnt/CMakeFiles/__idf_esp_driver_pcnt.dir/src/pulse_cnt.c.obj[0m
+[15.334s] [ 96%] [32m[1mLinking C static library libmain.a[0m
+[15.371s] [ 96%] Built target __idf_main
+[15.393s] [ 97%] [32mBuilding C object CMakeFiles/bootloader.elf.dir/project_elf_src_esp32s3.c.obj[0m
+[15.416s] [ 97%] [32m[1mLinking C executable bootloader.elf[0m
+[15.507s] [ 98%] Built target bootloader.elf
+[15.528s] [100%] [34m[1mGenerating binary image from built executable[0m
+[15.601s] [ 12%] [32m[1mLinking C static library libesp_driver_pcnt.a[0m
+[15.606s] esptool.py v4.12.dev3
+[15.607s] Creating esp32s3 image...
+[15.607s] Merged 2 ELF sections
+[15.608s] Successfully created esp32s3 image.
+[15.630s] Generated /home/diego/Ros2_esp32/build/Ros2_esp32/bootloader/bootloader.bin
+[15.639s] [ 12%] Built target __idf_esp_driver_pcnt
+[15.647s] [100%] Built target gen_project_binary
+[15.648s] [35m[1mScanning dependencies of target __idf_esp_gdbstub[0m
+[15.667s] [ 12%] [32mBuilding C object esp-idf/esp_gdbstub/CMakeFiles/__idf_esp_gdbstub.dir/src/port/xtensa/gdbstub_xtensa.c.obj[0m
+[15.667s] [ 12%] [32mBuilding C object esp-idf/esp_gdbstub/CMakeFiles/__idf_esp_gdbstub.dir/src/gdbstub_transport.c.obj[0m
+[15.668s] [ 13%] [32mBuilding C object esp-idf/esp_gdbstub/CMakeFiles/__idf_esp_gdbstub.dir/src/gdbstub.c.obj[0m
+[15.668s] [ 13%] [32mBuilding C object esp-idf/esp_gdbstub/CMakeFiles/__idf_esp_gdbstub.dir/src/packet.c.obj[0m
+[15.669s] [ 13%] [32mBuilding ASM object esp-idf/esp_gdbstub/CMakeFiles/__idf_esp_gdbstub.dir/src/port/xtensa/xt_debugexception.S.obj[0m
+[15.670s] [ 13%] [32mBuilding ASM object esp-idf/esp_gdbstub/CMakeFiles/__idf_esp_gdbstub.dir/src/port/xtensa/gdbstub-entry.S.obj[0m
+[15.692s] Bootloader binary size 0x5160 bytes. 0x2ea0 bytes (36%) free.
+[15.706s] [100%] Built target bootloader_check_size
+[15.730s] [100%] Built target app
+[15.755s] [ 13%] [34m[1mNo install step for 'bootloader'[0m
+[15.783s] [ 13%] [34m[1mCompleted 'bootloader'[0m
+[15.821s] [ 13%] Built target bootloader
+[15.848s] [ 13%] [32m[1mLinking C static library libesp_gdbstub.a[0m
+[15.890s] [ 13%] Built target __idf_esp_gdbstub
+[15.913s] [ 14%] [32mBuilding C object esp-idf/esp_driver_spi/CMakeFiles/__idf_esp_driver_spi.dir/src/gpspi/spi_slave.c.obj[0m
+[15.913s] [ 14%] [32mBuilding C object esp-idf/esp_driver_spi/CMakeFiles/__idf_esp_driver_spi.dir/src/gpspi/spi_master.c.obj[0m
+[15.913s] [ 14%] [32mBuilding C object esp-idf/esp_driver_spi/CMakeFiles/__idf_esp_driver_spi.dir/src/gpspi/spi_slave_hd.c.obj[0m
+[15.913s] [ 14%] [32mBuilding C object esp-idf/esp_driver_spi/CMakeFiles/__idf_esp_driver_spi.dir/src/gpspi/spi_common.c.obj[0m
+[16.274s] [ 14%] [32m[1mLinking C static library libesp_driver_spi.a[0m
+[16.315s] [ 14%] Built target __idf_esp_driver_spi
+[16.340s] [ 14%] [32mBuilding C object esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/lib_printf.c.obj[0m
+[16.340s] [ 14%] [32mBuilding C object esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/wifi_init.c.obj[0m
+[16.340s] [ 14%] [32mBuilding C object esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/smartconfig.c.obj[0m
+[16.340s] [ 14%] [32mBuilding C object esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/mesh_event.c.obj[0m
+[16.340s] [ 14%] [32mBuilding C object esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/wifi_netif.c.obj[0m
+[16.340s] [ 14%] [32mBuilding C object esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/wifi_default.c.obj[0m
+[16.341s] [ 15%] [32mBuilding C object esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/wifi_default_ap.c.obj[0m
+[16.341s] [ 15%] [32mBuilding C object esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/esp32s3/esp_adapter.c.obj[0m
+[16.341s] [ 15%] [32mBuilding C object esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/smartconfig_ack.c.obj[0m
+[16.344s] [ 15%] [32mBuilding C object esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/regulatory/esp_wifi_regulatory.c.obj[0m
+[16.549s] [ 15%] [32m[1mLinking C static library libesp_wifi.a[0m
+[16.592s] [ 15%] Built target __idf_esp_wifi
+[16.611s] [ 15%] [32mBuilding C object esp-idf/esp_coex/CMakeFiles/__idf_esp_coex.dir/src/coexist_debug_diagram.c.obj[0m
+[16.611s] [ 15%] [32mBuilding C object esp-idf/esp_coex/CMakeFiles/__idf_esp_coex.dir/src/coexist_debug.c.obj[0m
+[16.612s] [ 15%] [32mBuilding C object esp-idf/esp_coex/CMakeFiles/__idf_esp_coex.dir/esp32s3/esp_coex_adapter.c.obj[0m
+[16.714s] [ 15%] [32m[1mLinking C static library libesp_coex.a[0m
+[16.753s] [ 15%] Built target __idf_esp_coex
+[16.780s] [ 15%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/ap/ap_config.c.obj[0m
+[16.780s] [ 15%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/port/os_xtensa.c.obj[0m
+[16.781s] [ 15%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/ap/wpa_auth.c.obj[0m
+[16.781s] [ 15%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/ap/ieee802_1x.c.obj[0m
+[16.781s] [ 15%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/ap/pmksa_cache_auth.c.obj[0m
+[16.782s] [ 15%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/ap/sta_info.c.obj[0m
+[16.782s] [ 15%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/ap/comeback_token.c.obj[0m
+[16.783s] [ 15%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/port/eloop.c.obj[0m
+[16.784s] [ 16%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/ap/wpa_auth_ie.c.obj[0m
+[16.785s] [ 16%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/common/dragonfly.c.obj[0m
+[16.787s] [ 16%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/common/sae.c.obj[0m
+[16.788s] [ 16%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/ap/ieee802_11.c.obj[0m
+[16.955s] [ 16%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/common/wpa_common.c.obj[0m
+[17.018s] [ 16%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/bitfield.c.obj[0m
+[17.022s] [ 16%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-siv.c.obj[0m
+[17.033s] [ 17%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha256-kdf.c.obj[0m
+[17.037s] [ 17%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/ccmp.c.obj[0m
+[17.043s] [ 17%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-gcm.c.obj[0m
+[17.077s] [ 17%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/crypto_ops.c.obj[0m
+[17.109s] [ 17%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/dh_group5.c.obj[0m
+[17.120s] [ 17%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/dh_groups.c.obj[0m
+[17.156s] [ 17%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/ms_funcs.c.obj[0m
+[17.244s] [ 17%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha1-tlsprf.c.obj[0m
+[17.279s] [ 17%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha384-tlsprf.c.obj[0m
+[17.281s] [ 17%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha256-tlsprf.c.obj[0m
+[17.288s] [ 17%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha256-prf.c.obj[0m
+[17.297s] [ 18%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha1-prf.c.obj[0m
+[17.316s] [ 18%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha384-prf.c.obj[0m
+[17.338s] [ 18%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/md4-internal.c.obj[0m
+[17.367s] [ 18%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha1-tprf.c.obj[0m
+[17.386s] [ 18%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_common/eap_wsc_common.c.obj[0m
+[17.434s] [ 18%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/common/ieee802_11_common.c.obj[0m
+[17.445s] [ 18%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/chap.c.obj[0m
+[17.457s] [ 18%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap.c.obj[0m
+[17.476s] [ 18%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_mschapv2.c.obj[0m
+[17.478s] [ 18%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_common.c.obj[0m
+[17.494s] [ 18%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_peap.c.obj[0m
+[17.510s] [ 19%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_peap_common.c.obj[0m
+[17.533s] [ 19%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_tls.c.obj[0m
+[17.551s] [ 19%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_tls_common.c.obj[0m
+[17.574s] [ 19%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_ttls.c.obj[0m
+[17.580s] [ 19%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/mschapv2.c.obj[0m
+[17.585s] [ 19%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_fast.c.obj[0m
+[17.614s] [ 19%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_fast_common.c.obj[0m
+[17.661s] [ 19%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_fast_pac.c.obj[0m
+[17.695s] [ 19%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/rsn_supp/pmksa_cache.c.obj[0m
+[17.704s] [ 19%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/rsn_supp/wpa.c.obj[0m
+[17.823s] [ 19%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/rsn_supp/wpa_ie.c.obj[0m
+[17.839s] [ 20%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/base64.c.obj[0m
+[17.851s] [ 20%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/common.c.obj[0m
+[17.853s] [ 20%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/ext_password.c.obj[0m
+[17.866s] [ 20%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/uuid.c.obj[0m
+[17.882s] [ 20%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/wpabuf.c.obj[0m
+[17.903s] [ 20%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/wpa_debug.c.obj[0m
+[17.998s] [ 20%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/json.c.obj[0m
+[18.016s] [ 20%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps.c.obj[0m
+[18.027s] [ 20%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_attr_build.c.obj[0m
+[18.061s] [ 20%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_attr_parse.c.obj[0m
+[18.072s] [ 20%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_attr_process.c.obj[0m
+[18.079s] [ 21%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_common.c.obj[0m
+[18.089s] [ 21%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/common/sae_pk.c.obj[0m
+[18.089s] [ 21%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_enrollee.c.obj[0m
+[18.092s] [ 21%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_dev_attr.c.obj[0m
+[18.141s] [ 21%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src/esp_eap_client.c.obj[0m
+[18.193s] [ 21%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src/esp_wpa2_api_port.c.obj[0m
+[18.314s] [ 21%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src/esp_wpa_main.c.obj[0m
+[18.316s] [ 21%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src/esp_wpas_glue.c.obj[0m
+[18.318s] [ 21%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src/esp_common.c.obj[0m
+[18.323s] [ 21%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src/esp_wps.c.obj[0m
+[18.328s] [ 21%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src/esp_wpa3.c.obj[0m
+[18.349s] [ 22%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src/esp_owe.c.obj[0m
+[18.377s] [ 22%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src/crypto/tls_mbedtls.c.obj[0m
+[18.377s] [ 22%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src/esp_hostap.c.obj[0m
+[18.409s] [ 22%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src/crypto/crypto_mbedtls-bignum.c.obj[0m
+[18.411s] [ 22%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src/crypto/crypto_mbedtls.c.obj[0m
+[18.510s] [ 22%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src/crypto/fastpsk.c.obj[0m
+[18.514s] [ 22%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src/crypto/crypto_mbedtls-rsa.c.obj[0m
+[18.522s] [ 22%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src/crypto/crypto_mbedtls-ec.c.obj[0m
+[18.543s] [ 22%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/rc4.c.obj[0m
+[18.607s] [ 22%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/des-internal.c.obj[0m
+[18.614s] [ 23%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-wrap.c.obj[0m
+[18.649s] [ 23%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-unwrap.c.obj[0m
+[18.663s] [ 23%] [32mBuilding C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-ccm.c.obj[0m
+[18.894s] [ 23%] [32m[1mLinking C static library libwpa_supplicant.a[0m
+[19.012s] [ 23%] Built target __idf_wpa_supplicant
+[19.035s] [ 23%] [32mBuilding C object esp-idf/esp_netif/CMakeFiles/__idf_esp_netif.dir/esp_netif_objects.c.obj[0m
+[19.035s] [ 23%] [32mBuilding C object esp-idf/esp_netif/CMakeFiles/__idf_esp_netif.dir/lwip/esp_netif_lwip.c.obj[0m
+[19.036s] [ 23%] [32mBuilding C object esp-idf/esp_netif/CMakeFiles/__idf_esp_netif.dir/esp_netif_handlers.c.obj[0m
+[19.036s] [ 23%] [32mBuilding C object esp-idf/esp_netif/CMakeFiles/__idf_esp_netif.dir/lwip/esp_netif_sntp.c.obj[0m
+[19.036s] [ 23%] [32mBuilding C object esp-idf/esp_netif/CMakeFiles/__idf_esp_netif.dir/esp_netif_defaults.c.obj[0m
+[19.036s] [ 24%] [32mBuilding C object esp-idf/esp_netif/CMakeFiles/__idf_esp_netif.dir/lwip/netif/ethernetif.c.obj[0m
+[19.036s] [ 24%] [32mBuilding C object esp-idf/esp_netif/CMakeFiles/__idf_esp_netif.dir/lwip/netif/wlanif.c.obj[0m
+[19.037s] [ 24%] [32mBuilding C object esp-idf/esp_netif/CMakeFiles/__idf_esp_netif.dir/lwip/netif/esp_pbuf_ref.c.obj[0m
+[19.037s] [ 24%] [32mBuilding C object esp-idf/esp_netif/CMakeFiles/__idf_esp_netif.dir/lwip/esp_netif_lwip_defaults.c.obj[0m
+[19.479s] [ 24%] [32m[1mLinking C static library libesp_netif.a[0m
+[19.526s] [ 24%] Built target __idf_esp_netif
+[19.553s] [ 24%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/api/api_msg.c.obj[0m
+[19.554s] [ 24%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/api/netdb.c.obj[0m
+[19.554s] [ 24%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/api/netbuf.c.obj[0m
+[19.556s] [ 25%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/api/tcpip.c.obj[0m
+[19.556s] [ 25%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/api/err.c.obj[0m
+[19.556s] [ 25%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/api/sockets.c.obj[0m
+[19.556s] [ 25%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/apps/sntp/sntp.c.obj[0m
+[19.556s] [ 25%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/api/api_lib.c.obj[0m
+[19.557s] [ 25%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/api/netifapi.c.obj[0m
+[19.557s] [ 25%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/api/if_api.c.obj[0m
+[19.557s] [ 25%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/apps/sntp/sntp.c.obj[0m
+[19.563s] [ 25%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/apps/netbiosns/netbiosns.c.obj[0m
+[19.684s] [ 25%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/def.c.obj[0m
+[19.699s] [ 26%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/dns.c.obj[0m
+[19.711s] [ 26%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/inet_chksum.c.obj[0m
+[19.743s] [ 26%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/init.c.obj[0m
+[19.752s] [ 26%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ip.c.obj[0m
+[19.754s] [ 26%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/mem.c.obj[0m
+[19.765s] [ 26%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/memp.c.obj[0m
+[19.767s] [ 26%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/netif.c.obj[0m
+[19.783s] [ 26%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/pbuf.c.obj[0m
+[19.828s] [ 26%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/raw.c.obj[0m
+[19.866s] [ 26%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/stats.c.obj[0m
+[19.882s] [ 26%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/sys.c.obj[0m
+[19.890s] [ 27%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/tcp.c.obj[0m
+[19.893s] [ 27%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/tcp_in.c.obj[0m
+[19.902s] [ 27%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/tcp_out.c.obj[0m
+[19.962s] [ 27%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/timeouts.c.obj[0m
+[19.996s] [ 27%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/udp.c.obj[0m
+[20.025s] [ 27%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv4/autoip.c.obj[0m
+[20.041s] [ 27%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv4/dhcp.c.obj[0m
+[20.105s] [ 27%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv4/etharp.c.obj[0m
+[20.107s] [ 27%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv4/icmp.c.obj[0m
+[20.134s] [ 27%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv4/igmp.c.obj[0m
+[20.151s] [ 27%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv4/ip4.c.obj[0m
+[20.184s] [ 28%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv4/ip4_napt.c.obj[0m
+[20.208s] [ 28%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv4/ip4_addr.c.obj[0m
+[20.311s] [ 28%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv4/ip4_frag.c.obj[0m
+[20.313s] [ 28%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv6/dhcp6.c.obj[0m
+[20.329s] [ 28%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv6/ethip6.c.obj[0m
+[20.344s] [ 28%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv6/icmp6.c.obj[0m
+[20.347s] [ 28%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv6/inet6.c.obj[0m
+[20.372s] [ 28%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv6/ip6.c.obj[0m
+[20.378s] [ 28%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv6/ip6_addr.c.obj[0m
+[20.383s] [ 28%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv6/ip6_frag.c.obj[0m
+[20.398s] [ 28%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv6/mld6.c.obj[0m
+[20.405s] [ 29%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv6/nd6.c.obj[0m
+[20.417s] [ 29%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ethernet.c.obj[0m
+[20.438s] [ 29%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/bridgeif.c.obj[0m
+[20.470s] [ 29%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/bridgeif_fdb.c.obj[0m
+[20.471s] [ 29%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/slipif.c.obj[0m
+[20.472s] [ 29%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/auth.c.obj[0m
+[20.496s] [ 29%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/ccp.c.obj[0m
+[20.525s] [ 29%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/chap-md5.c.obj[0m
+[20.529s] [ 29%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/chap-new.c.obj[0m
+[20.547s] [ 29%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/chap_ms.c.obj[0m
+[20.593s] [ 29%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/demand.c.obj[0m
+[20.597s] [ 30%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/eap.c.obj[0m
+[20.611s] [ 30%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/ecp.c.obj[0m
+[20.612s] [ 30%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/eui64.c.obj[0m
+[20.630s] [ 30%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/fsm.c.obj[0m
+[20.640s] [ 30%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/ipcp.c.obj[0m
+[20.643s] [ 30%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/ipv6cp.c.obj[0m
+[20.651s] [ 30%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/lcp.c.obj[0m
+[20.679s] [ 30%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/magic.c.obj[0m
+[20.682s] [ 30%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/mppe.c.obj[0m
+[20.698s] [ 30%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/multilink.c.obj[0m
+[20.724s] [ 30%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/ppp.c.obj[0m
+[20.724s] [ 30%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/pppcrypt.c.obj[0m
+[20.724s] [ 31%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/pppapi.c.obj[0m
+[20.739s] [ 31%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/pppoe.c.obj[0m
+[20.754s] [ 31%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/pppol2tp.c.obj[0m
+[20.766s] [ 31%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/pppos.c.obj[0m
+[20.770s] [ 31%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/upap.c.obj[0m
+[20.775s] [ 31%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/utils.c.obj[0m
+[20.807s] [ 31%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/vj.c.obj[0m
+[20.811s] [ 31%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/port/hooks/tcp_isn_default.c.obj[0m
+[20.842s] [ 31%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/port/hooks/lwip_default_hooks.c.obj[0m
+[20.855s] [ 32%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/port/debug/lwip_debug.c.obj[0m
+[20.856s] [ 32%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/port/sockets_ext.c.obj[0m
+[20.859s] [ 32%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/port/freertos/sys_arch.c.obj[0m
+[20.868s] [ 32%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/port/if_index.c.obj[0m
+[20.889s] [ 32%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/port/acd_dhcp_check.c.obj[0m
+[20.893s] [ 32%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/port/esp32xx/vfs_lwip.c.obj[0m
+[20.903s] [ 32%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/apps/ping/esp_ping.c.obj[0m
+[20.919s] [ 32%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/apps/ping/ping.c.obj[0m
+[20.938s] [ 32%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/apps/ping/ping_sock.c.obj[0m
+[20.964s] [ 32%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/polarssl/arc4.c.obj[0m
+[21.010s] [ 32%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/polarssl/des.c.obj[0m
+[21.030s] [ 32%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/polarssl/md5.c.obj[0m
+[21.033s] [ 33%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/polarssl/md4.c.obj[0m
+[21.042s] [ 33%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/polarssl/sha1.c.obj[0m
+[21.043s] [ 33%] [32mBuilding C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/apps/dhcpserver/dhcpserver.c.obj[0m
+[21.271s] [ 33%] [32m[1mLinking C static library liblwip.a[0m
+[21.379s] [ 33%] Built target __idf_lwip
+[21.400s] [ 33%] [32mBuilding C object esp-idf/vfs/CMakeFiles/__idf_vfs.dir/vfs_semihost.c.obj[0m
+[21.400s] [ 33%] [32mBuilding C object esp-idf/vfs/CMakeFiles/__idf_vfs.dir/vfs_eventfd.c.obj[0m
+[21.400s] [ 33%] [32mBuilding C object esp-idf/vfs/CMakeFiles/__idf_vfs.dir/nullfs.c.obj[0m
+[21.400s] [ 33%] [32mBuilding C object esp-idf/vfs/CMakeFiles/__idf_vfs.dir/vfs.c.obj[0m
+[21.750s] [ 33%] [32m[1mLinking C static library libvfs.a[0m
+[21.790s] [ 33%] Built target __idf_vfs
+[21.811s] [ 34%] [32mBuilding C object esp-idf/esp_vfs_console/CMakeFiles/__idf_esp_vfs_console.dir/vfs_console.c.obj[0m
+[21.909s] [ 34%] [32m[1mLinking C static library libesp_vfs_console.a[0m
+[21.944s] [ 34%] Built target __idf_esp_vfs_console
+[21.965s] [ 34%] [32mBuilding C object esp-idf/esp_driver_usb_serial_jtag/CMakeFiles/__idf_esp_driver_usb_serial_jtag.dir/src/usb_serial_jtag.c.obj[0m
+[21.965s] [ 34%] [32mBuilding C object esp-idf/esp_driver_usb_serial_jtag/CMakeFiles/__idf_esp_driver_usb_serial_jtag.dir/src/usb_serial_jtag_vfs.c.obj[0m
+[21.965s] [ 34%] [32mBuilding C object esp-idf/esp_driver_usb_serial_jtag/CMakeFiles/__idf_esp_driver_usb_serial_jtag.dir/src/usb_serial_jtag_connection_monitor.c.obj[0m
+[22.128s] [ 35%] [32m[1mLinking C static library libesp_driver_usb_serial_jtag.a[0m
+[22.166s] [ 35%] Built target __idf_esp_driver_usb_serial_jtag
+[22.187s] [ 36%] [32mBuilding C object esp-idf/esp_phy/CMakeFiles/__idf_esp_phy.dir/src/phy_init.c.obj[0m
+[22.187s] [ 36%] [32mBuilding C object esp-idf/esp_phy/CMakeFiles/__idf_esp_phy.dir/src/lib_printf.c.obj[0m
+[22.187s] [ 36%] [32mBuilding C object esp-idf/esp_phy/CMakeFiles/__idf_esp_phy.dir/src/phy_common.c.obj[0m
+[22.187s] [ 36%] [32mBuilding C object esp-idf/esp_phy/CMakeFiles/__idf_esp_phy.dir/src/phy_override.c.obj[0m
+[22.188s] [ 36%] [32mBuilding C object esp-idf/esp_phy/CMakeFiles/__idf_esp_phy.dir/esp32s3/phy_init_data.c.obj[0m
+[22.188s] [ 36%] [32mBuilding C object esp-idf/esp_phy/CMakeFiles/__idf_esp_phy.dir/src/btbb_init.c.obj[0m
+[22.347s] [ 36%] [32m[1mLinking C static library libesp_phy.a[0m
+[22.384s] [ 36%] Built target __idf_esp_phy
+[22.410s] [ 37%] [32mBuilding CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_page.cpp.obj[0m
+[22.410s] [ 37%] [32mBuilding CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_cxx_api.cpp.obj[0m
+[22.410s] [ 37%] [32mBuilding CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_api.cpp.obj[0m
+[22.410s] [ 37%] [32mBuilding CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_item_hash_list.cpp.obj[0m
+[22.410s] [ 37%] [32mBuilding CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_partition.cpp.obj[0m
+[22.410s] [ 37%] [32mBuilding CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_storage.cpp.obj[0m
+[22.411s] [ 37%] [32mBuilding CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_pagemanager.cpp.obj[0m
+[22.411s] [ 37%] [32mBuilding CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_handle_simple.cpp.obj[0m
+[22.411s] [ 37%] [32mBuilding CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_handle_locked.cpp.obj[0m
+[22.411s] [ 37%] [32mBuilding CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_types.cpp.obj[0m
+[22.411s] [ 37%] [32mBuilding CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_partition_manager.cpp.obj[0m
+[22.413s] [ 37%] [32mBuilding CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_partition_lookup.cpp.obj[0m
+[23.030s] [ 38%] [32mBuilding CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_platform.cpp.obj[0m
+[23.031s] [ 38%] [32mBuilding C object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_bootloader.c.obj[0m
+[23.117s] [ 38%] [32mBuilding CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_encrypted_partition.cpp.obj[0m
+[23.328s] [ 38%] [32mBuilding C object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_bootloader_aes.c.obj[0m
+[23.405s] [ 38%] [32mBuilding C object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_bootloader_xts_aes.c.obj[0m
+[25.428s] [ 38%] [32m[1mLinking C static library libnvs_flash.a[0m
+[25.484s] [ 38%] Built target __idf_nvs_flash
+[25.504s] [ 38%] [32mBuilding C object esp-idf/esp_event/CMakeFiles/__idf_esp_event.dir/esp_event_private.c.obj[0m
+[25.505s] [ 38%] [32mBuilding C object esp-idf/esp_event/CMakeFiles/__idf_esp_event.dir/default_event_loop.c.obj[0m
+[25.505s] [ 38%] [32mBuilding C object esp-idf/esp_event/CMakeFiles/__idf_esp_event.dir/esp_event.c.obj[0m
+[25.684s] [ 38%] [32m[1mLinking C static library libesp_event.a[0m
+[25.724s] [ 38%] Built target __idf_esp_event
+[25.744s] [ 38%] [32mBuilding C object esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart.c.obj[0m
+[25.744s] [ 38%] [32mBuilding C object esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uhci.c.obj[0m
+[25.744s] [ 38%] [32mBuilding C object esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart_wakeup.c.obj[0m
+[25.744s] [ 38%] [32mBuilding C object esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart_vfs.c.obj[0m
+[26.280s] [ 38%] [32m[1mLinking C static library libesp_driver_uart.a[0m
+[26.329s] [ 38%] Built target __idf_esp_driver_uart
+[26.352s] [ 38%] [32mBuilding C object esp-idf/esp_psram/CMakeFiles/__idf_esp_psram.dir/system_layer/esp_psram_mspi.c.obj[0m
+[26.399s] [ 38%] [32m[1mLinking C static library libesp_psram.a[0m
+[26.433s] [ 38%] Built target __idf_esp_psram
+[26.454s] [ 38%] [32mBuilding C object esp-idf/esp_ringbuf/CMakeFiles/__idf_esp_ringbuf.dir/ringbuf.c.obj[0m
+[26.700s] [ 38%] [32m[1mLinking C static library libesp_ringbuf.a[0m
+[26.736s] [ 38%] Built target __idf_esp_ringbuf
+[26.757s] [ 38%] [32mBuilding C object esp-idf/esp_driver_gptimer/CMakeFiles/__idf_esp_driver_gptimer.dir/src/gptimer_common.c.obj[0m
+[26.757s] [ 39%] [32mBuilding C object esp-idf/esp_driver_gptimer/CMakeFiles/__idf_esp_driver_gptimer.dir/src/gptimer.c.obj[0m
+[26.929s] [ 39%] [32m[1mLinking C static library libesp_driver_gptimer.a[0m
+[26.966s] [ 39%] Built target __idf_esp_driver_gptimer
+[26.987s] [ 39%] [32mBuilding C object esp-idf/esp_timer/CMakeFiles/__idf_esp_timer.dir/src/esp_timer.c.obj[0m
+[26.988s] [ 39%] [32mBuilding C object esp-idf/esp_timer/CMakeFiles/__idf_esp_timer.dir/src/ets_timer_legacy.c.obj[0m
+[26.988s] [ 39%] [32mBuilding C object esp-idf/esp_timer/CMakeFiles/__idf_esp_timer.dir/src/esp_timer_impl_systimer.c.obj[0m
+[26.988s] [ 39%] [32mBuilding C object esp-idf/esp_timer/CMakeFiles/__idf_esp_timer.dir/src/esp_timer_impl_common.c.obj[0m
+[26.988s] [ 39%] [32mBuilding C object esp-idf/esp_timer/CMakeFiles/__idf_esp_timer.dir/src/system_time.c.obj[0m
+[26.988s] [ 39%] [32mBuilding C object esp-idf/esp_timer/CMakeFiles/__idf_esp_timer.dir/src/esp_timer_init.c.obj[0m
+[27.142s] [ 39%] [32m[1mLinking C static library libesp_timer.a[0m
+[27.183s] [ 39%] Built target __idf_esp_timer
+[27.204s] [ 39%] [32mBuilding CXX object esp-idf/cxx/CMakeFiles/__idf_cxx.dir/cxx_guards.cpp.obj[0m
+[27.204s] [ 40%] [32mBuilding CXX object esp-idf/cxx/CMakeFiles/__idf_cxx.dir/cxx_exception_stubs.cpp.obj[0m
+[27.204s] [ 40%] [32mBuilding CXX object esp-idf/cxx/CMakeFiles/__idf_cxx.dir/cxx_init.cpp.obj[0m
+[27.555s] [ 40%] [32m[1mLinking C static library libcxx.a[0m
+[27.592s] [ 40%] Built target __idf_cxx
+[27.615s] [ 40%] [32mBuilding C object esp-idf/pthread/CMakeFiles/__idf_pthread.dir/pthread_cond_var.c.obj[0m
+[27.615s] [ 40%] [32mBuilding C object esp-idf/pthread/CMakeFiles/__idf_pthread.dir/pthread.c.obj[0m
+[27.615s] [ 40%] [32mBuilding C object esp-idf/pthread/CMakeFiles/__idf_pthread.dir/pthread_local_storage.c.obj[0m
+[27.615s] [ 40%] [32mBuilding C object esp-idf/pthread/CMakeFiles/__idf_pthread.dir/pthread_rwlock.c.obj[0m
+[27.616s] [ 40%] [32mBuilding C object esp-idf/pthread/CMakeFiles/__idf_pthread.dir/pthread_semaphore.c.obj[0m
+[27.811s] [ 41%] [32m[1mLinking C static library libpthread.a[0m
+[27.850s] [ 41%] Built target __idf_pthread
+[27.878s] [ 41%] [32mBuilding C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/heap.c.obj[0m
+[27.879s] [ 41%] [32mBuilding C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/locks.c.obj[0m
+[27.879s] [ 41%] [32mBuilding C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/init.c.obj[0m
+[27.879s] [ 42%] [32mBuilding C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/assert.c.obj[0m
+[27.879s] [ 42%] [32mBuilding C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/abort.c.obj[0m
+[27.879s] [ 42%] [32mBuilding C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/pthread.c.obj[0m
+[27.879s] [ 42%] [32mBuilding C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/random.c.obj[0m
+[27.879s] [ 42%] [32mBuilding C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/termios.c.obj[0m
+[27.880s] [ 42%] [32mBuilding C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/stdatomic.c.obj[0m
+[27.881s] [ 42%] [32mBuilding C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/poll.c.obj[0m
+[27.881s] [ 42%] [32mBuilding C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/getentropy.c.obj[0m
+[27.884s] [ 42%] [32mBuilding C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/time.c.obj[0m
+[27.957s] [ 42%] [32mBuilding C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/sysconf.c.obj[0m
+[27.964s] [ 43%] [32mBuilding C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/realpath.c.obj[0m
+[27.964s] [ 43%] [32mBuilding C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/syscalls.c.obj[0m
+[27.964s] [ 43%] [32mBuilding C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/scandir.c.obj[0m
+[27.973s] [ 43%] [32mBuilding C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/flockfile.c.obj[0m
+[27.973s] [ 43%] [32mBuilding C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/reent_syscalls.c.obj[0m
+[27.982s] [ 43%] [32mBuilding C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/port/esp_time_impl.c.obj[0m
+[27.989s] [ 43%] [32mBuilding C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/reent_init.c.obj[0m
+[28.004s] [ 43%] [32mBuilding C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/newlib_init.c.obj[0m
+[28.097s] [ 43%] [32m[1mLinking C static library libnewlib.a[0m
+[28.150s] [ 43%] Built target __idf_newlib
+[28.161s] [35m[1mScanning dependencies of target __idf_freertos[0m
+[28.180s] [ 43%] [32mBuilding C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/list.c.obj[0m
+[28.180s] [ 43%] [32mBuilding C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/port_systick.c.obj[0m
+[28.181s] [ 43%] [32mBuilding C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/port_common.c.obj[0m
+[28.181s] [ 43%] [32mBuilding C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/app_startup.c.obj[0m
+[28.181s] [ 43%] [32mBuilding C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/heap_idf.c.obj[0m
+[28.181s] [ 43%] [32mBuilding C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/queue.c.obj[0m
+[28.181s] [ 43%] [32mBuilding C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/tasks.c.obj[0m
+[28.182s] [ 43%] [32mBuilding C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/stream_buffer.c.obj[0m
+[28.183s] [ 43%] [32mBuilding C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/timers.c.obj[0m
+[28.183s] [ 44%] [32mBuilding C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/event_groups.c.obj[0m
+[28.185s] [ 44%] [32mBuilding ASM object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/portable/xtensa/portasm.S.obj[0m
+[28.186s] [ 44%] [32mBuilding C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/portable/xtensa/port.c.obj[0m
+[28.246s] [ 44%] [32mBuilding C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/portable/xtensa/xtensa_init.c.obj[0m
+[28.294s] [ 44%] [32mBuilding C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/portable/xtensa/xtensa_overlay_os_hook.c.obj[0m
+[28.298s] [ 44%] [32mBuilding C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/esp_additions/freertos_compatibility.c.obj[0m
+[28.298s] [ 44%] [32mBuilding C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/esp_additions/idf_additions_event_groups.c.obj[0m
+[28.307s] [ 44%] [32mBuilding C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/esp_additions/idf_additions.c.obj[0m
+[28.635s] [ 44%] [32m[1mLinking C static library libfreertos.a[0m
+[28.686s] [ 44%] Built target __idf_freertos
+[28.713s] [ 44%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/cpu_region_protect.c.obj[0m
+[28.713s] [ 44%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/esp_memory_utils.c.obj[0m
+[28.714s] [ 44%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/esp_clk.c.obj[0m
+[28.714s] [ 44%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_cpu_intr.c.obj[0m
+[28.714s] [ 44%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/cpu.c.obj[0m
+[28.714s] [ 44%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/clk_ctrl_os.c.obj[0m
+[28.715s] [ 44%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/periph_ctrl.c.obj[0m
+[28.715s] [ 44%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/mac_addr.c.obj[0m
+[28.715s] [ 44%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/revision.c.obj[0m
+[28.716s] [ 44%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/rtc_module.c.obj[0m
+[28.717s] [ 44%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/hw_random.c.obj[0m
+[28.717s] [ 45%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/intr_alloc.c.obj[0m
+[28.773s] [ 45%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/regi2c_ctrl.c.obj[0m
+[28.789s] [ 45%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/esp_gpio_reserve.c.obj[0m
+[28.790s] [ 45%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/io_mux.c.obj[0m
+[28.793s] [ 45%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sar_periph_ctrl_common.c.obj[0m
+[28.808s] [ 45%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_clk_tree.c.obj[0m
+[28.837s] [ 45%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/dma/esp_dma_utils.c.obj[0m
+[28.849s] [ 46%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/dma/gdma_link.c.obj[0m
+[28.859s] [ 46%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/spi_bus_lock.c.obj[0m
+[28.860s] [ 46%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp_clk_tree_common.c.obj[0m
+[28.862s] [ 46%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/clk_utils.c.obj[0m
+[28.881s] [ 46%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/spi_share_hw_ctrl.c.obj[0m
+[28.935s] [ 46%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/adc_share_hw_ctrl.c.obj[0m
+[28.948s] [ 46%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sleep_modem.c.obj[0m
+[28.948s] [ 46%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sleep_modes.c.obj[0m
+[28.950s] [ 46%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sleep_console.c.obj[0m
+[28.979s] [ 46%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sleep_mspi.c.obj[0m
+[28.989s] [ 47%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sleep_usb.c.obj[0m
+[29.004s] [ 47%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sleep_gpio.c.obj[0m
+[29.030s] [ 47%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sleep_event.c.obj[0m
+[29.041s] [ 47%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/dma/gdma.c.obj[0m
+[29.064s] [ 47%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/dma/esp_async_memcpy.c.obj[0m
+[29.064s] [ 47%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/deprecated/gdma_legacy.c.obj[0m
+[29.064s] [ 47%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/dma/async_memcpy_gdma.c.obj[0m
+[29.073s] [ 47%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/mspi_timing_tuning/mspi_timing_tuning.c.obj[0m
+[29.078s] [ 47%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/systimer.c.obj[0m
+[29.080s] [ 47%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sleep_wake_stub.c.obj[0m
+[29.129s] [ 47%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/esp_clock_output.c.obj[0m
+[29.144s] [ 48%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/power_supply/brownout.c.obj[0m
+[29.161s] [ 48%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk.c.obj[0m
+[29.168s] [ 48%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk_init.c.obj[0m
+[29.183s] [ 48%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_init.c.obj[0m
+[29.208s] [ 48%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_sleep.c.obj[0m
+[29.233s] [ 48%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/chip_info.c.obj[0m
+[29.233s] [ 48%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_time.c.obj[0m
+[29.238s] [ 48%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/sar_periph_ctrl.c.obj[0m
+[29.310s] [ 48%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp_memprot_conv.c.obj[0m
+[29.313s] [ 48%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/mspi_timing_tuning/port/esp32s3/mspi_timing_config.c.obj[0m
+[29.313s] [ 48%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_memprot.c.obj[0m
+[29.316s] [ 50%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/mspi_timing_tuning/port/esp32s3/mspi_timing_by_mspi_delay.c.obj[0m
+[29.333s] [ 50%] [32mBuilding C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/lowpower/port/esp32s3/sleep_cpu.c.obj[0m
+[29.692s] [ 50%] [32m[1mLinking C static library libesp_hw_support.a[0m
+[29.772s] [ 50%] Built target __idf_esp_hw_support
+[29.792s] [ 50%] [32mBuilding C object esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_hmac.c.obj[0m
+[29.792s] [ 50%] [32mBuilding C object esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_ds.c.obj[0m
+[29.792s] [ 50%] [32mBuilding C object esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/init.c.obj[0m
+[29.792s] [ 50%] [32mBuilding C object esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_crypto_lock.c.obj[0m
+[29.792s] [ 50%] [32mBuilding C object esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_crypto_periph_clk.c.obj[0m
+[29.890s] [ 50%] [32m[1mLinking C static library libesp_security.a[0m
+[29.927s] [ 50%] Built target __idf_esp_security
+[29.953s] [ 50%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/gpio_periph.c.obj[0m
+[29.954s] [ 50%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/dport_access_common.c.obj[0m
+[29.954s] [ 50%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/adc_periph.c.obj[0m
+[29.954s] [ 50%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/interrupts.c.obj[0m
+[29.954s] [ 50%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/lldesc.c.obj[0m
+[29.954s] [ 50%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/gdma_periph.c.obj[0m
+[29.955s] [ 50%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/dedic_gpio_periph.c.obj[0m
+[29.955s] [ 50%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/uart_periph.c.obj[0m
+[29.956s] [ 50%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/spi_periph.c.obj[0m
+[29.956s] [ 51%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/ledc_periph.c.obj[0m
+[29.958s] [ 51%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/rmt_periph.c.obj[0m
+[29.959s] [ 51%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/pcnt_periph.c.obj[0m
+[30.000s] [ 51%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/sdm_periph.c.obj[0m
+[30.002s] [ 51%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/i2s_periph.c.obj[0m
+[30.009s] [ 51%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/timer_periph.c.obj[0m
+[30.009s] [ 51%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/temperature_sensor_periph.c.obj[0m
+[30.010s] [ 51%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/mcpwm_periph.c.obj[0m
+[30.010s] [ 51%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/mpi_periph.c.obj[0m
+[30.011s] [ 51%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/i2c_periph.c.obj[0m
+[30.011s] [ 51%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/lcd_periph.c.obj[0m
+[30.014s] [ 51%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/touch_sensor_periph.c.obj[0m
+[30.014s] [ 52%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/sdmmc_periph.c.obj[0m
+[30.024s] [ 52%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/twai_periph.c.obj[0m
+[30.039s] [ 52%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/wdt_periph.c.obj[0m
+[30.053s] [ 52%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/usb_dwc_periph.c.obj[0m
+[30.054s] [ 52%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/rtc_io_periph.c.obj[0m
+[30.064s] [ 52%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/power_supply_periph.c.obj[0m
+[30.064s] [ 52%] [32mBuilding C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/cam_periph.c.obj[0m
+[30.099s] [ 52%] [32m[1mLinking C static library libsoc.a[0m
+[30.148s] [ 52%] Built target __idf_soc
+[30.169s] [ 52%] [32mBuilding C object esp-idf/heap/CMakeFiles/__idf_heap.dir/heap_caps_init.c.obj[0m
+[30.170s] [ 52%] [32mBuilding C object esp-idf/heap/CMakeFiles/__idf_heap.dir/heap_caps.c.obj[0m
+[30.170s] [ 52%] [32mBuilding C object esp-idf/heap/CMakeFiles/__idf_heap.dir/tlsf/tlsf.c.obj[0m
+[30.170s] [ 52%] [32mBuilding C object esp-idf/heap/CMakeFiles/__idf_heap.dir/heap_caps_base.c.obj[0m
+[30.170s] [ 52%] [32mBuilding C object esp-idf/heap/CMakeFiles/__idf_heap.dir/port/memory_layout_utils.c.obj[0m
+[30.170s] [ 52%] [32mBuilding C object esp-idf/heap/CMakeFiles/__idf_heap.dir/multi_heap.c.obj[0m
+[30.172s] [ 52%] [32mBuilding C object esp-idf/heap/CMakeFiles/__idf_heap.dir/port/esp32s3/memory_layout.c.obj[0m
+[30.498s] [ 52%] [32m[1mLinking C static library libheap.a[0m
+[30.544s] [ 52%] Built target __idf_heap
+[30.569s] [ 52%] [32mBuilding C object esp-idf/log/CMakeFiles/__idf_log.dir/src/log_timestamp_common.c.obj[0m
+[30.569s] [ 52%] [32mBuilding C object esp-idf/log/CMakeFiles/__idf_log.dir/src/os/log_timestamp.c.obj[0m
+[30.569s] [ 52%] [32mBuilding C object esp-idf/log/CMakeFiles/__idf_log.dir/src/os/log_lock.c.obj[0m
+[30.569s] [ 52%] [32mBuilding C object esp-idf/log/CMakeFiles/__idf_log.dir/src/buffer/log_buffers.c.obj[0m
+[30.569s] [ 52%] [32mBuilding C object esp-idf/log/CMakeFiles/__idf_log.dir/src/os/util.c.obj[0m
+[30.569s] [ 52%] [32mBuilding C object esp-idf/log/CMakeFiles/__idf_log.dir/src/log_format_text.c.obj[0m
+[30.569s] [ 52%] [32mBuilding C object esp-idf/log/CMakeFiles/__idf_log.dir/src/util.c.obj[0m
+[30.570s] [ 53%] [32mBuilding C object esp-idf/log/CMakeFiles/__idf_log.dir/src/log_print.c.obj[0m
+[30.570s] [ 53%] [32mBuilding C object esp-idf/log/CMakeFiles/__idf_log.dir/src/log.c.obj[0m
+[30.571s] [ 53%] [32mBuilding C object esp-idf/log/CMakeFiles/__idf_log.dir/src/os/log_write.c.obj[0m
+[30.573s] [ 53%] [32mBuilding C object esp-idf/log/CMakeFiles/__idf_log.dir/src/log_level/log_level.c.obj[0m
+[30.581s] [ 53%] [32mBuilding C object esp-idf/log/CMakeFiles/__idf_log.dir/src/log_level/tag_log_level/tag_log_level.c.obj[0m
+[30.627s] [ 53%] [32mBuilding C object esp-idf/log/CMakeFiles/__idf_log.dir/src/log_level/tag_log_level/linked_list/log_linked_list.c.obj[0m
+[30.637s] [ 53%] [32mBuilding C object esp-idf/log/CMakeFiles/__idf_log.dir/src/log_level/tag_log_level/cache/log_binary_heap.c.obj[0m
+[30.697s] [ 53%] [32m[1mLinking C static library liblog.a[0m
+[30.739s] [ 53%] Built target __idf_log
+[30.765s] [ 53%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/efuse_hal.c.obj[0m
+[30.765s] [ 54%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/hal_utils.c.obj[0m
+[30.765s] [ 54%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32s3/efuse_hal.c.obj[0m
+[30.765s] [ 54%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/mmu_hal.c.obj[0m
+[30.765s] [ 54%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/mpu_hal.c.obj[0m
+[30.765s] [ 54%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/color_hal.c.obj[0m
+[30.766s] [ 54%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/cache_hal.c.obj[0m
+[30.766s] [ 54%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_hal_iram.c.obj[0m
+[30.766s] [ 54%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_hal.c.obj[0m
+[30.767s] [ 54%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32s3/clk_tree_hal.c.obj[0m
+[30.769s] [ 54%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/systimer_hal.c.obj[0m
+[30.769s] [ 54%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_encrypt_hal_iram.c.obj[0m
+[30.834s] [ 55%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/uart_hal.c.obj[0m
+[30.850s] [ 55%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/uart_hal_iram.c.obj[0m
+[30.855s] [ 55%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/rtc_io_hal.c.obj[0m
+[30.859s] [ 55%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/gpio_hal.c.obj[0m
+[30.867s] [ 55%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/timer_hal.c.obj[0m
+[30.892s] [ 55%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/ledc_hal.c.obj[0m
+[30.896s] [ 55%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/ledc_hal_iram.c.obj[0m
+[30.916s] [ 55%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/i2c_hal.c.obj[0m
+[30.924s] [ 55%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/i2c_hal_iram.c.obj[0m
+[30.927s] [ 55%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/rmt_hal.c.obj[0m
+[30.973s] [ 55%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/pcnt_hal.c.obj[0m
+[30.977s] [ 56%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/mcpwm_hal.c.obj[0m
+[30.979s] [ 56%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/uhci_hal.c.obj[0m
+[30.989s] [ 56%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/twai_hal_v1.c.obj[0m
+[31.002s] [ 56%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/gdma_hal_ahb_v1.c.obj[0m
+[31.002s] [ 56%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/gdma_hal_top.c.obj[0m
+[31.003s] [ 56%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/i2s_hal.c.obj[0m
+[31.010s] [ 56%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/sdm_hal.c.obj[0m
+[31.015s] [ 56%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/sdmmc_hal.c.obj[0m
+[31.037s] [ 56%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/adc_hal_common.c.obj[0m
+[31.047s] [ 56%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/adc_oneshot_hal.c.obj[0m
+[31.054s] [ 56%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/adc_hal.c.obj[0m
+[31.059s] [ 57%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/lcd_hal.c.obj[0m
+[31.064s] [ 57%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/mpi_hal.c.obj[0m
+[31.072s] [ 57%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/sha_hal.c.obj[0m
+[31.101s] [ 57%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/brownout_hal.c.obj[0m
+[31.101s] [ 57%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_hal.c.obj[0m
+[31.102s] [ 57%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/aes_hal.c.obj[0m
+[31.167s] [ 57%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_hal_iram.c.obj[0m
+[31.194s] [ 57%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_slave_hal_iram.c.obj[0m
+[31.198s] [ 57%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_slave_hal.c.obj[0m
+[31.198s] [ 57%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_slave_hd_hal.c.obj[0m
+[31.209s] [ 58%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_hal_gpspi.c.obj[0m
+[31.212s] [ 58%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/hmac_hal.c.obj[0m
+[31.214s] [ 58%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/ds_hal.c.obj[0m
+[31.223s] [ 58%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/cam_hal.c.obj[0m
+[31.231s] [ 58%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/usb_serial_jtag_hal.c.obj[0m
+[31.249s] [ 58%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/usb_dwc_hal.c.obj[0m
+[31.252s] [ 58%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/usb_wrap_hal.c.obj[0m
+[31.303s] [ 58%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32s3/touch_sensor_hal.c.obj[0m
+[31.303s] [ 58%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/touch_sensor_hal.c.obj[0m
+[31.317s] [ 58%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/touch_sens_hal.c.obj[0m
+[31.321s] [ 58%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/xt_wdt_hal.c.obj[0m
+[31.325s] [ 59%] [32mBuilding C object esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32s3/rtc_cntl_hal.c.obj[0m
+[31.446s] [ 59%] [32m[1mLinking C static library libhal.a[0m
+[31.530s] [ 59%] Built target __idf_hal
+[31.540s] [35m[1mScanning dependencies of target __idf_esp_rom[0m
+[31.557s] [ 60%] [32mBuilding C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_print.c.obj[0m
+[31.558s] [ 60%] [32mBuilding C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_sys.c.obj[0m
+[31.558s] [ 60%] [32mBuilding C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_crc.c.obj[0m
+[31.558s] [ 60%] [32mBuilding C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_uart.c.obj[0m
+[31.558s] [ 60%] [32mBuilding C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_spiflash.c.obj[0m
+[31.558s] [ 60%] [32mBuilding C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_efuse.c.obj[0m
+[31.558s] [ 60%] [32mBuilding ASM object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_longjmp.S.obj[0m
+[31.558s] [ 60%] [32mBuilding C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_gpio.c.obj[0m
+[31.559s] [ 60%] [32mBuilding C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_wdt.c.obj[0m
+[31.563s] [ 61%] [32mBuilding ASM object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_cache_writeback_esp32s3.S.obj[0m
+[31.564s] [ 61%] [32mBuilding C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_cache_esp32s2_esp32s3.c.obj[0m
+[31.564s] [ 61%] [32mBuilding C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_systimer.c.obj[0m
+[31.649s] [ 61%] [32m[1mLinking C static library libesp_rom.a[0m
+[31.689s] [ 61%] Built target __idf_esp_rom
+[31.708s] [ 61%] [32mBuilding C object esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/esp_err_to_name.c.obj[0m
+[31.901s] [ 61%] [32m[1mLinking C static library libesp_common.a[0m
+[31.934s] [ 61%] Built target __idf_esp_common
+[31.944s] [35m[1mScanning dependencies of target __idf_esp_system[0m
+[31.971s] [ 61%] [32mBuilding C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/crosscore_int.c.obj[0m
+[31.973s] [ 61%] [32mBuilding C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_ipc.c.obj[0m
+[31.973s] [ 61%] [32mBuilding C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/freertos_hooks.c.obj[0m
+[31.973s] [ 61%] [32mBuilding C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_system.c.obj[0m
+[31.973s] [ 61%] [32mBuilding C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/panic.c.obj[0m
+[31.973s] [ 61%] [32mBuilding C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/int_wdt.c.obj[0m
+[31.973s] [ 62%] [32mBuilding C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_system_console.c.obj[0m
+[31.973s] [ 62%] [32mBuilding C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_err.c.obj[0m
+[31.974s] [ 62%] [32mBuilding C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/startup.c.obj[0m
+[31.974s] [ 62%] [32mBuilding C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/startup_funcs.c.obj[0m
+[31.977s] [ 62%] [32mBuilding C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/system_time.c.obj[0m
+[31.977s] [ 62%] [32mBuilding C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/stack_check.c.obj[0m
+[32.049s] [ 62%] [32mBuilding C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/ubsan.c.obj[0m
+[32.055s] [ 62%] [32mBuilding C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/xt_wdt.c.obj[0m
+[32.056s] [ 63%] [32mBuilding C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/task_wdt/task_wdt.c.obj[0m
+[32.069s] [ 63%] [32mBuilding C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/task_wdt/task_wdt_impl_timergroup.c.obj[0m
+[32.082s] [ 63%] [32mBuilding C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/cpu_start.c.obj[0m
+[32.094s] [ 63%] [32mBuilding C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/panic_handler.c.obj[0m
+[32.097s] [ 63%] [32mBuilding C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/esp_system_chip.c.obj[0m
+[32.104s] [ 63%] [32mBuilding C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/image_process.c.obj[0m
+[32.157s] [ 63%] [32mBuilding C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/esp_ipc_isr.c.obj[0m
+[32.164s] [ 63%] [32mBuilding C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/esp_ipc_isr_port.c.obj[0m
+[32.182s] [ 63%] [32mBuilding ASM object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/esp_ipc_isr_handler.S.obj[0m
+[32.185s] [ 63%] [32mBuilding ASM object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/esp_ipc_isr_routines.S.obj[0m
+[32.186s] [ 64%] [32mBuilding C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/panic_arch.c.obj[0m
+[32.214s] [ 64%] [32mBuilding ASM object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/panic_handler_asm.S.obj[0m
+[32.233s] [ 64%] [32mBuilding C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/expression_with_stack.c.obj[0m
+[32.236s] [ 64%] [32mBuilding ASM object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/expression_with_stack_asm.S.obj[0m
+[32.240s] [ 64%] [32mBuilding C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/debug_helpers.c.obj[0m
+[32.241s] [ 64%] [32mBuilding ASM object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/debug_helpers_asm.S.obj[0m
+[32.248s] [ 64%] [32mBuilding C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/debug_stubs.c.obj[0m
+[32.261s] [ 64%] [32mBuilding C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/trax.c.obj[0m
+[32.268s] [ 64%] [32mBuilding ASM object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32s3/highint_hdl.S.obj[0m
+[32.277s] [ 64%] [32mBuilding C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32s3/clk.c.obj[0m
+[32.287s] [ 64%] [32mBuilding C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32s3/reset_reason.c.obj[0m
+[32.292s] [ 65%] [32mBuilding C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32s3/system_internal.c.obj[0m
+[32.301s] [ 65%] [32mBuilding C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32s3/cache_err_int.c.obj[0m
+[32.327s] [ 65%] [32mBuilding C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32s3/apb_backup_dma.c.obj[0m
+[32.434s] [ 65%] [32m[1mLinking C static library libesp_system.a[0m
+[32.495s] [ 65%] Built target __idf_esp_system
+[32.519s] [ 66%] [32mBuilding C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_generic.c.obj[0m
+[32.520s] [ 66%] [32mBuilding C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_hpm_enable.c.obj[0m
+[32.521s] [ 66%] [32mBuilding C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_issi.c.obj[0m
+[32.522s] [ 66%] [32mBuilding C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_drivers.c.obj[0m
+[32.522s] [ 66%] [32mBuilding C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_boya.c.obj[0m
+[32.522s] [ 66%] [32mBuilding C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_gd.c.obj[0m
+[32.522s] [ 66%] [32mBuilding C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_winbond.c.obj[0m
+[32.522s] [ 66%] [32mBuilding C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/esp32s3/spi_flash_oct_flash_init.c.obj[0m
+[32.522s] [ 66%] [32mBuilding C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_mxic.c.obj[0m
+[32.522s] [ 66%] [32mBuilding C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/flash_brownout_hook.c.obj[0m
+[32.523s] [ 66%] [32mBuilding C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_mxic_opi.c.obj[0m
+[32.523s] [ 66%] [32mBuilding C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_th.c.obj[0m
+[32.574s] [ 66%] [32mBuilding C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/memspi_host_driver.c.obj[0m
+[32.598s] [ 67%] [32mBuilding C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/cache_utils.c.obj[0m
+[32.600s] [ 67%] [32mBuilding C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/flash_mmap.c.obj[0m
+[32.604s] [ 67%] [32mBuilding C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/flash_ops.c.obj[0m
+[32.609s] [ 67%] [32mBuilding C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_wrap.c.obj[0m
+[32.621s] [ 67%] [32mBuilding C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/esp_flash_api.c.obj[0m
+[32.624s] [ 67%] [32mBuilding C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/esp_flash_spi_init.c.obj[0m
+[32.625s] [ 67%] [32mBuilding C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_os_func_app.c.obj[0m
+[32.649s] [ 67%] [32mBuilding C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_os_func_noos.c.obj[0m
+[32.895s] [ 67%] [32m[1mLinking C static library libspi_flash.a[0m
+[32.946s] [ 67%] Built target __idf_spi_flash
+[32.967s] [ 68%] [32mBuilding C object esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/port/esp32s3/ext_mem_layout.c.obj[0m
+[32.967s] [ 68%] [32mBuilding C object esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/esp_mmu_map.c.obj[0m
+[32.967s] [ 68%] [32mBuilding C object esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/heap_align_hw.c.obj[0m
+[32.967s] [ 68%] [32mBuilding C object esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/esp_cache_msync.c.obj[0m
+[32.968s] [ 68%] [32mBuilding C object esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/esp_cache_utils.c.obj[0m
+[33.169s] [ 68%] [32m[1mLinking C static library libesp_mm.a[0m
+[33.206s] [ 68%] Built target __idf_esp_mm
+[33.231s] [ 68%] [32mBuilding C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_mem.c.obj[0m
+[33.231s] [ 68%] [32mBuilding C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_random.c.obj[0m
+[33.231s] [ 68%] [32mBuilding C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_common_loader.c.obj[0m
+[33.231s] [ 68%] [32mBuilding C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_efuse.c.obj[0m
+[33.231s] [ 68%] [32mBuilding C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_common.c.obj[0m
+[33.231s] [ 68%] [32mBuilding C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_clock_init.c.obj[0m
+[33.232s] [ 68%] [32mBuilding C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_random_esp32s3.c.obj[0m
+[33.234s] [ 68%] [32mBuilding C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/flash_encrypt.c.obj[0m
+[33.234s] [ 68%] [32mBuilding C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/bootloader_flash.c.obj[0m
+[33.234s] [ 69%] [32mBuilding C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/flash_qio_mode.c.obj[0m
+[33.234s] [ 69%] [32mBuilding C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/secure_boot.c.obj[0m
+[33.238s] [ 69%] [32mBuilding C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/bootloader_flash_config_esp32s3.c.obj[0m
+[33.306s] [ 69%] [32mBuilding C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_utility.c.obj[0m
+[33.315s] [ 69%] [32mBuilding C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/flash_partitions.c.obj[0m
+[33.323s] [ 69%] [32mBuilding C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp_image_format.c.obj[0m
+[33.332s] [ 69%] [32mBuilding C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_sha.c.obj[0m
+[33.335s] [ 69%] [32mBuilding C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp32s3/secure_boot_secure_features.c.obj[0m
+[33.547s] [ 69%] [32m[1mLinking C static library libbootloader_support.a[0m
+[33.594s] [ 69%] Built target __idf_bootloader_support
+[33.616s] [ 69%] [32mBuilding C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s3/esp_efuse_rtc_calib.c.obj[0m
+[33.616s] [ 69%] [32mBuilding C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s3/esp_efuse_table.c.obj[0m
+[33.617s] [ 69%] [32mBuilding C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s3/esp_efuse_fields.c.obj[0m
+[33.617s] [ 69%] [32mBuilding C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_api.c.obj[0m
+[33.618s] [ 69%] [32mBuilding C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_utility.c.obj[0m
+[33.618s] [ 69%] [32mBuilding C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s3/esp_efuse_utility.c.obj[0m
+[33.618s] [ 70%] [32mBuilding C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_fields.c.obj[0m
+[33.619s] [ 70%] [32mBuilding C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_startup.c.obj[0m
+[33.619s] [ 70%] [32mBuilding C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/efuse_controller/keys/with_key_purposes/esp_efuse_api_key.c.obj[0m
+[33.753s] [ 70%] [32m[1mLinking C static library libefuse.a[0m
+[33.798s] [ 70%] Built target __idf_efuse
+[33.818s] [ 70%] [32mBuilding C object esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/partition.c.obj[0m
+[33.818s] [ 70%] [32mBuilding C object esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/partition_target.c.obj[0m
+[33.933s] [ 70%] [32m[1mLinking C static library libesp_partition.a[0m
+[33.968s] [ 70%] Built target __idf_esp_partition
+[33.989s] [ 70%] [32mBuilding C object esp-idf/app_update/CMakeFiles/__idf_app_update.dir/esp_ota_app_desc.c.obj[0m
+[33.989s] [ 70%] [32mBuilding C object esp-idf/app_update/CMakeFiles/__idf_app_update.dir/esp_ota_ops.c.obj[0m
+[34.203s] [ 71%] [32m[1mLinking C static library libapp_update.a[0m
+[34.240s] [ 71%] Built target __idf_app_update
+[34.260s] [ 71%] [32mBuilding C object esp-idf/esp_bootloader_format/CMakeFiles/__idf_esp_bootloader_format.dir/esp_bootloader_desc.c.obj[0m
+[34.300s] [ 71%] [32m[1mLinking C static library libesp_bootloader_format.a[0m
+[34.335s] [ 71%] Built target __idf_esp_bootloader_format
+[34.357s] [ 71%] [32mBuilding C object esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/esp_app_desc.c.obj[0m
+[34.422s] [ 71%] [32m[1mLinking C static library libesp_app_format.a[0m
+[34.458s] [ 71%] Built target __idf_esp_app_format
+[34.485s] [ 71%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/mps_reader.c.obj[0m
+[34.485s] [ 71%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_ciphersuites.c.obj[0m
+[34.485s] [ 71%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_cache.c.obj[0m
+[34.485s] [ 71%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_cookie.c.obj[0m
+[34.485s] [ 71%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/mps_trace.c.obj[0m
+[34.485s] [ 71%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_client.c.obj[0m
+[34.485s] [ 72%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_msg.c.obj[0m
+[34.485s] [ 72%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_debug_helpers_generated.c.obj[0m
+[34.486s] [ 72%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/debug.c.obj[0m
+[34.488s] [ 72%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls.c.obj[0m
+[34.488s] [ 72%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_ticket.c.obj[0m
+[34.489s] [ 72%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls12_client.c.obj[0m
+[34.552s] [ 72%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls12_server.c.obj[0m
+[34.570s] [ 72%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls13_keys.c.obj[0m
+[34.571s] [ 72%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls13_server.c.obj[0m
+[34.644s] [ 72%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls13_client.c.obj[0m
+[34.646s] [ 72%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls13_generic.c.obj[0m
+[34.659s] [ 72%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/home/diego/.espressif/v5.5/esp-idf/components/mbedtls/port/mbedtls_debug.c.obj[0m
+[34.673s] [ 73%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/home/diego/.espressif/v5.5/esp-idf/components/mbedtls/port/esp_platform_time.c.obj[0m
+[34.679s] [ 73%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/home/diego/.espressif/v5.5/esp-idf/components/mbedtls/port/net_sockets.c.obj[0m
+[35.103s] [ 73%] [32m[1mLinking CXX static library libmbedtls.a[0m
+[35.158s] [ 73%] Built target mbedtls
+[35.181s] [ 73%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/pkcs7.c.obj[0m
+[35.181s] [ 73%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509_csr.c.obj[0m
+[35.181s] [ 73%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509_crl.c.obj[0m
+[35.182s] [ 73%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509_crt.c.obj[0m
+[35.182s] [ 73%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509.c.obj[0m
+[35.182s] [ 73%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509write.c.obj[0m
+[35.182s] [ 73%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509_create.c.obj[0m
+[35.184s] [ 73%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509write_crt.c.obj[0m
+[35.187s] [ 74%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509write_csr.c.obj[0m
+[35.580s] [ 74%] [32m[1mLinking CXX static library libmbedx509.a[0m
+[35.627s] [ 74%] Built target mbedx509
+[35.655s] [ 74%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/aria.c.obj[0m
+[35.656s] [ 74%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/aesni.c.obj[0m
+[35.657s] [ 74%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/aes.c.obj[0m
+[35.657s] [ 74%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/aesce.c.obj[0m
+[35.657s] [ 75%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/asn1parse.c.obj[0m
+[35.657s] [ 75%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/asn1write.c.obj[0m
+[35.659s] [ 75%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/base64.c.obj[0m
+[35.659s] [ 75%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/bignum_mod.c.obj[0m
+[35.659s] [ 75%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/bignum.c.obj[0m
+[35.659s] [ 75%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/bignum_core.c.obj[0m
+[35.660s] [ 75%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/bignum_mod_raw.c.obj[0m
+[35.669s] [ 75%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/block_cipher.c.obj[0m
+[35.730s] [ 75%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/camellia.c.obj[0m
+[35.735s] [ 75%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ccm.c.obj[0m
+[35.742s] [ 75%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/chacha20.c.obj[0m
+[35.743s] [ 75%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/chachapoly.c.obj[0m
+[35.757s] [ 76%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/cipher.c.obj[0m
+[35.814s] [ 76%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/constant_time.c.obj[0m
+[35.815s] [ 76%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/cipher_wrap.c.obj[0m
+[35.829s] [ 76%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/cmac.c.obj[0m
+[35.848s] [ 76%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ctr_drbg.c.obj[0m
+[35.848s] [ 76%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/des.c.obj[0m
+[35.849s] [ 76%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/dhm.c.obj[0m
+[35.882s] [ 76%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ecdh.c.obj[0m
+[35.898s] [ 76%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ecdsa.c.obj[0m
+[35.923s] [ 76%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ecjpake.c.obj[0m
+[35.927s] [ 77%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ecp.c.obj[0m
+[35.933s] [ 77%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ecp_curves.c.obj[0m
+[35.950s] [ 77%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ecp_curves_new.c.obj[0m
+[35.980s] [ 77%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/entropy.c.obj[0m
+[35.994s] [ 77%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/entropy_poll.c.obj[0m
+[36.008s] [ 77%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/error.c.obj[0m
+[36.044s] [ 77%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/gcm.c.obj[0m
+[36.056s] [ 77%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/hkdf.c.obj[0m
+[36.074s] [ 77%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/hmac_drbg.c.obj[0m
+[36.094s] [ 77%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/lmots.c.obj[0m
+[36.112s] [ 77%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/lms.c.obj[0m
+[36.123s] [ 78%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/md.c.obj[0m
+[36.138s] [ 78%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/md5.c.obj[0m
+[36.147s] [ 78%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/memory_buffer_alloc.c.obj[0m
+[36.163s] [ 78%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/nist_kw.c.obj[0m
+[36.179s] [ 78%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/oid.c.obj[0m
+[36.222s] [ 78%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/padlock.c.obj[0m
+[36.237s] [ 78%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pem.c.obj[0m
+[36.240s] [ 78%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pk.c.obj[0m
+[36.250s] [ 78%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pk_ecc.c.obj[0m
+[36.268s] [ 78%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pk_wrap.c.obj[0m
+[36.289s] [ 78%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pkcs12.c.obj[0m
+[36.297s] [ 79%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pkcs5.c.obj[0m
+[36.322s] [ 79%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pkparse.c.obj[0m
+[36.334s] [ 79%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pkwrite.c.obj[0m
+[36.371s] [ 79%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/platform.c.obj[0m
+[36.372s] [ 79%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/platform_util.c.obj[0m
+[36.383s] [ 79%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/poly1305.c.obj[0m
+[36.408s] [ 79%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto.c.obj[0m
+[36.452s] [ 79%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_aead.c.obj[0m
+[36.452s] [ 79%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_cipher.c.obj[0m
+[36.457s] [ 79%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_client.c.obj[0m
+[36.469s] [ 79%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_driver_wrappers_no_static.c.obj[0m
+[36.480s] [ 80%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_ecp.c.obj[0m
+[36.486s] [ 80%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_ffdh.c.obj[0m
+[36.498s] [ 80%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_hash.c.obj[0m
+[36.514s] [ 80%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_mac.c.obj[0m
+[36.566s] [ 80%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_pake.c.obj[0m
+[36.578s] [ 80%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_random.c.obj[0m
+[36.586s] [ 80%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_rsa.c.obj[0m
+[36.609s] [ 80%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_se.c.obj[0m
+[36.612s] [ 80%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_slot_management.c.obj[0m
+[36.617s] [ 80%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_storage.c.obj[0m
+[36.650s] [ 80%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_its_file.c.obj[0m
+[36.665s] [ 81%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_util.c.obj[0m
+[36.672s] [ 81%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ripemd160.c.obj[0m
+[36.682s] [ 81%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/rsa.c.obj[0m
+[36.700s] [ 81%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/rsa_alt_helpers.c.obj[0m
+[36.714s] [ 81%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/sha1.c.obj[0m
+[36.719s] [ 81%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/sha256.c.obj[0m
+[36.739s] [ 81%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/sha512.c.obj[0m
+[36.741s] [ 81%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/sha3.c.obj[0m
+[36.779s] [ 81%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/threading.c.obj[0m
+[36.794s] [ 81%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/timing.c.obj[0m
+[36.813s] [ 81%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/version.c.obj[0m
+[36.819s] [ 82%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/version_features.c.obj[0m
+[36.838s] [ 82%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/diego/.espressif/v5.5/esp-idf/components/mbedtls/port/sha/core/esp_sha_gdma_impl.c.obj[0m
+[36.838s] [ 82%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/diego/.espressif/v5.5/esp-idf/components/mbedtls/port/aes/dma/esp_aes_gdma_impl.c.obj[0m
+[36.838s] [ 82%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/diego/.espressif/v5.5/esp-idf/components/mbedtls/port/aes/dma/esp_aes_dma_core.c.obj[0m
+[36.850s] [ 82%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/diego/.espressif/v5.5/esp-idf/components/mbedtls/port/crypto_shared_gdma/esp_crypto_shared_gdma.c.obj[0m
+[36.850s] [ 82%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/diego/.espressif/v5.5/esp-idf/components/mbedtls/port/esp_hardware.c.obj[0m
+[36.861s] [ 82%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/diego/.espressif/v5.5/esp-idf/components/mbedtls/port/esp_mem.c.obj[0m
+[36.875s] [ 82%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/diego/.espressif/v5.5/esp-idf/components/mbedtls/port/esp_timing.c.obj[0m
+[36.881s] [ 82%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/diego/.espressif/v5.5/esp-idf/components/mbedtls/port/aes/esp_aes_xts.c.obj[0m
+[36.895s] [ 82%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/diego/.espressif/v5.5/esp-idf/components/mbedtls/port/aes/esp_aes_common.c.obj[0m
+[36.905s] [ 83%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/diego/.espressif/v5.5/esp-idf/components/mbedtls/port/aes/dma/esp_aes.c.obj[0m
+[36.930s] [ 83%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/diego/.espressif/v5.5/esp-idf/components/mbedtls/port/sha/esp_sha.c.obj[0m
+[36.937s] [ 83%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/diego/.espressif/v5.5/esp-idf/components/mbedtls/port/sha/core/sha.c.obj[0m
+[36.949s] [ 83%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/diego/.espressif/v5.5/esp-idf/components/mbedtls/port/esp_ds/esp_rsa_sign_alt.c.obj[0m
+[36.956s] [ 83%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/diego/.espressif/v5.5/esp-idf/components/mbedtls/port/esp_ds/esp_rsa_dec_alt.c.obj[0m
+[36.985s] [ 83%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/diego/.espressif/v5.5/esp-idf/components/mbedtls/port/esp_ds/esp_ds_common.c.obj[0m
+[37.013s] [ 83%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/diego/.espressif/v5.5/esp-idf/components/mbedtls/port/esp_hmac_pbkdf2.c.obj[0m
+[37.025s] [ 83%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/diego/.espressif/v5.5/esp-idf/components/mbedtls/port/bignum/esp_bignum.c.obj[0m
+[37.027s] [ 83%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/diego/.espressif/v5.5/esp-idf/components/mbedtls/port/bignum/bignum_alt.c.obj[0m
+[37.060s] [ 83%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/diego/.espressif/v5.5/esp-idf/components/mbedtls/port/sha/core/esp_sha1.c.obj[0m
+[37.113s] [ 83%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/diego/.espressif/v5.5/esp-idf/components/mbedtls/port/sha/core/esp_sha256.c.obj[0m
+[37.122s] [ 84%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/diego/.espressif/v5.5/esp-idf/components/mbedtls/port/sha/core/esp_sha512.c.obj[0m
+[37.126s] [ 84%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/diego/.espressif/v5.5/esp-idf/components/mbedtls/port/aes/esp_aes_gcm.c.obj[0m
+[37.136s] [ 84%] [32mBuilding C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/diego/.espressif/v5.5/esp-idf/components/mbedtls/port/md/esp_md.c.obj[0m
+[37.534s] [ 84%] [32m[1mLinking CXX static library libmbedcrypto.a[0m
+[37.660s] [ 84%] Built target mbedcrypto
+[37.680s] [ 84%] [32mBuilding C object esp-idf/mbedtls/mbedtls/3rdparty/p256-m/CMakeFiles/p256m.dir/p256-m_driver_entrypoints.c.obj[0m
+[37.680s] [ 84%] [32mBuilding C object esp-idf/mbedtls/mbedtls/3rdparty/p256-m/CMakeFiles/p256m.dir/p256-m/p256-m.c.obj[0m
+[37.745s] [ 84%] [32m[1mLinking CXX static library libp256m.a[0m
+[37.780s] [ 84%] Built target p256m
+[37.801s] [ 84%] [32mBuilding C object esp-idf/mbedtls/mbedtls/3rdparty/everest/CMakeFiles/everest.dir/library/everest.c.obj[0m
+[37.801s] [ 84%] [32mBuilding C object esp-idf/mbedtls/mbedtls/3rdparty/everest/CMakeFiles/everest.dir/library/Hacl_Curve25519_joined.c.obj[0m
+[37.801s] [ 84%] [32mBuilding C object esp-idf/mbedtls/mbedtls/3rdparty/everest/CMakeFiles/everest.dir/library/x25519.c.obj[0m
+[37.853s] [ 84%] [32m[1mLinking CXX static library libeverest.a[0m
+[37.889s] [ 84%] Built target everest
+[37.898s] [ 84%] [34m[1mGenerating x509_crt_bundle[0m
+[38.025s] [ 84%] [34m[1mGenerating ../../x509_crt_bundle.S[0m
+[38.129s] [35m[1mScanning dependencies of target __idf_mbedtls[0m
+[38.139s] [ 84%] [32mBuilding C object esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/esp_crt_bundle/esp_crt_bundle.c.obj[0m
+[38.139s] [ 85%] [32mBuilding ASM object esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/__/__/x509_crt_bundle.S.obj[0m
+[38.251s] [ 85%] [32m[1mLinking C static library libmbedtls.a[0m
+[38.285s] [ 85%] Built target __idf_mbedtls
+[38.305s] [ 85%] [32mBuilding C object esp-idf/esp_pm/CMakeFiles/__idf_esp_pm.dir/pm_impl.c.obj[0m
+[38.306s] [ 85%] [32mBuilding C object esp-idf/esp_pm/CMakeFiles/__idf_esp_pm.dir/pm_locks.c.obj[0m
+[38.306s] [ 85%] [32mBuilding C object esp-idf/esp_pm/CMakeFiles/__idf_esp_pm.dir/pm_trace.c.obj[0m
+[38.445s] [ 85%] [32m[1mLinking C static library libesp_pm.a[0m
+[38.480s] [ 85%] Built target __idf_esp_pm
+[38.500s] [ 85%] [32mBuilding C object esp-idf/esp_driver_gpio/CMakeFiles/__idf_esp_driver_gpio.dir/src/rtc_io.c.obj[0m
+[38.500s] [ 85%] [32mBuilding C object esp-idf/esp_driver_gpio/CMakeFiles/__idf_esp_driver_gpio.dir/src/gpio_pin_glitch_filter.c.obj[0m
+[38.501s] [ 85%] [32mBuilding C object esp-idf/esp_driver_gpio/CMakeFiles/__idf_esp_driver_gpio.dir/src/gpio_glitch_filter_ops.c.obj[0m
+[38.501s] [ 85%] [32mBuilding C object esp-idf/esp_driver_gpio/CMakeFiles/__idf_esp_driver_gpio.dir/src/dedic_gpio.c.obj[0m
+[38.501s] [ 85%] [32mBuilding C object esp-idf/esp_driver_gpio/CMakeFiles/__idf_esp_driver_gpio.dir/src/gpio.c.obj[0m
+[38.865s] [ 85%] [32m[1mLinking C static library libesp_driver_gpio.a[0m
+[38.904s] [ 85%] Built target __idf_esp_driver_gpio
+[38.914s] [35m[1mScanning dependencies of target __idf_xtensa[0m
+[38.932s] [ 85%] [32mBuilding ASM object esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/xtensa_context.S.obj[0m
+[38.932s] [ 85%] [32mBuilding C object esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/eri.c.obj[0m
+[38.932s] [ 85%] [32mBuilding ASM object esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/xtensa_intr_asm.S.obj[0m
+[38.932s] [ 85%] [32mBuilding C object esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/xt_trax.c.obj[0m
+[38.932s] [ 85%] [32mBuilding C object esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/xtensa_intr.c.obj[0m
+[38.932s] [ 85%] [32mBuilding ASM object esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/xtensa_vectors.S.obj[0m
+[39.002s] [ 85%] [32m[1mLinking C static library libxtensa.a[0m
+[39.039s] [ 85%] Built target __idf_xtensa
+[39.058s] [35m[1mScanning dependencies of target __idf_espcoredump[0m
+[39.069s] [ 85%] [32mBuilding C object esp-idf/console/CMakeFiles/__idf_console.dir/commands.c.obj[0m
+[39.070s] [ 85%] [32mBuilding C object esp-idf/unity/CMakeFiles/__idf_unity.dir/unity/src/unity.c.obj[0m
+[39.072s] [ 85%] [32mBuilding C object esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/app_trace.c.obj[0m
+[39.073s] [ 85%] [32mBuilding C object esp-idf/esp_driver_touch_sens/CMakeFiles/__idf_esp_driver_touch_sens.dir/common/touch_sens_common.c.obj[0m
+[39.073s] [ 85%] [32mBuilding C object esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth.c.obj[0m
+[39.074s] [ 85%] [32mBuilding C object esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir/src/esp_hidd.c.obj[0m
+[39.074s] [ 86%] [32mBuilding C object esp-idf/esp_driver_cam/CMakeFiles/__idf_esp_driver_cam.dir/esp_cam_ctlr.c.obj[0m
+[39.075s] [ 86%] [32mBuilding C object esp-idf/protobuf-c/CMakeFiles/__idf_protobuf-c.dir/protobuf-c/protobuf-c/protobuf-c.c.obj[0m
+[39.075s] [ 86%] [32mBuilding C object esp-idf/esp_https_server/CMakeFiles/__idf_esp_https_server.dir/src/https_server.c.obj[0m
+[39.078s] [ 86%] [32mBuilding C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_common.c.obj[0m
+[39.086s] [ 86%] [32mBuilding CXX object esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/Partition.cpp.obj[0m
+[39.087s] [ 86%] [32mBuilding C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_init.c.obj[0m
+[39.128s] [ 86%] [32mBuilding C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_common.c.obj[0m
+[39.209s] [ 86%] [32mBuilding C object esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir/src/esp_hidh.c.obj[0m
+[39.215s] [ 86%] [32mBuilding C object esp-idf/esp_driver_cam/CMakeFiles/__idf_esp_driver_cam.dir/dvp_share_ctrl.c.obj[0m
+[39.219s] [ 86%] [32mBuilding CXX object esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/SPI_Flash.cpp.obj[0m
+[39.222s] [ 86%] [32mBuilding C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_panel_io.c.obj[0m
+[39.253s] [ 86%] [32mBuilding C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_flash.c.obj[0m
+[39.270s] [ 87%] [32mBuilding C object esp-idf/console/CMakeFiles/__idf_console.dir/esp_console_common.c.obj[0m
+[39.280s] [ 87%] [32mBuilding C object esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/app_trace_util.c.obj[0m
+[39.332s] [ 87%] [32mBuilding C object esp-idf/esp_driver_cam/CMakeFiles/__idf_esp_driver_cam.dir/dvp/src/esp_cam_ctlr_dvp_gdma.c.obj[0m
+[39.353s] [ 87%] [32m[1mLinking C static library libesp_https_server.a[0m
+[39.368s] [ 87%] [32mBuilding CXX object esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/WL_Ext_Perf.cpp.obj[0m
+[39.376s] [ 87%] [32mBuilding C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_panel_nt35510.c.obj[0m
+[39.420s] [ 87%] [32mBuilding C object esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/host_file_io.c.obj[0m
+[39.420s] [ 87%] Built target __idf_esp_https_server
+[39.433s] [ 87%] [32mBuilding C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_uart.c.obj[0m
+[39.443s] [ 87%] [32mBuilding C object esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/port/port_uart.c.obj[0m
+[39.453s] [ 87%] [32mBuilding C object esp-idf/console/CMakeFiles/__idf_console.dir/esp_console_repl_internal.c.obj[0m
+[39.453s] [ 87%] [32mBuilding C object esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/phy/esp_eth_phy_802_3.c.obj[0m
+[39.458s] [ 87%] [32mBuilding C object esp-idf/esp_driver_touch_sens/CMakeFiles/__idf_esp_driver_touch_sens.dir/hw_ver2/touch_version_specific.c.obj[0m
+[39.469s] [ 87%] [32mBuilding C object esp-idf/esp_driver_cam/CMakeFiles/__idf_esp_driver_cam.dir/dvp/src/esp_cam_ctlr_dvp_cam.c.obj[0m
+[39.469s] [ 87%] [32mBuilding C object esp-idf/unity/CMakeFiles/__idf_unity.dir/unity_compat.c.obj[0m
+[39.470s] [ 87%] [32mBuilding C object esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir/src/esp_hid_common.c.obj[0m
+[39.530s] [ 88%] [32mBuilding CXX object esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/WL_Ext_Safe.cpp.obj[0m
+[39.532s] [ 88%] [32mBuilding C object esp-idf/console/CMakeFiles/__idf_console.dir/split_argv.c.obj[0m
+[39.569s] [ 88%] [32mBuilding C object esp-idf/unity/CMakeFiles/__idf_unity.dir/unity_runner.c.obj[0m
+[39.578s] [ 88%] [32mBuilding C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_elf.c.obj[0m
+[39.583s] [ 88%] [32m[1mLinking C static library libapp_trace.a[0m
+[39.615s] [ 88%] [32mBuilding C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_binary.c.obj[0m
+[39.615s] [ 88%] [32mBuilding C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_panel_ssd1306.c.obj[0m
+[39.627s] [ 88%] [32mBuilding C object esp-idf/console/CMakeFiles/__idf_console.dir/linenoise/linenoise.c.obj[0m
+[39.654s] [ 88%] [32m[1mLinking C static library libesp_hid.a[0m
+[39.666s] [ 88%] Built target __idf_app_trace
+[39.682s] [ 88%] [32mBuilding C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_panel_st7789.c.obj[0m
+[39.707s] [ 88%] [32mBuilding C object esp-idf/unity/CMakeFiles/__idf_unity.dir/unity_utils_freertos.c.obj[0m
+[39.714s] [ 88%] [32mBuilding C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_panel_ops.c.obj[0m
+[39.731s] [ 88%] [32mBuilding CXX object esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/WL_Flash.cpp.obj[0m
+[39.738s] [ 88%] [32mBuilding C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_sha.c.obj[0m
+[39.742s] [ 88%] Built target __idf_esp_hid
+[39.768s] [ 88%] [32m[1mLinking C static library libprotobuf-c.a[0m
+[39.771s] [ 88%] [32mBuilding C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_crc.c.obj[0m
+[39.792s] [ 88%] [32mBuilding C object esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_netif_glue.c.obj[0m
+[39.817s] [ 88%] [32mBuilding C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/port/xtensa/core_dump_port.c.obj[0m
+[39.824s] [ 88%] [32m[1mLinking C static library libesp_driver_touch_sens.a[0m
+[39.855s] [ 88%] Built target __idf_protobuf-c
+[39.856s] [ 88%] [32mBuilding CXX object esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/crc32.cpp.obj[0m
+[39.860s] [ 88%] [32mBuilding C object esp-idf/console/CMakeFiles/__idf_console.dir/esp_console_repl_chip.c.obj[0m
+[39.861s] [ 89%] [32mBuilding C object esp-idf/unity/CMakeFiles/__idf_unity.dir/unity_utils_cache.c.obj[0m
+[39.863s] [ 89%] [32mBuilding CXX object esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/wear_levelling.cpp.obj[0m
+[39.870s] [ 89%] [32mBuilding C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/i2c/esp_lcd_panel_io_i2c_v1.c.obj[0m
+[39.902s] [ 89%] [32mBuilding C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_cmd.c.obj[0m
+[39.902s] [ 89%] [32m[1mLinking C static library libesp_driver_cam.a[0m
+[39.910s] [ 89%] Built target __idf_esp_driver_touch_sens
+[39.920s] [ 90%] [32mBuilding ASM object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/port/xtensa/core_dump_stack_switch.S.obj[0m
+[39.931s] [ 90%] [32mBuilding C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/i2c/esp_lcd_panel_io_i2c_v2.c.obj[0m
+[39.939s] [ 91%] [32mBuilding C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/spi/esp_lcd_panel_io_spi.c.obj[0m
+[39.969s] [ 91%] [32mBuilding C object esp-idf/unity/CMakeFiles/__idf_unity.dir/unity_utils_memory.c.obj[0m
+[39.970s] [ 91%] [32m[1mLinking C static library libespcoredump.a[0m
+[39.975s] [ 91%] Built target __idf_esp_driver_cam
+[39.979s] [ 91%] [32m[1mLinking C static library libesp_eth.a[0m
+[39.983s] [ 91%] [32mBuilding C object esp-idf/unity/CMakeFiles/__idf_unity.dir/unity_port_esp32.c.obj[0m
+[40.011s] [ 91%] [32mBuilding C object esp-idf/json/CMakeFiles/__idf_json.dir/cJSON/cJSON.c.obj[0m
+[40.037s] [ 91%] Built target __idf_espcoredump
+[40.042s] [ 91%] [32mBuilding C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_date.c.obj[0m
+[40.049s] [ 91%] [32mBuilding C object esp-idf/unity/CMakeFiles/__idf_unity.dir/port/esp/unity_utils_memory_esp.c.obj[0m
+[40.049s] [ 91%] [32mBuilding C object esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/mqtt_client.c.obj[0m
+[40.050s] [ 91%] Built target __idf_esp_eth
+[40.055s] [ 91%] [32mBuilding C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/i80/esp_lcd_panel_io_i80.c.obj[0m
+[40.064s] [ 91%] [32mBuilding C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/rgb/esp_lcd_panel_rgb.c.obj[0m
+[40.079s] [ 91%] [32mBuilding C object esp-idf/json/CMakeFiles/__idf_json.dir/cJSON/cJSON_Utils.c.obj[0m
+[40.099s] [ 91%] [32mBuilding C object esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/mqtt_msg.c.obj[0m
+[40.108s] [ 91%] [32mBuilding C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_dbl.c.obj[0m
+[40.152s] [ 91%] [32mBuilding C object esp-idf/nvs_sec_provider/CMakeFiles/__idf_nvs_sec_provider.dir/nvs_sec_provider.c.obj[0m
+[40.156s] [ 91%] [32m[1mLinking C static library libunity.a[0m
+[40.219s] [ 91%] [32m[1mLinking C static library libwear_levelling.a[0m
+[40.228s] [ 91%] [32mBuilding C object esp-idf/perfmon/CMakeFiles/__idf_perfmon.dir/xtensa_perfmon_access.c.obj[0m
+[40.247s] [ 91%] Built target __idf_unity
+[40.271s] [ 91%] [32mBuilding C object esp-idf/perfmon/CMakeFiles/__idf_perfmon.dir/xtensa_perfmon_apis.c.obj[0m
+[40.277s] [ 91%] [32mBuilding C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_dstr.c.obj[0m
+[40.298s] [ 91%] [32mBuilding C object esp-idf/rt/CMakeFiles/__idf_rt.dir/FreeRTOS_POSIX_mqueue.c.obj[0m
+[40.310s] [ 91%] Built target __idf_wear_levelling
+[40.324s] [ 91%] [32m[1mLinking C static library libnvs_sec_provider.a[0m
+[40.329s] [ 91%] [32mBuilding C object esp-idf/rt/CMakeFiles/__idf_rt.dir/FreeRTOS_POSIX_utils.c.obj[0m
+[40.349s] [ 91%] [32mBuilding C object esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/mqtt_outbox.c.obj[0m
+[40.368s] [ 91%] [32mBuilding C object esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/platform_esp32_idf.c.obj[0m
+[40.376s] [ 91%] [32mBuilding C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_end.c.obj[0m
+[40.392s] [ 91%] Built target __idf_nvs_sec_provider
+[40.392s] [ 91%] [32mBuilding C object esp-idf/perfmon/CMakeFiles/__idf_perfmon.dir/xtensa_perfmon_masks.c.obj[0m
+[40.404s] [ 91%] [32mBuilding C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_file.c.obj[0m
+[40.423s] [ 91%] [32mBuilding C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs_api.c.obj[0m
+[40.459s] [ 92%] [32m[1mLinking C static library libperfmon.a[0m
+[40.482s] [ 92%] [32mBuilding C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_cache.c.obj[0m
+[40.491s] [ 93%] [32m[1mLinking C static library librt.a[0m
+[40.491s] [ 93%] [32mBuilding C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_check.c.obj[0m
+[40.522s] [ 94%] [32mBuilding C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_hashtable.c.obj[0m
+[40.529s] [ 94%] [32mBuilding C object esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_element.c.obj[0m
+[40.536s] [ 94%] Built target __idf_perfmon
+[40.537s] [ 94%] [32mBuilding C object esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_button.c.obj[0m
+[40.544s] [ 94%] [32mBuilding C object esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_slider.c.obj[0m
+[40.559s] [ 94%] Built target __idf_rt
+[40.569s] [ 94%] [32mBuilding C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_gc.c.obj[0m
+[40.574s] [ 94%] [32mBuilding C object esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_matrix.c.obj[0m
+[40.583s] [ 94%] [32mBuilding C object esp-idf/usb/CMakeFiles/__idf_usb.dir/hcd_dwc.c.obj[0m
+[40.587s] [ 94%] [32m[1mLinking C static library libjson.a[0m
+[40.649s] [ 94%] [32mBuilding C object esp-idf/micro_ros_espidf_component/CMakeFiles/__idf_micro_ros_espidf_component.dir/network_interfaces/uros_wlan_netif.c.obj[0m
+[40.652s] [ 94%] [32mBuilding C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_int.c.obj[0m
+[40.665s] [ 94%] Built target __idf_json
+[40.750s] [ 94%] [32mBuilding C object esp-idf/cmock/CMakeFiles/__idf_cmock.dir/CMock/src/cmock.c.obj[0m
+[40.779s] [ 94%] [32m[1mLinking C static library libesp_lcd.a[0m
+[40.780s] [ 94%] [32mBuilding C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_lit.c.obj[0m
+[40.797s] [ 94%] [32mBuilding C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_rem.c.obj[0m
+[40.801s] [ 94%] [32mBuilding C object esp-idf/usb/CMakeFiles/__idf_usb.dir/enum.c.obj[0m
+[40.814s] [ 94%] [32mBuilding C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_hydrogen.c.obj[0m
+[40.818s] [ 94%] [32m[1mLinking C static library libmicro_ros_espidf_component.a[0m
+[40.854s] [ 94%] [32mBuilding C object esp-idf/usb/CMakeFiles/__idf_usb.dir/hub.c.obj[0m
+[40.862s] [ 94%] [32m[1mLinking C static library libcmock.a[0m
+[40.866s] [ 94%] [32mBuilding C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_rex.c.obj[0m
+[40.871s] [ 94%] Built target __idf_esp_lcd
+[40.887s] [ 94%] [32mBuilding C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_nucleus.c.obj[0m
+[40.887s] [ 94%] Built target __idf_micro_ros_espidf_component
+[40.891s] [ 94%] [32mBuilding C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/esp_spiffs.c.obj[0m
+[40.900s] [ 94%] [32mBuilding C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio.c.obj[0m
+[40.904s] [ 94%] [32mBuilding C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_str.c.obj[0m
+[40.935s] [ 94%] Built target __idf_cmock
+[40.951s] [ 94%] [32mBuilding C object esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_helpers.c.obj[0m
+[40.960s] [ 94%] [32m[1mLinking C static library libmqtt.a[0m
+[40.979s] [ 94%] [32m[1mLinking C static library libtouch_element.a[0m
+[41.010s] [ 94%] [32mBuilding C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_utils.c.obj[0m
+[41.047s] [ 94%] Built target __idf_mqtt
+[41.053s] [ 94%] [32mBuilding C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio_rawflash.c.obj[0m
+[41.071s] [ 94%] [32mBuilding C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/argtable3.c.obj[0m
+[41.078s] [ 94%] Built target __idf_touch_element
+[41.097s] [ 94%] [32mBuilding C object esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_host.c.obj[0m
+[41.098s] [ 94%] [32mBuilding C object esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_private.c.obj[0m
+[41.122s] [ 95%] [32mBuilding C object esp-idf/usb/CMakeFiles/__idf_usb.dir/usbh.c.obj[0m
+[41.151s] [ 95%] [32mBuilding C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio_wl.c.obj[0m
+[41.163s] [ 95%] [32mBuilding C object esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_phy.c.obj[0m
+[41.163s] [ 95%] [32mBuilding CXX object esp-idf/main/CMakeFiles/__idf_main.dir/micro-ros-esp32.cpp.obj[0m
+[41.214s] [ 95%] [32mBuilding C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/src/ff.c.obj[0m
+[41.214s] [ 95%] [32mBuilding C object esp-idf/main/CMakeFiles/__idf_main.dir/esp32_serial_transport.c.obj[0m
+[41.236s] [ 95%] [32mBuilding C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/src/ffunicode.c.obj[0m
+[41.289s] [01m[K/home/diego/Ros2_esp32/main/micro-ros-esp32.cpp:10:10:[m[K [01;31m[Kfatal error: [m[Kdriver/ledc.h: No such file or directory
+[41.290s]    10 | #include [01;31m[K"driver/ledc.h"[m[K
+[41.291s]       |          [01;31m[K^~~~~~~~~~~~~~~[m[K
+[41.296s] compilation terminated.
+[41.298s] gmake[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:76: esp-idf/main/CMakeFiles/__idf_main.dir/micro-ros-esp32.cpp.obj] Error 1
+[41.299s] gmake[2]: *** Waiting for unfinished jobs....
+[41.301s] [ 95%] [32mBuilding C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio_sdmmc.c.obj[0m
+[41.301s] [ 95%] [32mBuilding C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/port/freertos/ffsystem.c.obj[0m
+[41.314s] [ 95%] [32mBuilding C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat.c.obj[0m
+[41.343s] [ 96%] [32mBuilding C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat_sdmmc.c.obj[0m
+[41.387s] gmake[1]: *** [CMakeFiles/Makefile2:6034: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+[41.388s] gmake[1]: *** Waiting for unfinished jobs....
+[41.401s] [ 96%] [32mBuilding C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat_spiflash.c.obj[0m
+[41.427s] [ 96%] [32m[1mLinking C static library libconsole.a[0m
+[41.514s] [ 96%] Built target __idf_console
+[41.514s] [ 96%] [32m[1mLinking C static library libspiffs.a[0m
+[41.580s] [ 96%] Built target __idf_spiffs
+[41.588s] [ 96%] [32m[1mLinking C static library libusb.a[0m
+[41.646s] [ 96%] Built target __idf_usb
+[41.819s] [ 96%] [32m[1mLinking C static library libfatfs.a[0m
+[41.867s] [ 96%] Built target __idf_fatfs
+[41.868s] gmake: *** [Makefile:136: all] Error 2
+[41.871s] Invoked command in '/home/diego/Ros2_esp32/build/Ros2_esp32' returned '2': /usr/bin/cmake --build /home/diego/Ros2_esp32/build/Ros2_esp32 -- -j12 -l12

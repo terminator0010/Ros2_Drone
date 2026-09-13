@@ -1,0 +1,11 @@
+[wokwi]
+version = 1
+elf = "build/Ros2_esp32.elf"
+firmware = "build/Ros2_esp32.bin"
+rfc2217ServerPort = 4000
+[[chip]]
+name = "pca9685-virtual"
+binary = "chip.wasm"
+[[chip]]
+name = "servo-feedback"
+binary = "servo_feedback.wasm"
