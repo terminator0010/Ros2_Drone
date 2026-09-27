@@ -161,6 +161,7 @@ try:
         target_pitch = 0.0 # Comando positivo = nariz para cima
         target_yaw = 0.0   # Comando positivo = guinar para a direita        v
         flap_setting = 0.0 # Comando de flaps (0.0 a 1.0)
+        target_flap = 0.0  # Mantém os flaps recolhidos se não houver entrada configurada
         
         # COMANDOS DA SIMULAÇÃO (Hardware-in-the-loop via ROS 2 ou fallback)
         if len(joy_node.current_axes) >= 4:
@@ -181,14 +182,14 @@ try:
             # Mapeamento do throttle [-1, 1] para [0, 1]
             throttle_input = (throttle_raw + 1.0) / 2.0 
 
-            target_throttle = fg_reader.get_throttle()         
+                    
             
             # Comandos em radianos para a física (baseados nos limites reais da aeronave)
             target_roll = roll_input * math.radians(CESSNA_172P["limits"]["aileron"])
             target_pitch = pitch_input * math.radians(CESSNA_172P["limits"]["elevator"])
             target_yaw = yaw_input * math.radians(CESSNA_172P["limits"]["rudder"])
 
-            target_flap = fg_reader.get_flaps()         
+                  
             
         else:
             # Fallback para valores padrão ou para um voo "autônomo" simples
@@ -196,24 +197,32 @@ try:
             target_roll = 0.0 # Sem roll
             target_pitch = 0.0 # Sem pitch
             target_yaw = 0.0 # Sem yaw
+            target_throttle = fg_reader.get_throttle()  
+            target_flap = fg_reader.get_flaps()
 
 
 
         # Passar os comandos pelo filtro passa-baixo dos atuadores
-        cmd_roll, cmd_pitch, cmd_yaw, cmd_throttle, cmd_flap = actuators.update(target_roll, target_pitch, target_yaw, target_throttle, target_flap, DT)
+        cmd_roll, cmd_pitch, cmd_yaw = actuators.update(target_roll, target_pitch, target_yaw, DT)
 
         # Valores normalizados (-1 a 1) para a visualização no FlightGear baseados nos comandos filtrados
         surf_aileron = cmd_roll / math.radians(CESSNA_172P["limits"]["aileron"])
         surf_elevator = cmd_pitch / math.radians(CESSNA_172P["limits"]["elevator"])
         surf_rudder = cmd_yaw / math.radians(CESSNA_172P["limits"]["rudder"])
 
-        throttle_to_engine = cmd_throttle / CESSNA_172P["max_thrust"]  
+        throttle_to_engine = throttle_input  
+        flap_setting = target_flap
 
-        joy_node.publish_aileron(surf_aileron)
-        joy_node.publish_elevator(surf_elevator)
-        joy_node.publish_rudder(surf_rudder)
+        # FlightGear recebe comandos normalizados; o ESP32 espera ângulos em graus.
+        aileron_servo_deg = math.degrees(cmd_roll)
+        elevator_servo_deg = math.degrees(cmd_pitch)
+        rudder_servo_deg = math.degrees(cmd_yaw)
+
+        joy_node.publish_aileron(aileron_servo_deg)
+        joy_node.publish_elevator(elevator_servo_deg)
+        joy_node.publish_rudder(rudder_servo_deg)
         joy_node.publish_throttle(throttle_to_engine)
-        joy_node.publish_flap(cmd_flap)
+        joy_node.publish_flap(target_flap)
         # ---------------------------------------------------------
         
         u, v, w = sim.state[0], sim.state[1], sim.state[2]

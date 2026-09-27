@@ -1,0 +1,56 @@
+[0.013s] Invoking command in '/home/diego/Ros2_fg_prj/build/fg_bridge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/diego/Ros2_fg_prj/src/fg_node -DCMAKE_INSTALL_PREFIX=/home/diego/Ros2_fg_prj/install/fg_bridge
+[0.039s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.197s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.218s] -- Found rclcpp: 16.0.21 (/opt/ros/humble/share/rclcpp/cmake)
+[0.281s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.285s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.294s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.311s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.330s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.378s] -- Found rmw_implementation_cmake: 6.1.4 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.380s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.534s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.641s] -- Found sensor_msgs: 4.9.2 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.691s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.793s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.793s] -- Configured cppcheck include dirs: 
+[0.793s] -- Configured cppcheck exclude dirs and/or files: 
+[0.794s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.795s] -- Added test 'lint_cmake' to check CMake code style
+[0.796s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.799s] -- Added test 'uncrustify' to check C / C++ code style
+[0.799s] -- Configured uncrustify additional arguments: 
+[0.799s] -- Added test 'xmllint' to check XML markup files
+[0.802s] -- Configuring done
+[0.819s] -- Generating done
+[0.826s] -- Build files have been written to: /home/diego/Ros2_fg_prj/build/fg_bridge
+[0.840s] Invoked command in '/home/diego/Ros2_fg_prj/build/fg_bridge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/diego/Ros2_fg_prj/src/fg_node -DCMAKE_INSTALL_PREFIX=/home/diego/Ros2_fg_prj/install/fg_bridge
+[0.843s] Invoking command in '/home/diego/Ros2_fg_prj/build/fg_bridge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/diego/Ros2_fg_prj/build/fg_bridge -- -j12 -l12
+[0.892s] [35m[1mConsolidate compiler generated dependencies of target Ros2_main[0m
+[0.893s] [35m[1mConsolidate compiler generated dependencies of target Ros2fg_bridge[0m
+[0.926s] [ 75%] [32mBuilding CXX object CMakeFiles/Ros2fg_bridge.dir/src/Ros2fg_bridge.cpp.o[0m
+[0.926s] [ 75%] Built target Ros2_main
+[14.546s] [100%] [32m[1mLinking CXX executable Ros2fg_bridge[0m
+[15.429s] [100%] Built target Ros2fg_bridge
+[15.442s] Invoked command in '/home/diego/Ros2_fg_prj/build/fg_bridge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/diego/Ros2_fg_prj/build/fg_bridge -- -j12 -l12
+[15.454s] Invoking command in '/home/diego/Ros2_fg_prj/build/fg_bridge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/diego/Ros2_fg_prj/build/fg_bridge
+[15.464s] -- Install configuration: ""
+[15.464s] -- Execute custom install script
+[15.465s] -- Up-to-date symlink: /home/diego/Ros2_fg_prj/install/fg_bridge/lib/fg_bridge/Ros2_main
+[15.465s] -- Up-to-date symlink: /home/diego/Ros2_fg_prj/install/fg_bridge/lib/fg_bridge/Ros2fg_bridge
+[15.465s] -- Up-to-date symlink: /home/diego/Ros2_fg_prj/install/fg_bridge/share/ament_index/resource_index/package_run_dependencies/fg_bridge
+[15.466s] -- Up-to-date symlink: /home/diego/Ros2_fg_prj/install/fg_bridge/share/ament_index/resource_index/parent_prefix_path/fg_bridge
+[15.466s] -- Up-to-date symlink: /home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/environment/ament_prefix_path.sh
+[15.466s] -- Up-to-date symlink: /home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/environment/ament_prefix_path.dsv
+[15.467s] -- Up-to-date symlink: /home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/environment/path.sh
+[15.467s] -- Up-to-date symlink: /home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/environment/path.dsv
+[15.467s] -- Up-to-date symlink: /home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/local_setup.bash
+[15.468s] -- Up-to-date symlink: /home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/local_setup.sh
+[15.468s] -- Up-to-date symlink: /home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/local_setup.zsh
+[15.468s] -- Up-to-date symlink: /home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/local_setup.dsv
+[15.468s] -- Symlinking: /home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/package.dsv
+[15.480s] -- Up-to-date symlink: /home/diego/Ros2_fg_prj/install/fg_bridge/share/ament_index/resource_index/packages/fg_bridge
+[15.481s] -- Up-to-date symlink: /home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/cmake/fg_bridgeConfig.cmake
+[15.481s] -- Up-to-date symlink: /home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/cmake/fg_bridgeConfig-version.cmake
+[15.481s] -- Up-to-date symlink: /home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/package.xml
+[15.485s] Invoked command in '/home/diego/Ros2_fg_prj/build/fg_bridge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/diego/Ros2_fg_prj/build/fg_bridge

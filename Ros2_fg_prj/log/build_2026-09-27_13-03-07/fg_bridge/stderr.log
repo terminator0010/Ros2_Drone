@@ -1,0 +1,29 @@
+/home/diego/Ros2_fg_prj/src/fg_node/src/Ros2fg_bridge.cpp: In member function ‘void Ros2MainToFlightGearBridge::recv_loop()’:
+/home/diego/Ros2_fg_prj/src/fg_node/src/Ros2fg_bridge.cpp:188:34: error: redeclaration of ‘std_msgs::msg::Float32 msg’
+  188 |           std_msgs::msg::Float32 msg;
+      |                                  ^~~
+/home/diego/Ros2_fg_prj/src/fg_node/src/Ros2fg_bridge.cpp:184:34: note: ‘std_msgs::msg::Float32 msg’ previously declared here
+  184 |           std_msgs::msg::Float32 msg;
+      |                                  ^~~
+/home/diego/Ros2_fg_prj/src/fg_node/src/Ros2fg_bridge.cpp:192:34: error: redeclaration of ‘std_msgs::msg::Float32 msg’
+  192 |           std_msgs::msg::Float32 msg;
+      |                                  ^~~
+/home/diego/Ros2_fg_prj/src/fg_node/src/Ros2fg_bridge.cpp:184:34: note: ‘std_msgs::msg::Float32 msg’ previously declared here
+  184 |           std_msgs::msg::Float32 msg;
+      |                                  ^~~
+/home/diego/Ros2_fg_prj/src/fg_node/src/Ros2fg_bridge.cpp:196:34: error: redeclaration of ‘std_msgs::msg::Float32 msg’
+  196 |           std_msgs::msg::Float32 msg;
+      |                                  ^~~
+/home/diego/Ros2_fg_prj/src/fg_node/src/Ros2fg_bridge.cpp:184:34: note: ‘std_msgs::msg::Float32 msg’ previously declared here
+  184 |           std_msgs::msg::Float32 msg;
+      |                                  ^~~
+/home/diego/Ros2_fg_prj/src/fg_node/src/Ros2fg_bridge.cpp:200:34: error: redeclaration of ‘std_msgs::msg::Float32 msg’
+  200 |           std_msgs::msg::Float32 msg;
+      |                                  ^~~
+/home/diego/Ros2_fg_prj/src/fg_node/src/Ros2fg_bridge.cpp:184:34: note: ‘std_msgs::msg::Float32 msg’ previously declared here
+  184 |           std_msgs::msg::Float32 msg;
+      |                                  ^~~
+gmake[2]: *** [CMakeFiles/Ros2fg_bridge.dir/build.make:76: CMakeFiles/Ros2fg_bridge.dir/src/Ros2fg_bridge.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/Ros2fg_bridge.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,29 @@
+[01m[K/home/diego/Ros2_fg_prj/src/fg_node/src/Ros2fg_bridge.cpp:[m[K In member function ‘[01m[Kvoid Ros2MainToFlightGearBridge::recv_loop()[m[K’:
+[01m[K/home/diego/Ros2_fg_prj/src/fg_node/src/Ros2fg_bridge.cpp:188:34:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kstd_msgs::msg::Float32 msg[m[K’
+  188 |           std_msgs::msg::Float32 [01;31m[Kmsg[m[K;
+      |                                  [01;31m[K^~~[m[K
+[01m[K/home/diego/Ros2_fg_prj/src/fg_node/src/Ros2fg_bridge.cpp:184:34:[m[K [01;36m[Knote: [m[K‘[01m[Kstd_msgs::msg::Float32 msg[m[K’ previously declared here
+  184 |           std_msgs::msg::Float32 [01;36m[Kmsg[m[K;
+      |                                  [01;36m[K^~~[m[K
+[01m[K/home/diego/Ros2_fg_prj/src/fg_node/src/Ros2fg_bridge.cpp:192:34:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kstd_msgs::msg::Float32 msg[m[K’
+  192 |           std_msgs::msg::Float32 [01;31m[Kmsg[m[K;
+      |                                  [01;31m[K^~~[m[K
+[01m[K/home/diego/Ros2_fg_prj/src/fg_node/src/Ros2fg_bridge.cpp:184:34:[m[K [01;36m[Knote: [m[K‘[01m[Kstd_msgs::msg::Float32 msg[m[K’ previously declared here
+  184 |           std_msgs::msg::Float32 [01;36m[Kmsg[m[K;
+      |                                  [01;36m[K^~~[m[K
+[01m[K/home/diego/Ros2_fg_prj/src/fg_node/src/Ros2fg_bridge.cpp:196:34:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kstd_msgs::msg::Float32 msg[m[K’
+  196 |           std_msgs::msg::Float32 [01;31m[Kmsg[m[K;
+      |                                  [01;31m[K^~~[m[K
+[01m[K/home/diego/Ros2_fg_prj/src/fg_node/src/Ros2fg_bridge.cpp:184:34:[m[K [01;36m[Knote: [m[K‘[01m[Kstd_msgs::msg::Float32 msg[m[K’ previously declared here
+  184 |           std_msgs::msg::Float32 [01;36m[Kmsg[m[K;
+      |                                  [01;36m[K^~~[m[K
+[01m[K/home/diego/Ros2_fg_prj/src/fg_node/src/Ros2fg_bridge.cpp:200:34:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kstd_msgs::msg::Float32 msg[m[K’
+  200 |           std_msgs::msg::Float32 [01;31m[Kmsg[m[K;
+      |                                  [01;31m[K^~~[m[K
+[01m[K/home/diego/Ros2_fg_prj/src/fg_node/src/Ros2fg_bridge.cpp:184:34:[m[K [01;36m[Knote: [m[K‘[01m[Kstd_msgs::msg::Float32 msg[m[K’ previously declared here
+  184 |           std_msgs::msg::Float32 [01;36m[Kmsg[m[K;
+      |                                  [01;36m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/Ros2fg_bridge.dir/build.make:76: CMakeFiles/Ros2fg_bridge.dir/src/Ros2fg_bridge.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/Ros2fg_bridge.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

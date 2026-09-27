@@ -1,0 +1,5 @@
+{
+    "idf.flashType": "UART",
+    "idf.currentSetup": "/home/diego/.espressif/v6.0.2/esp-idf",
+    "python.envFile": "${workspaceFolder}/.env"
+}

@@ -395,7 +395,7 @@
 
     [
       "pot_rudder:VCC",
-      "esp:3V3",
+      "esp:3V3.2",
       "red",
       [
         "v0"
@@ -422,7 +422,7 @@
 
     [
       "pot_aileron:VCC",
-      "esp:3V3",
+      "esp:3V3.2",
       "red",
       [
         "v0"
@@ -449,7 +449,7 @@
 
     [
       "pot_elevator:VCC",
-      "esp:3V3",
+      "esp:3V3.2",
       "red",
       [
         "v0"
@@ -476,7 +476,7 @@
 
     [
       "pot_flaps:VCC",
-      "esp:3V3",
+      "esp:3V3.2",
       "red",
       [
         "v0"
@@ -503,7 +503,7 @@
 
     [
       "pot_engine:VCC",
-      "esp:3V3",
+      "esp:3V3.2",
       "red",
       [
         "v0"

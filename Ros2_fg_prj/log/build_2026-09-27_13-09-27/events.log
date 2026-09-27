@@ -1,0 +1,161 @@
+[0.000000] (-) TimerEvent: {}
+[0.000683] (fg_bridge) JobQueued: {'identifier': 'fg_bridge', 'dependencies': OrderedDict()}
+[0.000737] (fg_bridge) JobStarted: {'identifier': 'fg_bridge'}
+[0.007704] (fg_bridge) JobProgress: {'identifier': 'fg_bridge', 'progress': 'cmake'}
+[0.008172] (fg_bridge) Command: {'cmd': ['/usr/bin/cmake', '/home/diego/Ros2_fg_prj/src/fg_node', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/diego/Ros2_fg_prj/install/fg_bridge'], 'cwd': '/home/diego/Ros2_fg_prj/build/fg_bridge', 'env': OrderedDict([('LINOROBOT2_BASE', '2wd'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'diego'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/diego'), ('OLDPWD', '/home/diego'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('WOKWI_CLI_TOKEN', 'wok_uslTuA2fl7wCqOw3ZkfHh7BzsdFfrcaAfc346dfb'), ('SYSTEMD_EXEC_PID', '1760'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'diego'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'diego'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/diego/bin:/home/diego/.espressif/eim_gui:/home/diego/.local/bin:/home/diego/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/diego-desktop:@/tmp/.ICE-unix/1728,unix/diego-desktop:/tmp/.ICE-unix/1728'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f4b8ac78_2e07_4f82_976b_ab4519a61272'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XHEFW3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.126'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/diego/Ros2_fg_prj/build/fg_bridge'), ('DRONE_TOKEN', 'wok_uslTuA2fl7wCqOw3ZkfHh7BzsdFfrcaAfc346dfb'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/home/diego/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.023026] (fg_bridge) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099806] (-) TimerEvent: {}
+[0.157887] (fg_bridge) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.199920] (-) TimerEvent: {}
+[0.214696] (fg_bridge) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.246143] (fg_bridge) StdoutLine: {'line': b'-- Found rclcpp: 16.0.21 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.289304] (fg_bridge) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.294650] (fg_bridge) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.299996] (-) TimerEvent: {}
+[0.303381] (fg_bridge) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.315067] (fg_bridge) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.330920] (fg_bridge) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.374725] (fg_bridge) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.4 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.377435] (fg_bridge) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.400118] (-) TimerEvent: {}
+[0.471235] (fg_bridge) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.500225] (-) TimerEvent: {}
+[0.503040] (fg_bridge) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.550873] (fg_bridge) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.560030] (fg_bridge) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.600349] (-) TimerEvent: {}
+[0.630244] (fg_bridge) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.630478] (fg_bridge) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.700476] (-) TimerEvent: {}
+[0.701302] (fg_bridge) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.702304] (fg_bridge) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.753860] (fg_bridge) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.2 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.785091] (fg_bridge) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.800586] (-) TimerEvent: {}
+[0.862262] (fg_bridge) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.862463] (fg_bridge) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[0.862545] (fg_bridge) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.862975] (fg_bridge) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[0.863829] (fg_bridge) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.864429] (fg_bridge) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[0.866676] (fg_bridge) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.866789] (fg_bridge) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.867291] (fg_bridge) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.868671] (fg_bridge) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.881769] (fg_bridge) StdoutLine: {'line': b'-- Generating done\n'}
+[0.886468] (fg_bridge) StdoutLine: {'line': b'-- Build files have been written to: /home/diego/Ros2_fg_prj/build/fg_bridge\n'}
+[0.893570] (fg_bridge) CommandEnded: {'returncode': 0}
+[0.894162] (fg_bridge) JobProgress: {'identifier': 'fg_bridge', 'progress': 'build'}
+[0.895266] (fg_bridge) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/diego/Ros2_fg_prj/build/fg_bridge', '--', '-j12', '-l12'], 'cwd': '/home/diego/Ros2_fg_prj/build/fg_bridge', 'env': OrderedDict([('LINOROBOT2_BASE', '2wd'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'diego'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/diego'), ('OLDPWD', '/home/diego'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('WOKWI_CLI_TOKEN', 'wok_uslTuA2fl7wCqOw3ZkfHh7BzsdFfrcaAfc346dfb'), ('SYSTEMD_EXEC_PID', '1760'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'diego'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'diego'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/diego/bin:/home/diego/.espressif/eim_gui:/home/diego/.local/bin:/home/diego/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/diego-desktop:@/tmp/.ICE-unix/1728,unix/diego-desktop:/tmp/.ICE-unix/1728'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f4b8ac78_2e07_4f82_976b_ab4519a61272'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XHEFW3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.126'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/diego/Ros2_fg_prj/build/fg_bridge'), ('DRONE_TOKEN', 'wok_uslTuA2fl7wCqOw3ZkfHh7BzsdFfrcaAfc346dfb'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/home/diego/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.900673] (-) TimerEvent: {}
+[0.945059] (fg_bridge) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/Ros2fg_bridge.dir/src/Ros2fg_bridge.cpp.o\x1b[0m\n'}
+[0.945232] (fg_bridge) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/Ros2_main.dir/src/Ros2_main.cpp.o\x1b[0m\n'}
+[1.000823] (-) TimerEvent: {}
+[1.101183] (-) TimerEvent: {}
+[1.201506] (-) TimerEvent: {}
+[1.301829] (-) TimerEvent: {}
+[1.402123] (-) TimerEvent: {}
+[1.502445] (-) TimerEvent: {}
+[1.602761] (-) TimerEvent: {}
+[1.703082] (-) TimerEvent: {}
+[1.803370] (-) TimerEvent: {}
+[1.903680] (-) TimerEvent: {}
+[2.003986] (-) TimerEvent: {}
+[2.104307] (-) TimerEvent: {}
+[2.204621] (-) TimerEvent: {}
+[2.304928] (-) TimerEvent: {}
+[2.405247] (-) TimerEvent: {}
+[2.505558] (-) TimerEvent: {}
+[2.605861] (-) TimerEvent: {}
+[2.706158] (-) TimerEvent: {}
+[2.806482] (-) TimerEvent: {}
+[2.906839] (-) TimerEvent: {}
+[3.007151] (-) TimerEvent: {}
+[3.107470] (-) TimerEvent: {}
+[3.207784] (-) TimerEvent: {}
+[3.308100] (-) TimerEvent: {}
+[3.408410] (-) TimerEvent: {}
+[3.508721] (-) TimerEvent: {}
+[3.609032] (-) TimerEvent: {}
+[3.709367] (-) TimerEvent: {}
+[3.809681] (-) TimerEvent: {}
+[3.909977] (-) TimerEvent: {}
+[4.010301] (-) TimerEvent: {}
+[4.110667] (-) TimerEvent: {}
+[4.211071] (-) TimerEvent: {}
+[4.311407] (-) TimerEvent: {}
+[4.411729] (-) TimerEvent: {}
+[4.512079] (-) TimerEvent: {}
+[4.612491] (-) TimerEvent: {}
+[4.712844] (-) TimerEvent: {}
+[4.813168] (-) TimerEvent: {}
+[4.913503] (-) TimerEvent: {}
+[5.013859] (-) TimerEvent: {}
+[5.114209] (-) TimerEvent: {}
+[5.214542] (-) TimerEvent: {}
+[5.314904] (-) TimerEvent: {}
+[5.415277] (-) TimerEvent: {}
+[5.515594] (-) TimerEvent: {}
+[5.615900] (-) TimerEvent: {}
+[5.716222] (-) TimerEvent: {}
+[5.816534] (-) TimerEvent: {}
+[5.916832] (-) TimerEvent: {}
+[6.017127] (-) TimerEvent: {}
+[6.117411] (-) TimerEvent: {}
+[6.217707] (-) TimerEvent: {}
+[6.318014] (-) TimerEvent: {}
+[6.418343] (-) TimerEvent: {}
+[6.518656] (-) TimerEvent: {}
+[6.618961] (-) TimerEvent: {}
+[6.719285] (-) TimerEvent: {}
+[6.819600] (-) TimerEvent: {}
+[6.919901] (-) TimerEvent: {}
+[7.020210] (-) TimerEvent: {}
+[7.120510] (-) TimerEvent: {}
+[7.220819] (-) TimerEvent: {}
+[7.321127] (-) TimerEvent: {}
+[7.421444] (-) TimerEvent: {}
+[7.521766] (-) TimerEvent: {}
+[7.622086] (-) TimerEvent: {}
+[7.722377] (-) TimerEvent: {}
+[7.822678] (-) TimerEvent: {}
+[7.922989] (-) TimerEvent: {}
+[8.023329] (-) TimerEvent: {}
+[8.123668] (-) TimerEvent: {}
+[8.224011] (-) TimerEvent: {}
+[8.324331] (-) TimerEvent: {}
+[8.370439] (fg_bridge) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable Ros2_main\x1b[0m\n'}
+[8.408794] (fg_bridge) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable Ros2fg_bridge\x1b[0m\n'}
+[8.424451] (-) TimerEvent: {}
+[8.524823] (-) TimerEvent: {}
+[8.625327] (-) TimerEvent: {}
+[8.725730] (-) TimerEvent: {}
+[8.826060] (-) TimerEvent: {}
+[8.861004] (fg_bridge) StdoutLine: {'line': b'[100%] Built target Ros2_main\n'}
+[8.898525] (fg_bridge) StdoutLine: {'line': b'[100%] Built target Ros2fg_bridge\n'}
+[8.910360] (fg_bridge) CommandEnded: {'returncode': 0}
+[8.910921] (fg_bridge) JobProgress: {'identifier': 'fg_bridge', 'progress': 'install'}
+[8.920024] (fg_bridge) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/diego/Ros2_fg_prj/build/fg_bridge'], 'cwd': '/home/diego/Ros2_fg_prj/build/fg_bridge', 'env': OrderedDict([('LINOROBOT2_BASE', '2wd'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'diego'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/diego'), ('OLDPWD', '/home/diego'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('WOKWI_CLI_TOKEN', 'wok_uslTuA2fl7wCqOw3ZkfHh7BzsdFfrcaAfc346dfb'), ('SYSTEMD_EXEC_PID', '1760'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'diego'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'diego'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/diego/bin:/home/diego/.espressif/eim_gui:/home/diego/.local/bin:/home/diego/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/diego-desktop:@/tmp/.ICE-unix/1728,unix/diego-desktop:/tmp/.ICE-unix/1728'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f4b8ac78_2e07_4f82_976b_ab4519a61272'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XHEFW3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.126'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/diego/Ros2_fg_prj/build/fg_bridge'), ('DRONE_TOKEN', 'wok_uslTuA2fl7wCqOw3ZkfHh7BzsdFfrcaAfc346dfb'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/home/diego/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[8.926090] (-) TimerEvent: {}
+[8.927304] (fg_bridge) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.927842] (fg_bridge) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[8.928179] (fg_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/diego/Ros2_fg_prj/install/fg_bridge/lib/fg_bridge/Ros2_main\n'}
+[8.928398] (fg_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/diego/Ros2_fg_prj/install/fg_bridge/lib/fg_bridge/Ros2fg_bridge\n'}
+[8.928642] (fg_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/diego/Ros2_fg_prj/install/fg_bridge/share/ament_index/resource_index/package_run_dependencies/fg_bridge\n'}
+[8.928835] (fg_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/diego/Ros2_fg_prj/install/fg_bridge/share/ament_index/resource_index/parent_prefix_path/fg_bridge\n'}
+[8.929030] (fg_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/environment/ament_prefix_path.sh\n'}
+[8.929245] (fg_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/environment/ament_prefix_path.dsv\n'}
+[8.929451] (fg_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/environment/path.sh\n'}
+[8.929629] (fg_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/environment/path.dsv\n'}
+[8.929812] (fg_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/local_setup.bash\n'}
+[8.929999] (fg_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/local_setup.sh\n'}
+[8.930193] (fg_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/local_setup.zsh\n'}
+[8.930378] (fg_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/local_setup.dsv\n'}
+[8.930489] (fg_bridge) StdoutLine: {'line': b'-- Symlinking: /home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/package.dsv\n'}
+[8.939919] (fg_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/diego/Ros2_fg_prj/install/fg_bridge/share/ament_index/resource_index/packages/fg_bridge\n'}
+[8.940089] (fg_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/cmake/fg_bridgeConfig.cmake\n'}
+[8.940209] (fg_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/cmake/fg_bridgeConfig-version.cmake\n'}
+[8.940359] (fg_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/diego/Ros2_fg_prj/install/fg_bridge/share/fg_bridge/package.xml\n'}
+[8.942536] (fg_bridge) CommandEnded: {'returncode': 0}
+[8.957079] (fg_bridge) JobEnded: {'identifier': 'fg_bridge', 'rc': 0}
+[8.957621] (-) EventReactorShutdown: {}

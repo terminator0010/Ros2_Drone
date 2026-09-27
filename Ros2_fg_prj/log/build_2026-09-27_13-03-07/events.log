@@ -1,0 +1,185 @@
+[0.000000] (-) TimerEvent: {}
+[0.000332] (fg_bridge) JobQueued: {'identifier': 'fg_bridge', 'dependencies': OrderedDict()}
+[0.000579] (fg_bridge) JobStarted: {'identifier': 'fg_bridge'}
+[0.008499] (fg_bridge) JobProgress: {'identifier': 'fg_bridge', 'progress': 'cmake'}
+[0.009079] (fg_bridge) Command: {'cmd': ['/usr/bin/cmake', '/home/diego/Ros2_fg_prj/src/fg_node', '-DCMAKE_INSTALL_PREFIX=/home/diego/Ros2_fg_prj/install/fg_bridge'], 'cwd': '/home/diego/Ros2_fg_prj/build/fg_bridge', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LINOROBOT2_BASE', '2wd'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/diego'), ('USER', 'diego'), ('ANTIGRAVITY_SOURCE_METADATA', '{"tool":{"conversationId":"353c7fcb-783d-47c9-8194-47efffb4d9c8","stepIndex":21,"toolCall":{"id":"call_35219","name":"run_command","argumentsJson":"{\\"CommandLine\\":\\"source /opt/ros/*/setup.bash \\\\u0026\\\\u0026 colcon build\\",\\"Cwd\\":\\"/home/diego/Ros2_fg_prj\\",\\"WaitMsBeforeAsync\\":10000,\\"toolAction\\":\\"Running command\\",\\"toolSummary\\":\\"Build all packages with colcon\\"}","thinkingSignature":"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","originalName":"run_command"}}}'), ('VSCODE_NLS_CONFIG', '{"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/home/diego/Antigravity IDE/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}'), ('XDG_SESSION_TYPE', 'wayland'), ('ANTIGRAVITY_AGENTAPI_EXE', '/home/diego/Antigravity IDE/resources/app/extensions/antigravity/bin/language_server_linux_x64'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/diego'), ('CHROME_DESKTOP', 'antigravity-ide.desktop'), ('DESKTOP_SESSION', 'ubuntu'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-4774c052-1.10-main.sock'), ('GIO_LAUNCHED_DESKTOP_FILE', '/home/diego/Desktop/Antigravity IDE.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('WOKWI_CLI_TOKEN', 'wok_uslTuA2fl7wCqOw3ZkfHh7BzsdFfrcaAfc346dfb'), ('MANAGERPID', '1571'), ('ANTIGRAVITY_SAFECLIS_SOURCE', '/home/diego/.gemini/antigravity-ide/bin/safeclis/src'), ('SYSTEMD_EXEC_PID', '1760'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ANTIGRAVITY_AGENT', '1'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5610'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'diego'), ('JOURNAL_STREAM', '8:15732'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'diego'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('ANTIGRAVITY_LS_VERSION', 'ide-2.4.5'), ('ANTIGRAVITY_EDITOR_APP_ROOT', '/home/diego/Antigravity IDE/resources/app'), ('PATH', '/opt/ros/humble/bin:/home/diego/.gemini/antigravity-ide/bin:/home/diego/.local/bin:/home/diego/bin:/home/diego/bin:/home/diego/.espressif/eim_gui:/home/diego/.local/bin:/home/diego/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/diego-desktop:@/tmp/.ICE-unix/1728,unix/diego-desktop:/tmp/.ICE-unix/1728'), ('INVOCATION_ID', 'db9490e48212466aabc35c15eb1d9d41'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'wayland'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('ANTIGRAVITY_CONVERSATION_ID', '353c7fcb-783d-47c9-8194-47efffb4d9c8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XHEFW3'), ('LS_COLORS', ''), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('ANTIGRAVITY_LS_ADDRESS', 'localhost:42163'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('ANTIGRAVITY_TRAJECTORY_ID', 'c1de648a-17a1-48d9-a884-6f1dd5bf3e27'), ('PWD', '/home/diego/Ros2_fg_prj/build/fg_bridge'), ('DRONE_TOKEN', 'wok_uslTuA2fl7wCqOw3ZkfHh7BzsdFfrcaAfc346dfb'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('VSCODE_CODE_CACHE_PATH', '/home/diego/.config/Antigravity IDE/CachedData/ecfbad74d93962fc8ca485d93ab9b4f3d4cb6cf8'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/home/diego/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('ANTIGRAVITY_CSRF_TOKEN', '1c235daf-1fb1-47d5-9be9-d8101b340307'), ('VSCODE_PID', '5610'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099830] (-) TimerEvent: {}
+[0.121146] (fg_bridge) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.194968] (fg_bridge) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.199916] (-) TimerEvent: {}
+[0.205230] (fg_bridge) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.276029] (fg_bridge) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.282867] (fg_bridge) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.283179] (fg_bridge) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.283816] (fg_bridge) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.287129] (fg_bridge) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.300036] (-) TimerEvent: {}
+[0.369766] (fg_bridge) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.377174] (fg_bridge) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.377418] (fg_bridge) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.377799] (fg_bridge) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.382620] (fg_bridge) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.400135] (-) TimerEvent: {}
+[0.500411] (-) TimerEvent: {}
+[0.527163] (fg_bridge) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.600541] (-) TimerEvent: {}
+[0.642059] (fg_bridge) StdoutLine: {'line': b'-- Found rclcpp: 16.0.21 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.700656] (-) TimerEvent: {}
+[0.700864] (fg_bridge) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.708008] (fg_bridge) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.720068] (fg_bridge) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.736274] (fg_bridge) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.755567] (fg_bridge) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.800751] (-) TimerEvent: {}
+[0.811598] (fg_bridge) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.4 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.815280] (fg_bridge) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.900865] (-) TimerEvent: {}
+[0.927061] (fg_bridge) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.960510] (fg_bridge) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.000973] (-) TimerEvent: {}
+[1.010564] (fg_bridge) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.022750] (fg_bridge) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.095269] (fg_bridge) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.095654] (fg_bridge) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.101070] (-) TimerEvent: {}
+[1.168987] (fg_bridge) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.169961] (fg_bridge) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.201192] (-) TimerEvent: {}
+[1.235182] (fg_bridge) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.2 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.270612] (fg_bridge) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.301289] (-) TimerEvent: {}
+[1.354434] (fg_bridge) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.354600] (fg_bridge) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[1.354662] (fg_bridge) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.355202] (fg_bridge) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.356153] (fg_bridge) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.356862] (fg_bridge) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.359271] (fg_bridge) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.359409] (fg_bridge) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.360063] (fg_bridge) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.361725] (fg_bridge) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.375571] (fg_bridge) StdoutLine: {'line': b'-- Generating done\n'}
+[1.380590] (fg_bridge) StdoutLine: {'line': b'-- Build files have been written to: /home/diego/Ros2_fg_prj/build/fg_bridge\n'}
+[1.390055] (fg_bridge) CommandEnded: {'returncode': 0}
+[1.390795] (fg_bridge) JobProgress: {'identifier': 'fg_bridge', 'progress': 'build'}
+[1.391406] (fg_bridge) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/diego/Ros2_fg_prj/build/fg_bridge', '--', '-j12', '-l12'], 'cwd': '/home/diego/Ros2_fg_prj/build/fg_bridge', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LINOROBOT2_BASE', '2wd'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/diego'), ('USER', 'diego'), ('ANTIGRAVITY_SOURCE_METADATA', '{"tool":{"conversationId":"353c7fcb-783d-47c9-8194-47efffb4d9c8","stepIndex":21,"toolCall":{"id":"call_35219","name":"run_command","argumentsJson":"{\\"CommandLine\\":\\"source /opt/ros/*/setup.bash \\\\u0026\\\\u0026 colcon build\\",\\"Cwd\\":\\"/home/diego/Ros2_fg_prj\\",\\"WaitMsBeforeAsync\\":10000,\\"toolAction\\":\\"Running command\\",\\"toolSummary\\":\\"Build all packages with colcon\\"}","thinkingSignature":"EqIMCp8MAWkUfRN0qMDi3d6dbxlCA8uIkdTXSH9d7TvxfJ2VKnj8Zrpp8QORb33+9AVLR3Dtk43Afa/iKFuUWjM3E1Xe/Y4PhyMkg7t5u0rh8tnB+F4JwQnrsNtD7Hng9h/NimG6FBJeGt5MBQi3/uaVneaHiarb/++/YLVeFfcm26nvSq27pwWgrKytt9RV9JXutnMADzPpnpfdAMnGlpR0judn46rpM5ylIJGZcnCTmLkZz9ZKsDEbs/U3noToP3C7yzwwrAk1Vej2H2dz4oJVNGiO+Gdv18T1hh/fahR5Hc8aeee7cZI3FtKpb4JE85jldOeLS26iUF2H2Hvsa2bPD7mxaz2WnzVEDNAEf2tmEnoezCD6dXAJ6a5jPlQsrhg9CV3SZbwgUG4t87uk4Ad/5AvPg5KO0p7IjhXxbhFLHRBzQ4ssLVAAVdbUKZiYsvewcmLwYXshGifQ+tdKsOyNeXfkeJVVCHq5/L5SErvryEAm7AJLEACBl6NpUXbsuCCX4Ll4VcSt5a8TcGXwY667RdpK3jOBtqs7t/o1nvwNqgWVe8ErUTHMj+Qg0sCRZVdONG6TO5DOpjuNIOHJL6cES39aSQpW71QzHCI9/jo6COfCArpOQCuSX/qWvtqdFP40CHBfmD0T/bH14eScNN86JU5D+X8gr6swaU/rSl5tskU87foDGy5ksZjF898Wz1nDxtNAp8+MvOPTeWjKZ2Gd6ksMZlU7BKScwWQ9micnd1UMF0+mqyAQiNIkCXVhFAxcr1GfZb0GNNoDGYMlfmtjXP74EC0wEvk8Z1M277OvtVUGA77bvc12u8y8BMCd8kRNXk5A/JO4sROcg0cBHInQGrBk/44zOWaVyIWEwPlwhzWLhVTmPBwfDuikmQIa32LdptIyqEywqJqA/WCSTwEArpJv0Qm+6OX6ysyveb00iExp1fvZ3bBDxmzZFzT2PxsqvBLlQwbhuI1aP0+PxS6MxQ3jJfrodRjrECdkytokLMdEeCK5FcXqwvqIkEhTaBadQAMrr+ADYAe3MnZGshqOgxi9At4FkI7SBRw9WSy19pQ08MIg+CkmwklQcACsVN7RPYT9k431qTPHssxZdZMoOCXa5W8o/kORTiam16w8/rST95e0DicY88oPNTj87TPNkeM0M6O86Qssk3Lbgi3CMBpcxZTAXlLzC72yovGTTsNIj3NCi3jPMaaROW/yD+1KOEdh4A10k3WNF2UYmlMYjGlyIIah5GhvfdUKMZvGMCL+zrCO+WmYBLgECwVm7BVo3juCgofMIadVez8kUN+yAYgi5Ch9HfGFGSz2V1tB8RV0ABZ/6f35pFnOcRpog0ggYBo4adun+zp0PCpJHsSwq56/7HbIUezFQSpG0kAjYgruyJ/wk6Nd8yoHhe4OvcyfD9fdOiD1lo/lTo54cAvGgGpbY4QDqZWOrjqzWDEF59Vkil71fcnBd3zbNslPRGfHEtPDX1IPn61PlxrA50cZR1P6coCPRizacar5ScGOOsbtPTiDReglDyBy/9G7JopVH/L9puOqlBLHAShasEQSn8ryKIryA7KVDIxEjxMwgMb5rnZe4WHgoTJNlS8Ft3i4qVlojUz17KYxZXAXl1tT5ppOtlgEAfuXyrEyTiTnMrsce9z8DDtCOHHgYkn4fqPNKbWFB+gbx9py2D564iJTB0jRGRLM/xF12tEvOFjmWsB0s96JNKQ9GrbB52aW7HqQ/OdV2U1a94mLxkex61twokMtwt5PJ/eVR11RAgAk+45/5alPTH15iwhKK2JjZScODACYgB8RrakSkrnz0TBDUoRVC2dAAozHcKJKEqDJ6SVBm/Z+Rjc004UhYLpJnl7VD6dESbwmdFGjE0xUlRCsYXjX2lJAbpD9ThuTXy3bmxv9atq+HQ49sJd/R8yJZdEkZ66wsSOXnIuo73Yd4FPweZLwqMotYorvuqDnZJskZXeKTehBQ3iOwVpiIPDa7del6K1RS8vYE9NFc2/LptuUCpY86lBhCbmw3+VibKiAmIPt4jTx5P2gdupRrjx1LSB3FlHYyNAW2EA5Zm5pPuXD0iah+ebLLSPT5WelJUGAp9H08A==","originalName":"run_command"}}}'), ('VSCODE_NLS_CONFIG', '{"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/home/diego/Antigravity IDE/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}'), ('XDG_SESSION_TYPE', 'wayland'), ('ANTIGRAVITY_AGENTAPI_EXE', '/home/diego/Antigravity IDE/resources/app/extensions/antigravity/bin/language_server_linux_x64'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/diego'), ('CHROME_DESKTOP', 'antigravity-ide.desktop'), ('DESKTOP_SESSION', 'ubuntu'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-4774c052-1.10-main.sock'), ('GIO_LAUNCHED_DESKTOP_FILE', '/home/diego/Desktop/Antigravity IDE.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('WOKWI_CLI_TOKEN', 'wok_uslTuA2fl7wCqOw3ZkfHh7BzsdFfrcaAfc346dfb'), ('MANAGERPID', '1571'), ('ANTIGRAVITY_SAFECLIS_SOURCE', '/home/diego/.gemini/antigravity-ide/bin/safeclis/src'), ('SYSTEMD_EXEC_PID', '1760'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ANTIGRAVITY_AGENT', '1'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5610'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'diego'), ('JOURNAL_STREAM', '8:15732'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'diego'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('ANTIGRAVITY_LS_VERSION', 'ide-2.4.5'), ('ANTIGRAVITY_EDITOR_APP_ROOT', '/home/diego/Antigravity IDE/resources/app'), ('PATH', '/opt/ros/humble/bin:/home/diego/.gemini/antigravity-ide/bin:/home/diego/.local/bin:/home/diego/bin:/home/diego/bin:/home/diego/.espressif/eim_gui:/home/diego/.local/bin:/home/diego/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/diego-desktop:@/tmp/.ICE-unix/1728,unix/diego-desktop:/tmp/.ICE-unix/1728'), ('INVOCATION_ID', 'db9490e48212466aabc35c15eb1d9d41'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'wayland'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('ANTIGRAVITY_CONVERSATION_ID', '353c7fcb-783d-47c9-8194-47efffb4d9c8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XHEFW3'), ('LS_COLORS', ''), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('ANTIGRAVITY_LS_ADDRESS', 'localhost:42163'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('ANTIGRAVITY_TRAJECTORY_ID', 'c1de648a-17a1-48d9-a884-6f1dd5bf3e27'), ('PWD', '/home/diego/Ros2_fg_prj/build/fg_bridge'), ('DRONE_TOKEN', 'wok_uslTuA2fl7wCqOw3ZkfHh7BzsdFfrcaAfc346dfb'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('VSCODE_CODE_CACHE_PATH', '/home/diego/.config/Antigravity IDE/CachedData/ecfbad74d93962fc8ca485d93ab9b4f3d4cb6cf8'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/home/diego/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('ANTIGRAVITY_CSRF_TOKEN', '1c235daf-1fb1-47d5-9be9-d8101b340307'), ('VSCODE_PID', '5610'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.401431] (-) TimerEvent: {}
+[1.445343] (fg_bridge) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/Ros2_main.dir/src/Ros2_main.cpp.o\x1b[0m\n'}
+[1.445551] (fg_bridge) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/Ros2fg_bridge.dir/src/Ros2fg_bridge.cpp.o\x1b[0m\n'}
+[1.501549] (-) TimerEvent: {}
+[1.601865] (-) TimerEvent: {}
+[1.702184] (-) TimerEvent: {}
+[1.802507] (-) TimerEvent: {}
+[1.902803] (-) TimerEvent: {}
+[2.003103] (-) TimerEvent: {}
+[2.103420] (-) TimerEvent: {}
+[2.203718] (-) TimerEvent: {}
+[2.304010] (-) TimerEvent: {}
+[2.404319] (-) TimerEvent: {}
+[2.504638] (-) TimerEvent: {}
+[2.604961] (-) TimerEvent: {}
+[2.705302] (-) TimerEvent: {}
+[2.805623] (-) TimerEvent: {}
+[2.905936] (-) TimerEvent: {}
+[3.006250] (-) TimerEvent: {}
+[3.106587] (-) TimerEvent: {}
+[3.206933] (-) TimerEvent: {}
+[3.307264] (-) TimerEvent: {}
+[3.407587] (-) TimerEvent: {}
+[3.508498] (-) TimerEvent: {}
+[3.608868] (-) TimerEvent: {}
+[3.697443] (fg_bridge) StderrLine: {'line': b'/home/diego/Ros2_fg_prj/src/fg_node/src/Ros2fg_bridge.cpp: In member function \xe2\x80\x98void Ros2MainToFlightGearBridge::recv_loop()\xe2\x80\x99:\n'}
+[3.697708] (fg_bridge) StderrLine: {'line': b'/home/diego/Ros2_fg_prj/src/fg_node/src/Ros2fg_bridge.cpp:188:34: error: redeclaration of \xe2\x80\x98std_msgs::msg::Float32 msg\xe2\x80\x99\n'}
+[3.697771] (fg_bridge) StderrLine: {'line': b'  188 |           std_msgs::msg::Float32 msg;\n'}
+[3.697833] (fg_bridge) StderrLine: {'line': b'      |                                  ^~~\n'}
+[3.697888] (fg_bridge) StderrLine: {'line': b'/home/diego/Ros2_fg_prj/src/fg_node/src/Ros2fg_bridge.cpp:184:34: note: \xe2\x80\x98std_msgs::msg::Float32 msg\xe2\x80\x99 previously declared here\n'}
+[3.697943] (fg_bridge) StderrLine: {'line': b'  184 |           std_msgs::msg::Float32 msg;\n'}
+[3.697996] (fg_bridge) StderrLine: {'line': b'      |                                  ^~~\n'}
+[3.698048] (fg_bridge) StderrLine: {'line': b'/home/diego/Ros2_fg_prj/src/fg_node/src/Ros2fg_bridge.cpp:192:34: error: redeclaration of \xe2\x80\x98std_msgs::msg::Float32 msg\xe2\x80\x99\n'}
+[3.698101] (fg_bridge) StderrLine: {'line': b'  192 |           std_msgs::msg::Float32 msg;\n'}
+[3.698153] (fg_bridge) StderrLine: {'line': b'      |                                  ^~~\n'}
+[3.698204] (fg_bridge) StderrLine: {'line': b'/home/diego/Ros2_fg_prj/src/fg_node/src/Ros2fg_bridge.cpp:184:34: note: \xe2\x80\x98std_msgs::msg::Float32 msg\xe2\x80\x99 previously declared here\n'}
+[3.698255] (fg_bridge) StderrLine: {'line': b'  184 |           std_msgs::msg::Float32 msg;\n'}
+[3.698306] (fg_bridge) StderrLine: {'line': b'      |                                  ^~~\n'}
+[3.698373] (fg_bridge) StderrLine: {'line': b'/home/diego/Ros2_fg_prj/src/fg_node/src/Ros2fg_bridge.cpp:196:34: error: redeclaration of \xe2\x80\x98std_msgs::msg::Float32 msg\xe2\x80\x99\n'}
+[3.698437] (fg_bridge) StderrLine: {'line': b'  196 |           std_msgs::msg::Float32 msg;\n'}
+[3.698490] (fg_bridge) StderrLine: {'line': b'      |                                  ^~~\n'}
+[3.698541] (fg_bridge) StderrLine: {'line': b'/home/diego/Ros2_fg_prj/src/fg_node/src/Ros2fg_bridge.cpp:184:34: note: \xe2\x80\x98std_msgs::msg::Float32 msg\xe2\x80\x99 previously declared here\n'}
+[3.698592] (fg_bridge) StderrLine: {'line': b'  184 |           std_msgs::msg::Float32 msg;\n'}
+[3.698654] (fg_bridge) StderrLine: {'line': b'      |                                  ^~~\n'}
+[3.698706] (fg_bridge) StderrLine: {'line': b'/home/diego/Ros2_fg_prj/src/fg_node/src/Ros2fg_bridge.cpp:200:34: error: redeclaration of \xe2\x80\x98std_msgs::msg::Float32 msg\xe2\x80\x99\n'}
+[3.698757] (fg_bridge) StderrLine: {'line': b'  200 |           std_msgs::msg::Float32 msg;\n'}
+[3.698809] (fg_bridge) StderrLine: {'line': b'      |                                  ^~~\n'}
+[3.698864] (fg_bridge) StderrLine: {'line': b'/home/diego/Ros2_fg_prj/src/fg_node/src/Ros2fg_bridge.cpp:184:34: note: \xe2\x80\x98std_msgs::msg::Float32 msg\xe2\x80\x99 previously declared here\n'}
+[3.698915] (fg_bridge) StderrLine: {'line': b'  184 |           std_msgs::msg::Float32 msg;\n'}
+[3.698967] (fg_bridge) StderrLine: {'line': b'      |                                  ^~~\n'}
+[3.708967] (-) TimerEvent: {}
+[3.809271] (-) TimerEvent: {}
+[3.909627] (-) TimerEvent: {}
+[4.009983] (-) TimerEvent: {}
+[4.110299] (-) TimerEvent: {}
+[4.210614] (-) TimerEvent: {}
+[4.310918] (-) TimerEvent: {}
+[4.411220] (-) TimerEvent: {}
+[4.511540] (-) TimerEvent: {}
+[4.611849] (-) TimerEvent: {}
+[4.712159] (-) TimerEvent: {}
+[4.812450] (-) TimerEvent: {}
+[4.912744] (-) TimerEvent: {}
+[5.013045] (-) TimerEvent: {}
+[5.113386] (-) TimerEvent: {}
+[5.213716] (-) TimerEvent: {}
+[5.314044] (-) TimerEvent: {}
+[5.414382] (-) TimerEvent: {}
+[5.514690] (-) TimerEvent: {}
+[5.615000] (-) TimerEvent: {}
+[5.715336] (-) TimerEvent: {}
+[5.815703] (-) TimerEvent: {}
+[5.899845] (fg_bridge) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/Ros2fg_bridge.dir/build.make:76: CMakeFiles/Ros2fg_bridge.dir/src/Ros2fg_bridge.cpp.o] Error 1\n'}
+[5.900087] (fg_bridge) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/Ros2fg_bridge.dir/all] Error 2\n'}
+[5.900156] (fg_bridge) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[5.915769] (-) TimerEvent: {}
+[6.016025] (-) TimerEvent: {}
+[6.116330] (-) TimerEvent: {}
+[6.216620] (-) TimerEvent: {}
+[6.316919] (-) TimerEvent: {}
+[6.417222] (-) TimerEvent: {}
+[6.517542] (-) TimerEvent: {}
+[6.617844] (-) TimerEvent: {}
+[6.718169] (-) TimerEvent: {}
+[6.818493] (-) TimerEvent: {}
+[6.918790] (-) TimerEvent: {}
+[7.019071] (-) TimerEvent: {}
+[7.119380] (-) TimerEvent: {}
+[7.219651] (-) TimerEvent: {}
+[7.319937] (-) TimerEvent: {}
+[7.420221] (-) TimerEvent: {}
+[7.520501] (-) TimerEvent: {}
+[7.620776] (-) TimerEvent: {}
+[7.721047] (-) TimerEvent: {}
+[7.821312] (-) TimerEvent: {}
+[7.921596] (-) TimerEvent: {}
+[8.021874] (-) TimerEvent: {}
+[8.122175] (-) TimerEvent: {}
+[8.222462] (-) TimerEvent: {}
+[8.322757] (-) TimerEvent: {}
+[8.423036] (-) TimerEvent: {}
+[8.523336] (-) TimerEvent: {}
+[8.623655] (-) TimerEvent: {}
+[8.723991] (-) TimerEvent: {}
+[8.824313] (-) TimerEvent: {}
+[8.924629] (-) TimerEvent: {}
+[9.024950] (-) TimerEvent: {}
+[9.125289] (-) TimerEvent: {}
+[9.225604] (-) TimerEvent: {}
+[9.238181] (fg_bridge) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable Ros2_main\x1b[0m\n'}
+[9.325754] (-) TimerEvent: {}
+[9.426114] (-) TimerEvent: {}
+[9.526429] (-) TimerEvent: {}
+[9.626755] (-) TimerEvent: {}
+[9.727078] (-) TimerEvent: {}
+[9.765318] (fg_bridge) StdoutLine: {'line': b'[ 75%] Built target Ros2_main\n'}
+[9.766898] (fg_bridge) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[9.769382] (fg_bridge) CommandEnded: {'returncode': 2}
+[9.783804] (fg_bridge) JobEnded: {'identifier': 'fg_bridge', 'rc': 2}
+[9.794404] (-) EventReactorShutdown: {}
