@@ -34,7 +34,7 @@ class JoystickNode(Node):
             1)
             
         # Publisher para enviar a posição do leme ao fg_bridge / ESP32
-        self.rudder_pub = self.create_publisher(Float32, 'rudder_pos_servo_sub', 10)
+        self.rudder_pub = self.create_publisher(Float32, 'rudder_pos_servo_sub', 10)surf_aileron
         self.aileron_pub = self.create_publisher(Float32, 'aileron_pos_servo_sub', 10)
         self.elevator_pub = self.create_publisher(Float32, 'elevator_pos_servo_sub', 10)
         self.throttle_pub = self.create_publisher(Float32, 'throttle_pos_servo_sub', 10)

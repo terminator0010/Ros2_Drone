@@ -1,8 +1,0 @@
-Command: ninja clean-microros
-[0/2] Re-checking globbed directories...
-[1/2] cd /home/diego/Ros2_esp32/components/micro_ros_espidf_component && make -f libmicroros.mk clean
-rm -rf /home/diego/Ros2_esp32/components/micro_ros_espidf_component/libmicroros.a; \
-rm -rf /home/diego/Ros2_esp32/components/micro_ros_espidf_component/include; \
-rm -rf /home/diego/Ros2_esp32/components/micro_ros_espidf_component/esp32_toolchain.cmake; \
-rm -rf /home/diego/Ros2_esp32/components/micro_ros_espidf_component/micro_ros_dev; \
-rm -rf /home/diego/Ros2_esp32/components/micro_ros_espidf_component/micro_ros_src;
